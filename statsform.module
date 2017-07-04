@@ -51,13 +51,35 @@ function statsform_page_alter(&$page) {
         $page['#theme'] = 'hijack'; 
   }
 }
+/**
+ * Implements hook_form_alter().
+ */
+//function statsform_form_alter(&$form, &$form_state, $form_id) {
+//    //print_r($form_id);
+////    print_r("asd".$form['actions']['submit']['#attributes']['class']);
+//  if ($form_id = 'statsform_page_one') {
+//    //$form['actions']['submit']['#attributes']['class'][] = 'hidden';
+//    //$form['actions']['submit']['#attributes'] = array('class' => 'my_class'); 
+//    
+//    
+//    $form['actions']['submit']['#attributes']['class'][] = 'hidden';
+//    $form['#attributes']['class'][] = 'hidden';
+//    
+//    
+//    
+//    
+////    print_r($form['actions']['submit']['#attributes']);
+//  }
+//}
 //=============================================================================
 
 function statsform_page_one($form, &$form_state) {
+
+//print_r(drupal_get_token());
     
-     // Jump to appropriate page if necessary
-  // Jump to appropriate page if necessary
-  // Jump to appropriate page if necessary
+// Jump to appropriate page if necessary
+// Jump to appropriate page if necessary
+// Jump to appropriate page if necessary
 
   // Display page 2 if $form_state['page_num'] == 2
   if (!empty($form_state['page_num']) && $form_state['page_num'] == 2) {
@@ -85,6 +107,8 @@ function statsform_page_one($form, &$form_state) {
     return statsform_page_seven($form, $form_state);
   }
   
+
+    // check to see if the user is in the StatsForm group
     global $user;
     $flag = 0;
 
@@ -92,12 +116,9 @@ function statsform_page_one($form, &$form_state) {
         $flag = 1;
     
     if ($flag == 1) {
-  
       $form['home'] = array(
             '#type' => 'item',
-    
             '#markup' => '
-            
 <html>
     <head>
         <title>Stats Redesign Project</title>
@@ -112,15 +133,33 @@ function statsform_page_one($form, &$form_state) {
         <!-- Personally Defined CSS/Javascript -->
         <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
 
+<script>
+function myfunction1() {
+    document.getElementsByName("bidhide")[0].value = "YRL";
+    document.getElementById("statsform-page-one").submit();
+}
+function myfunction2() {
+    document.getElementsByName("bidhide")[0].value =  "BIOMEDICAL";
+    document.getElementById("statsform-page-one").submit();
+}
+function myfunction3() {
+    document.getElementsByName("bidhide")[0].value =  "POWELL";
+    document.getElementById("statsform-page-one").submit();
+}
+function myfunction4() {
+    document.getElementsByName("bidhide")[0].value = "ARTS";
+    document.getElementById("statsform-page-one").submit();
+}
+function myfunction5() {
+    document.getElementsByName("bidhide")[0].value = "MUSIC";
+    document.getElementById("statsform-page-one").submit();
+}
+</script>
 
         <!-- Google Font Montserrat --> 
-
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">   
-
-
     </head>
     <body>
-
         <!-- Menu -->
         <div class="ui secondary inverted menu">
             <div class="ui huge breadcrumb">
@@ -168,48 +207,59 @@ function statsform_page_one($form, &$form_state) {
         <a class="four wide column" href="#" onclick="myfunction5()" id="ML"><div class="verticalalign">MUSIC LIBRARY</div></a>
     </div>
 </div>  
-</body>
-
-
-<script>
-function myfunction1() {
-    document.getElementById("edit-bid").value = "YRL";
-    document.getElementById("statsform-page-one").submit();
-}
-function myfunction2() {
-    document.getElementById("edit-bid").value = "BIOMEDICAL";
-    document.getElementById("statsform-page-one").submit();
-}
-function myfunction3() {
-    document.getElementById("edit-bid").value = "POWELL";
-    document.getElementById("statsform-page-one").submit();
-}
-function myfunction4() {
-    document.getElementById("edit-bid").value = "ARTS";
-    document.getElementById("statsform-page-one").submit();
-}
-function myfunction5() {
-    document.getElementById("edit-bid").value = "MUSIC";
-    document.getElementById("statsform-page-one").submit();
-}
-</script>
-
-</html>
-            
             ',
         );
- $form['bid'] = array(
-    '#type' => 'textfield', 
+
+
+
+//$form['#attributes'] = array(
+//    'class' => array('search-form')
+//    );
+
+
+ $form['bidhide'] = array(
+    '#type' => 'hidden', 
     '#default_value' => $bid
     );
- 
 
+
+//style="color:blue;margin-left:30px;"
+//  '#prefix' => '<div class="poll-form">',
+//  '#suffix' => '</div>', 
+//$form['#attributes'] = array('class' => array('search-form'));
+//$form['#attributes']['class'][] = 'test';
+
+
+
+$form['html_markup1'] = array('#markup' => '<div style="visibility:hidden;">');
   $form['submit'] = array(
+//visible' => array(
+///   '#prefix' => '<div style="visibility:hidden;">',
+///    '#suffix' => '</div>', 
+//    '#class' => array('hidden'),
     '#type'  => 'submit',
     '#value' => t('Start'),
     '#submit' => array('statsform_page_one_handler_submit'),
+//
   );
+//$form['html_markup2'] = array('#markup' => '</div>');
+
+//$form['html_markup3'] = array('#markup' => t('<a href="http://eureka.ykyuen.info">Eureka!</a>'));
+
+
+
+
+
+
+
+
+
+
+
+ 
+
   return $form;
+  $form['html_markup2'] = array('#markup' => '</div>');
 }
     
     else {
@@ -221,7 +271,8 @@ function myfunction5() {
             
     <html>
         <body>
-            <h1>Contact Your Supervisors</h1>   
+            <h1>Contact Your Supervisors</h1>
+            Developer: Make sure that you are logged in to Drupal!
         </body>
     </html>
             
@@ -244,8 +295,9 @@ function statsform_page_two($form, &$form_state) {
   // build form for page
   //  $form_state['page_num'] = 1;
   
+  krumo($form_state['values']);
   //krumo($form_state['values']['bid']);
-  $library = $form_state['values']['bid'];
+  $library = $form_state['values']['bidhide'];
   statsform_session_variable_set('statsform', 'libraryName', $library);
   statsform_session_variable_get('statsform', 'libraryName');
   
