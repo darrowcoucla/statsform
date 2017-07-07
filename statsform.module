@@ -271,7 +271,8 @@ $form['html_markup1'] = array('#markup' => '<div style="visibility:hidden;">');
             
     <html>
         <body>
-            <h1>Contact Your Supervisors</h1>
+            <h1>Stats Form App</h1>
+            Please log in or contact your supervisor to gain access<br>
             Developer: Make sure that you are logged in to Drupal!
         </body>
     </html>
@@ -295,7 +296,7 @@ function statsform_page_two($form, &$form_state) {
   // build form for page
   //  $form_state['page_num'] = 1;
   
-  krumo($form_state['values']);
+  //krumo($form_state['values']);
   //krumo($form_state['values']['bid']);
   $library = $form_state['values']['bidhide'];
   statsform_session_variable_set('statsform', 'libraryName', $library);
@@ -349,11 +350,10 @@ function statsform_page_two($form, &$form_state) {
 
   $form = array();
 
-$form['ref'] = array(
+  $form['ref1'] = array(
         '#type' => 'item',
-        '#markup' => '
-        
-<html>
+        '#prefix' => '',
+        '#markup' =>'<html>
 <head>
     <title>Stats Redesign Project</title>
 
@@ -368,6 +368,32 @@ $form['ref'] = array(
     <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
     <!-- IScroll Link here -->
     <script type="text/javascript" src="../css/stylesheet.css"></script>
+    
+    <script>
+function myfunction11() {
+    document.getElementsByName("bidhide2")[0].value = "circ";
+    tt = document.getElementsByName("bidhide2")[0].value;
+    console.log("iuyiuy");
+    document.getElementById("statsform-page-one").submit();
+}
+function myfunction2() {
+    document.getElementsByName("bidhide")[0].value =  "aLevel";
+    document.getElementById("statsform-page-two").submit();
+}
+function myfunction3() {
+    document.getElementsByName("bidhide")[0].value =  "info";
+    document.getElementById("statsform-page-two").submit();
+}
+function myfunction4() {
+    document.getElementsByName("bidhide")[0].value = "cashier";
+    document.getElementById("statsform-page-two").submit();
+}
+function myfunction5() {
+    document.getElementsByName("bidhide")[0].value = "phone";
+    document.getElementById("statsform-page-two").submit();
+}
+</script>
+
 </head>
 <body>
 
@@ -375,19 +401,13 @@ $form['ref'] = array(
     <div class="ui secondary inverted menu">
         <div class="ui huge breadcrumb">
             <div class="section" >
-                <a class="item" href="index.html">
+                <a class="item" href="/statsform/form">
                     Home
                 </a>
             </div>
-            <i class="right chevron icon divider"></i>
-            ');
-  $form['ref1'] = array(
-        '#type' => 'item',
-        '#prefix' => '
+        <i class="right chevron icon divider"></i>
             <div class="active section">
-                <a class="item">',
-        '#markup' =>t(ucfirst(statsform_session_variable_get('statsform', 'libraryName')).' 
-                </a>
+                <a class="item">'.t(ucfirst(statsform_session_variable_get('statsform', 'libraryName')).'</a>
             </div>
         </div>
         <div class="right menu">
@@ -396,10 +416,14 @@ $form['ref'] = array(
             </a>
         </div>
     </div>'));
-
 $form['pos1'] = array(
         '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid"><a href = "mockup"class="eight wide column" id="sec1"> <div class="verticalalign">',
+        '#prefix' => '<div class="ui equal width center aligned grid">
+        
+        
+
+        <a href="#" class="eight wide column" onclick="myfunction11()" id="YRL"> <div class="verticalalign">',
+        
         '#suffix' => '</div></a></div',
         '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos1')).''));
 
@@ -442,20 +466,59 @@ $form['pos6'] = array(
  ** Attempted to create hyperlink photo with text on top. 3/1
 !-->
 
-</body>
-</html>
-        
         ')
         
+    );
+
+ $form['bidhide2'] = array(
+    '#type' => 'hidden', 
+    '#default_value' => "qwe",
     );
 
   $form['next'] = array(
     '#type'  => 'submit',
     '#value' => t('Start'),
-    '#submit' => array('statsform_page_one_handler_submit'),
+    '#submit' => array('statsform_page_two_handler_submit'),
   );
   return $form;
 }
+
+
+
+
+/**
+* page 3 - Welcome ......................................................................................................................
+* page 3 - Welcome ......................................................................................................................
+* page 3 - Welcome ......................................................................................................................
+ */
+
+function statsform_page_three($form, &$form_state) {
+krumo("iopiop");
+  // build form for page
+  //  $form_state['page_num'] = 1;
+  
+  //krumo($form_state['values']);
+  //krumo($form_state['values']['bid']);
+  $library = $form_state['values']['bidhide'];
+
+$form['2pos6'] = array(
+        '#type' => 'item',
+        '#prefix' => '<div class="ui equal width center aligned grid"><a href = "mockup"class="eight wide column" id="sec6"> <div class="verticalalign">',
+        '#suffix' => '</div></a></div',
+        '#markup' => 'poipoi',
+    );
+
+  $form['next'] = array(
+    '#type'  => 'submit',
+    '#value' => t('Start'),
+    '#submit' => array('statsform_page_two_handler_submit'),
+  );
+  return $form;
+}
+
+
+
+
 
 /**
  * Page 1 submit handler.
@@ -479,11 +542,37 @@ function statsform_page_one_handler_submit($form, &$form_state) {
   $form_state['rebuild'] = TRUE;
 }
 
+
+
+/**
+ * Page 2 submit handler.
+ * Page 2 submit handler.
+ * Page 2 submit handler.
+ *
+ * Save the vals from page one for a later final submit.
+ */
+  // Values are saved for each page.
+  // to carry forward to subsequent pages in the form.
+  // The Forms API rebuilds the form.
+function statsform_page_two_handler_submit($form, &$form_state) {
+  $form_state['page_values'][1] = $form_state['values'];
+
+  // set page num if it does not yet exist, ie this is the first pass
+  if (empty($form_state['page_num'])) { $form_state['page_num'] = 2; } 
+
+  // go forward to page 3
+  $form_state['page_num'] = 3;
+
+  $form_state['rebuild'] = TRUE;
+}
+
+
+
 function statsform_mockup($form, &$form_state) {
- 
   $form['test'] = array(
-        '#type' => 'item',
-        '#markup' => '
+        '#type' => 'submit',
+        '#value' => t('Submitq'),
+        '#prefix' => '
 <html>
 <head>
     <title>Stats Redesign Project</title>
@@ -662,8 +751,9 @@ function statsform_mockup($form, &$form_state) {
                     </div>
                 </div>
                 <div class="eight wide column"> 
-                    <div class="ui fluid card ">
-                        <button style = "height: 120px" class=" ui button"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
+                    <div class="ui fluid card ">',
+//                        <button style = "height: 120px" class=" ui button"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
+        '#suffix' => '
                     </div>
                 </div>
 
