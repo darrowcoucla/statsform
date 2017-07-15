@@ -75,15 +75,14 @@ function statsform_page_one($form, &$form_state) {
 
     if (in_array('administrator', $user->roles)) { // Can add more roles to this check
         $flag = 1;
-    
         // Display page 2 if $form_state['page_num'] == 2
         if (!empty($form_state['page_num']) && $form_state['page_num'] == 2) {
-            //print_r('page_2');
+            print_r('page_2');
             return statsform_page_two($form, $form_state);
         } elseif (!empty($form_state['page_num']) && $form_state['page_num'] == 3) {
             //print_r('page_3');
-//            return statsform_page_three($form, $form_state);
-            return statsform_mockup($form, $form_state);
+            return statsform_page_three($form, $form_state);
+//            return statsform_mockup($form, $form_state);
         } elseif (!empty($form_state['page_num']) && $form_state['page_num'] == 4) {
             //print_r('page_4a');
             return statsform_page_four($form, $form_state);
@@ -97,100 +96,6 @@ function statsform_page_one($form, &$form_state) {
             //print_r('page_7');
             return statsform_page_seven($form, $form_state);
         }
-
-        $form['home'] = array(
-            '#type' => 'item',
-            '#markup' => '
-<html>
-    <head>
-        <title>Stats Redesign Project</title>
-
-        <!-- JQuery -->
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-
-        <!-- Semantic UI -->
-        <link rel="stylesheet" type="text/css" href="../semantic/semantic.min.css">
-        <script src="../semantic/semantic.min.js"></script>
-
-        <!-- Personally Defined CSS/Javascript -->
-        <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
-
-        <script>
-        function myfunction1() {
-            document.getElementsByName("bidhide")[0].value = "YRL";
-            document.getElementById("statsform-page-one").submit();
-        }
-        function myfunction2() {
-            document.getElementsByName("bidhide")[0].value =  "BIOMEDICAL";
-            document.getElementById("statsform-page-one").submit();
-        }
-        function myfunction3() {
-            document.getElementsByName("bidhide")[0].value =  "POWELL";
-            document.getElementById("statsform-page-one").submit();
-        }
-        function myfunction4() {
-            document.getElementsByName("bidhide")[0].value = "ARTS";
-            document.getElementById("statsform-page-one").submit();
-        }
-        function myfunction5() {
-            document.getElementsByName("bidhide")[0].value = "MUSIC";
-            document.getElementById("statsform-page-one").submit();
-        }
-        </script>
-
-        <!-- Google Font Montserrat --> 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">   
-    </head>
-    <body>
-        <!-- Menu -->
-        <div class="ui secondary inverted menu">
-            <div class="ui huge breadcrumb">
-                <div class="active section" >
-                    <a class="item">
-                        Home
-                    </a>
-                </div>
-            </div>
-            <div class="right menu">
-                <a class="item">
-                    Login
-                </a>
-            </div>
-        </div>
-
-        <!-- Content -->
-      <div class="ui equal width height center aligned grid">
-         <div class="row">
-          <a class="six wide column" href="#" onclick="myfunction1()" id="YRL"> <div class="verticalalign"> 1YOUNG RESEARCH LIBRARY</div></a>
-          <div class="four wide column">
-            <img class ="img-responsive" src="../img/Statsform_Stock_Photos/powellnight.jpg">
-        </div>
-        <a class="six wide column" href="#" onclick="myfunction2()" id="BL"> <div class="verticalalign"> BIOMEDICAL LIBRARY </div> </a>
-    </div>
-
-    <div class="row">
-        <div class="four wide column"> <div align="left">
-           <img class ="img-responsive" src="../img/Statsform_Stock_Photos/powellstudent.jpg"></div>
-       </div>
-       <a class="seven wide column" href="#" onclick="myfunction3()" id = "POWELL"> <div class="verticalalign">POWELL LIBRARY</div></a> 
-       <div class="five wide column">
-        <img class ="img-responsive" src="../img/Statsform_Stock_Photos/clicc.jpg"></div>
-    </div>
-
-
-    <div class="row">
-        <div class="four wide column">
-            <img class ="img-responsive" src="../img/Statsform_Stock_Photos/books.jpg">
-        </div>
-        <a class="four wide column" href="#" onclick="myfunction4()" id="AL"><div class="verticalalign"> ARTS LIBRARY</div></a>
-        <div class="four wide column">
-            <img class ="img-responsive" src="../img/Statsform_Stock_Photos/DAY3_SHOT5_YOUNGLIBRARY-2192_r_cmyk.jpg">
-        </div>
-        <a class="four wide column" href="#" onclick="myfunction5()" id="ML"><div class="verticalalign">MUSIC LIBRARY</div></a>
-    </div>
-</div>  
-            ',
-        );
 
         $form['bidhide'] = array(
             '#type' => 'hidden', 
@@ -292,7 +197,7 @@ function statsform_page_two($form, &$form_state) {
             '#markup' => '
 <html>
     <head>
-        <title>Stats Redesign Project</title>
+        <title>Stats Redesign Project - 2</title>
 
         <!-- Semantic UI -->
         <link rel="stylesheet" type="text/css" href="../assets/includes/semantic.min.css">
@@ -308,7 +213,6 @@ function statsform_page_two($form, &$form_state) {
     
         <script>
             function myfunction1() {
-alert("222a");                
                 document.getElementsByName("bidhide3")[0].value = "circ";
                 tt = document.getElementsByName("bidhide3")[0].value;
                 console.log("iuyiuy");
@@ -364,8 +268,7 @@ alert("222a");
         '#type' => 'item',
         '#prefix' => '<div class="ui equal width center aligned grid">
         <a href="#" class="eight wide column" onclick="myfunction1()" id="YRL"> <div class="verticalalign">',
-        '#suffix' => '</div></a>
-222</div',
+        '#suffix' => '</div></a></div',
         '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos1')).'')
     );
     $form['pos2'] = array(
@@ -453,7 +356,7 @@ function statsform_page_three($form, &$form_state) {
             '#markup' => '
 <html>
 <head>
-    <title>Stats Redesign Project</title>
+    <title>Stats Redesign Project - 3</title>
 
     <!-- Include meta tag to ensure proper rendering and touch zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -480,6 +383,31 @@ function statsform_page_three($form, &$form_state) {
     <!-- IScroll Link here -->
     <script type="text/javascript" src="../assets/includes/custom.accordion.js?v=1"></script>
 
+        <script>
+            function myfunction3a() {
+alert("mnnb");
+                document.getElementsByName("bidhide3")[0].value = "circ";
+                tt = document.getElementsByName("bidhide3")[0].value;
+                console.log("iuyiuy");
+                document.getElementById("statsform-page-one").submit();
+            }
+            function myfunction2() {
+                document.getElementsByName("bidhide")[0].value =  "aLevel";
+                document.getElementById("statsform-page-two").submit();
+            }
+            function myfunction3() {
+                document.getElementsByName("bidhide")[0].value =  "info";
+                document.getElementById("statsform-page-two").submit();
+            }
+            function myfunction4() {
+                document.getElementsByName("bidhide")[0].value = "cashier";
+                document.getElementById("statsform-page-two").submit();
+            }
+            function myfunction5() {
+                document.getElementsByName("bidhide")[0].value = "phone";
+                document.getElementById("statsform-page-two").submit();
+            }
+        </script>
 
 </head>
 <body>
@@ -517,7 +445,7 @@ function statsform_page_three($form, &$form_state) {
     $( "#datepicker" ).datepicker();
   } );
   </script>
-    <h3>Date only</h3>
+    <h3>2Date only</h3>
   <div class="ui calendar" id="calendar">
     <div class="ui input left icon">
       <i class="calendar icon"></i>
@@ -629,1051 +557,10 @@ function statsform_page_three($form, &$form_state) {
                     </div>
                 </div>
                 <div class="eight wide column"> 
-                    <div class="ui fluid card ">',
-//                        <button style = "height: 120px" class=" ui button"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
-        '#suffix' => '
-                    </div>
-                </div>
+                    <div class="ui fluid card ">
 
-            </div>
-        </div>
+<button style = "height: 120px" class="ui button" onclick="myfunction3a()" id="YRL"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
 
-        <!-- Referral Section -->
-        <div class="title">
-            <i class="dropdown icon"></i>
-            Research Assistance
-        </div>
-        <div class="content">
-            <div class="ui equal width aligned grid">
-                <div class="eight wide column">
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <img class="ui tiny image left floated" src="../../img/research.png"> 
-                            <div class="header"> Research Assistance </div>
-                            <div class="meta"> Help patron with research strategy, advice, overview of resources (drop-in). </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="eight wide column">
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <img class="ui tiny image left floated" src="../../img/technical.png"> 
-                            <div class="header"> Technical Assistance </div>
-                            <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="eight wide column">
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <img class="ui tiny image left floated" src="../../img/lookup.png"> 
-                            <div class="header"> Look up Known Item </div>
-                            <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="eight wide column">
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <img class="ui tiny image left floated" src="../../img/directions.png"> 
-                            <div class="header"> Directional </div>
-                            <div class="meta"> Location or directions provided e.g. rooms, events, contact information, etc. </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="eight wide column">
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <img class="ui tiny image left floated" src="../../img/policy.png"> 
-                            <div class="header"> Policy & Operations </div>
-                            <div class="meta"> Hours, access privileges, borrowing, space reservations, other policies. </div>
-                        </div> 
-                    </div>
-                </div>
-
-                <div class="eight wide column">
-                    <form class="ui form">
-                        <div class="field">
-                            <label>
-                                Question Topic
-                            </label>
-                            <input type="text" name="topic" placeholder="Add topic here." height="200">
-                        </div>
-                        <div class="grouped fields">
-                            <label for="referral">Referral?</label>
-                            <div class="field">
-                                <div class="ui radio checkbox">
-                                    <input type="radio" name="referral" tabindex="0" class="hidden">
-                                    <label>Yes</label>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="ui radio checkbox">
-                                    <input type="radio" name="referral" tabindex="0" class="hidden">
-                                    <label>No</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label>
-                                Department / Unit
-                            </label>
-                            <div class="ui selection dropdown">
-                                <input type="hidden" name="department">
-                                <i class="dropdown icon"></i>
-                                <div class="default text">
-                                    Choose your department
-                                </div>
-                                <div class="menu">
-                                    <div class="item" data-value="none">N/A</div>
-                                    <div class="item" data-value="linguistics">Linguistics</div>
-                                    <div class="item" data-value="cs">Computer Science</div>
-                                    <div class="item" data-value="commstudies">Communications</div>
-                                    <div class="item" data-value="arts">Fine Arts</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label>Course / Section</label>
-                            <input type="text" name="course" placeholder="CRS###/SEC###">
-                        </div>
-                    </form>
-                </div>
-            </div>
-             <div class="ui equal width aligned grid">
-                <div class="eight wide column">
-                    <div class="ui equal width aligned grid">
-                        <div class="four wide column">
-                            <div class="ui inverted segment">
-                                <div class="ui tiny inverted statistics">
-                                    <div class="statistic">
-                                        <div class="value">
-                                            0
-                                        </div>
-                                        <div class="label">
-                                            People
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="four wide column">
-                            <div class="ui inverted segment">
-                                <div class="ui tiny inverted statistics">
-                                    <div class="statistic">
-                                        <div class="value">
-                                            0
-                                        </div>
-                                        <div class="label">
-                                            Minutes
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui form">
-                          <div class="inline fields">
-                            <label>How did you help the patron?</label>
-                            <div class="field">
-                              <div class="ui radio checkbox">
-                                <input type="radio" name="frequency" checked="checked">
-                                <label>In-Person</label>
-                            </div>
-                        </div>
-                        <div class="field">
-                          <div class="ui radio checkbox">
-                            <input type="radio" name="frequency">
-                            <label>E-mail</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                      <div class="ui radio checkbox">
-                        <input type="radio" name="frequency">
-                        <label>Telephone</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="eight wide column">
-         <form class="ui form">
-            <div class="grouped fields">
-                <label for="status" style = "font-size: 30px">Patron Status</label>
-                <div class="field">
-                    <div class="ui radio checkbox">
-                        <input type="radio" name="status" tabindex="0" checked="" class="hidden">
-                        <label>Unknown</label>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui radio checkbox">
-                        <input type="radio" name="status" tabindex="0" class="hidden">
-                        <label>UCLA undergrad</label>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui radio checkbox">
-                        <input type="radio" name="status" tabindex="0" class="hidden">
-                        <label>UCLA graduate student</label>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui radio checkbox">
-                        <input type="radio" name="status" tabindex="0" class="hidden">
-                        <label>UCLA faculty</label>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui radio checkbox">
-                        <input type="radio" name="status" tabindex="0" class="hidden">
-                        <label>UCLA researcher/other</label>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui radio checkbox">
-                        <input type="radio" name="status" tabindex="0" class="hidden">
-                        <label>UCLA alumnus/a</label>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui radio checkbox">
-                        <input type="radio" name="status" tabindex="0" class="hidden">
-                        <label>non-UCLA</label>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-
-</div>
-</div>
-
-<!--<div class="eight wide column">
-    <form class="ui form">
-        <div class="field">
-            <label>
-                Question Topic
-            </label>
-            <input type="text" name="topic" placeholder="Add topic here." height="200">
-        </div>
-        <div class="grouped fields">
-            <label for="referral">Referral?</label>
-            <div class="field">
-                <div class="ui radio checkbox">
-                    <input type="radio" name="referral" tabindex="0" class="hidden">
-                    <label>Yes</label>
-                </div>
-            </div>
-            <div class="field">
-                <div class="ui radio checkbox">
-                    <input type="radio" name="referral" tabindex="0" class="hidden">
-                    <label>No</label>
-                </div>
-            </div>
-        </div>
-        <div class="field">
-            <label>
-                Department / Unit
-            </label>
-            <div class="ui selection dropdown">
-                <input type="hidden" name="department">
-                <i class="dropdown icon"></i>
-                <div class="default text">
-                    Choose your department
-                </div>
-                <div class="menu">
-                    <div class="item" data-value="none">N/A</div>
-                    <div class="item" data-value="linguistics">Linguistics</div>
-                    <div class="item" data-value="cs">Computer Science</div>
-                    <div class="item" data-value="commstudies">Communications</div>
-                    <div class="item" data-value="arts">Fine Arts</div>
-                </div>
-            </div>
-        </div>
-        <div class="field">
-            <label>Course / Section</label>
-            <input type="text" name="course" placeholder="CRS###/SEC###">
-        </div>
-    </form>
-</div> 
-</div>
-</div> !-->
-
-<!-- Directions Modal -->
-<div class="ui modal" id="directions-modal">
-    <div class="content">
-        <div class="header">
-            <h1>
-                Edit content for Directions
-            </h1>
-            <div class="ui massive form">
-                <div class="field">
-                    <label>
-                        New count:
-                    </label>
-                    <input placeholder="E.G.: 42" type="number" min="0" inputmode="numberic" pattern="[0-9]*" id="new-directions-count">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Lookup Modal -->
-<div class="ui modal" id="lookup-modal">
-    <div class="content">
-        <div class="header">
-            <h1>
-                Edit content for Lookup
-            </h1>
-            <div class="ui massive form">
-                <div class="field">
-                    <label>
-                        New count:
-                    </label>
-                    <input placeholder="E.G.: 42" type="number" min="0" inputmode="numberic" pattern="[0-9]*" id="new-lookup-count">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Policy Modal -->
-<div class="ui modal" id="policy-modal">
-    <div class="content">
-        <div class="header">
-            <h1>
-                Edit content for Policy
-            </h1>
-            <div class="ui massive form">
-                <div class="field">
-                    <label>
-                        New count:
-                    </label>
-                    <input placeholder="E.G.: 42" type="number" min="0" inputmode="numberic" pattern="[0-9]*" id="new-policy-count">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Research Modal -->
-<div class="ui modal" id="research-modal">
-    <div class="content">
-        <div class="header">Research Assistance
-            <h1>
-                Edit content for Research Assistance
-            </h1>
-            <div class="ui massive form">
-                <div class="field">
-                    <label>
-                        New count:
-                    </label>
-                    <input placeholder="E.G.: 42" type="number" min="0" inputmode="numberic" pattern="[0-9]*" id="new-research-count">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Technical Modal -->
-<div class="ui modal" id="technical-modal">
-    <div class="content">
-        <div class="header">
-            <h1>
-                Edit content for Technical Assistance
-            </h1>
-            <div class="ui massive form">
-                <div class="field">
-                    <label>
-                        New count:
-                    </label>
-                    <input placeholder="E.G.: 42" type="number" min="0" inputmode="numberic" pattern="[0-9]*" id="new-technical-count">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-</div>',
-        );
-
-        $form['bidhide3'] = array(
-            '#type' => 'hidden', 
-            '#default_value' => 'zzz',
-        );
-
-        $form['html_markup1'] = array(
-            '#markup' => '<div style="visibility:hidden;">',
-        );
-
-        $form['submit'] = array(
-            '#type'  => 'submit',
-            '#value' => t('Start'),
-            '#submit' => array('statsform_page_two_handler_submit'),
-        );
-
-        return $form;
-
-        $form['html_markup2'] = array('#markup' => '</div>');
-
-    } else { // djc move this to the very end and indent the code between here and the end
-        $form['home'] = array(
-            '#type' => 'item',
-            '#markup' => '
-<html>
-    <body>
-        <h1>Stats Form App</h1>
-        Please log in or contact your supervisor to gain access<br>
-        Developer: Make sure that you are logged in to Drupal!
-    </body>
-</html>',
-        );
-        return $form;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
-* page 2 - Welcome ......................................................................................................................
-* page 2 - Welcome ......................................................................................................................
-* page 2 - Welcome ......................................................................................................................
- */
-
-function statsform_page_three_old($form, &$form_state) {
-//function statsform_page_two_oem($form, &$form_state) {
-    $library = $form_state['values']['bidhide'];
-    statsform_session_variable_set('statsform', 'libraryName', $library);
-    statsform_session_variable_get('statsform', 'libraryName');
-
-    if ($library == 'POWELL'){
-        statsform_session_variable_set('statsform', 'pos1', 'Circulation Desk: second floor counter');
-        statsform_session_variable_set('statsform', 'pos2', 'Reference Desk');
-        statsform_session_variable_set('statsform', 'pos3', 'Information Desk');
-        statsform_session_variable_set('statsform', 'pos4', 'Off-Desk');
-        statsform_session_variable_set('statsform', 'pos5', 'Circulation Desk: entrance foyer');
-        statsform_session_variable_set('statsform', 'pos6', 'Rovers');
-    }
-    if ($library == 'YRL'){
-        statsform_session_variable_set('statsform', 'pos1', '1Circulation Desk');
-        statsform_session_variable_set('statsform', 'pos2', 'A Level Service Desk');
-        statsform_session_variable_set('statsform', 'pos3', 'Information Desk');
-        statsform_session_variable_set('statsform', 'pos4', 'Cashier Window');
-        statsform_session_variable_set('statsform', 'pos5', 'Phone Answering Station');
-        statsform_session_variable_set('statsform', 'pos6', '');
-    }
-    if ($library == 'BIOMEDICAL'){
-        statsform_session_variable_set('statsform', 'pos1', 'Circulation Desk');
-        statsform_session_variable_set('statsform', 'pos2', 'Reference Desk');
-        statsform_session_variable_set('statsform', 'pos3', 'Information Desk');
-        statsform_session_variable_set('statsform', 'pos4', 'Off-Desk');
-        statsform_session_variable_set('statsform', 'pos5', '');
-        statsform_session_variable_set('statsform', 'pos6', '');
-    }
-    if ($library == 'ARTS'){
-        statsform_session_variable_set('statsform', 'pos1', 'Circulation Desk');
-        statsform_session_variable_set('statsform', 'pos2', 'Reference Desk');
-        statsform_session_variable_set('statsform', 'pos3', 'Off Desk');
-        statsform_session_variable_set('statsform', 'pos4', '');
-        statsform_session_variable_set('statsform', 'pos5', '');
-        statsform_session_variable_set('statsform', 'pos6', '');
-    }
-    if ($library == 'MUSIC'){
-        statsform_session_variable_set('statsform', 'pos1', 'Circulation Desk');
-        statsform_session_variable_set('statsform', 'pos2', 'Reference Desk');
-        statsform_session_variable_set('statsform', 'pos3', 'Off Desk');
-        statsform_session_variable_set('statsform', 'pos4', '');
-        statsform_session_variable_set('statsform', 'pos5', '');
-        statsform_session_variable_set('statsform', 'pos6', '');
-    }
-    $form = array();
-
-    $form['ref1'] = array(
-        '#type' => 'item',
-        '#prefix' => '',
-        '#markup' =>'
-<html>
-    <head>
-        <title>Stats Redesign Project</title>
-
-        <!-- Semantic UI -->
-        <link rel="stylesheet" type="text/css" href="../assets/includes/semantic.min.css">
-        <script type="text/javascript" src="../assets/includes/semantic.min.js"></script>
-
-        <!-- JQuery -->
-        <script type="text/javascript" src="../assets/includes/jquery.min.js"></script>
-
-        <!-- Customization -->
-        <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
-        <!-- IScroll Link here -->
-        <script type="text/javascript" src="../css/stylesheet.css"></script>
-    
-        <script>
-            function myfunction1() {
-alert("222b");                
-                document.getElementsByName("bidhide")[0].value = "circ";
-                tt = document.getElementsByName("bidhide")[0].value;
-                console.log("iuyiuy");
-                document.getElementById("statsform-page-one").submit();
-            }
-            function myfunction2() {
-                document.getElementsByName("bidhide")[0].value =  "aLevel";
-                document.getElementById("statsform-page-two").submit();
-            }
-            function myfunction3() {
-                document.getElementsByName("bidhide")[0].value =  "info";
-                document.getElementById("statsform-page-two").submit();
-            }
-            function myfunction4() {
-                document.getElementsByName("bidhide")[0].value = "cashier";
-                document.getElementById("statsform-page-two").submit();
-            }
-            function myfunction5() {
-                document.getElementsByName("bidhide")[0].value = "phone";
-                document.getElementById("statsform-page-two").submit();
-            }
-        </script>
-    </head>
-    <body>
-        <!-- Menu -->
-        <div class="ui secondary inverted menu">
-            <div class="ui huge breadcrumb">
-                <div class="section" >
-                    <a class="item" href="/statsform/form">
-                        Home
-                    </a>
-                </div>
-                <i class="right chevron icon divider"></i>
-                <div class="active section">
-                    <a class="item">'.t(ucfirst(statsform_session_variable_get('statsform', 'libraryName')).'</a>
-                </div>
-            </div>
-            <div class="right menu">
-                <a class="item">
-                    Login
-                </a>
-            </div>
-        </div>')
-    );
-
-    $form['pos1'] = array(
-        '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid">
-        <a href="#" class="eight wide column" onclick="myfunction1()" id="YRL"> <div class="verticalalign">',
-        '#suffix' => '</div></a>
-222</div',
-        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos1')).'')
-    );
-    $form['pos2'] = array(
-        '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid"><a href = "mockup"class="eight wide column" id="sec2"> <div class="verticalalign">',
-        '#suffix' => '</div></a></div',
-        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos2')).'')
-    );
-    $form['pos3'] = array(
-        '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid"><a href = "mockup"class="eight wide column" id="sec3"> <div class="verticalalign">',
-        '#suffix' => '</div></a></div',
-        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos3')).'')
-    );
-    $form['pos4'] = array(
-        '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid"><a href = "mockup"class="eight wide column" id="sec4"> <div class="verticalalign">',
-        '#suffix' => '</div></a></div',
-        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos4')).'')
-    );
-    $form['pos5'] = array(
-        '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid"><a href = "mockup"class="eight wide column" id="sec5"> <div class="verticalalign">',
-        '#suffix' => '</div></a></div',
-        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos5')).'')
-    );
-    $form['pos6'] = array(
-        '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid"><a href = "mockup"class="eight wide column" id="sec6"> <div class="verticalalign">',
-        '#suffix' => '</div></a></div',
-        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos6')).'')
-//        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos6')).'</div>')
-    );
-
-    $form['bidhide'] = array(
-        '#type' => 'hidden', 
-        '#default_value' => $bid
-    );
-
-    $form['html_markup2'] = array(
-        '#markup' => '<div style="visibility:hidden;">'
-    );
-
-    $form['next2'] = array(
-        '#type'  => 'submit',
-        '#value' => t('Start'),
-        '#submit' => array('statsform_page_two_handler_submit'),
-    );
-
-    return $form;
-
-    $form['html_markup2'] = array('#markup' => '</div>');
-
-}
-
-
-/**
-* page 3 - Welcome ......................................................................................................................
-* page 3 - Welcome ......................................................................................................................
-* page 3 - Welcome ......................................................................................................................
- */
-
-function statsform_page_three_oem($form, &$form_state) {
-    $library = $form_state['values']['bidhide'];
-    statsform_session_variable_set('statsform', 'libraryName', $library);
-    statsform_session_variable_get('statsform', 'libraryName');
-
-    if ($library == 'POWELL'){
-        statsform_session_variable_set('statsform', 'pos1', 'Circulation Desk: second floor counter');
-        statsform_session_variable_set('statsform', 'pos2', 'Reference Desk');
-        statsform_session_variable_set('statsform', 'pos3', 'Information Desk');
-        statsform_session_variable_set('statsform', 'pos4', 'Off-Desk');
-        statsform_session_variable_set('statsform', 'pos5', 'Circulation Desk: entrance foyer');
-        statsform_session_variable_set('statsform', 'pos6', 'Rovers');
-    }
-    if ($library == 'YRL'){
-        statsform_session_variable_set('statsform', 'pos1', 'Circulation Deskqqq');
-        statsform_session_variable_set('statsform', 'pos2', 'A Level Service Desk');
-        statsform_session_variable_set('statsform', 'pos3', 'Information Desk');
-        statsform_session_variable_set('statsform', 'pos4', 'Cashier Window');
-        statsform_session_variable_set('statsform', 'pos5', 'Phone Answering Station');
-        statsform_session_variable_set('statsform', 'pos6', '');
-    }
-    if ($library == 'BIOMEDICAL'){
-        statsform_session_variable_set('statsform', 'pos1', 'Circulation Desk');
-        statsform_session_variable_set('statsform', 'pos2', 'Reference Desk');
-        statsform_session_variable_set('statsform', 'pos3', 'Information Desk');
-        statsform_session_variable_set('statsform', 'pos4', 'Off-Desk');
-        statsform_session_variable_set('statsform', 'pos5', '');
-        statsform_session_variable_set('statsform', 'pos6', '');
-    }
-    if ($library == 'ARTS'){
-        statsform_session_variable_set('statsform', 'pos1', 'Circulation Desk');
-        statsform_session_variable_set('statsform', 'pos2', 'Reference Desk');
-        statsform_session_variable_set('statsform', 'pos3', 'Off Desk');
-        statsform_session_variable_set('statsform', 'pos4', '');
-        statsform_session_variable_set('statsform', 'pos5', '');
-        statsform_session_variable_set('statsform', 'pos6', '');
-    }
-    if ($library == 'MUSIC'){
-        statsform_session_variable_set('statsform', 'pos1', 'Circulation Desk');
-        statsform_session_variable_set('statsform', 'pos2', 'Reference Desk');
-        statsform_session_variable_set('statsform', 'pos3', 'Off Desk');
-        statsform_session_variable_set('statsform', 'pos4', '');
-        statsform_session_variable_set('statsform', 'pos5', '');
-        statsform_session_variable_set('statsform', 'pos6', '');
-    }
-    $form = array();
-
-    $form['ref1'] = array(
-        '#type' => 'item',
-        '#prefix' => '',
-        '#markup' =>'
-<html>
-    <head>
-        <title>Stats Redesign Project</title>
-
-        <!-- Semantic UI -->
-        <link rel="stylesheet" type="text/css" href="../assets/includes/semantic.min.css">
-        <script type="text/javascript" src="../assets/includes/semantic.min.js"></script>
-
-        <!-- JQuery -->
-        <script type="text/javascript" src="../assets/includes/jquery.min.js"></script>
-
-        <!-- Customization -->
-        <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
-        <!-- IScroll Link here -->
-        <script type="text/javascript" src="../css/stylesheet.css"></script>
-    
-        <script>
-            function myfunction1() {
-                document.getElementsByName("bidhide")[0].value = "circ";
-                tt = document.getElementsByName("bidhide")[0].value;
-                console.log("iuyiuy");
-                document.getElementById("statsform-page-one").submit();
-            }
-            function myfunction2() {
-                document.getElementsByName("bidhide")[0].value =  "aLevel";
-                document.getElementById("statsform-page-two").submit();
-            }
-            function myfunction3() {
-                document.getElementsByName("bidhide")[0].value =  "info";
-                document.getElementById("statsform-page-two").submit();
-            }
-            function myfunction4() {
-                document.getElementsByName("bidhide")[0].value = "cashier";
-                document.getElementById("statsform-page-two").submit();
-            }
-            function myfunction5() {
-                document.getElementsByName("bidhide")[0].value = "phone";
-                document.getElementById("statsform-page-two").submit();
-            }
-        </script>
-    </head>
-    <body>
-        <!-- Menu -->
-        <div class="ui secondary inverted menu">
-            <div class="ui huge breadcrumb">
-                <div class="section" >
-                    <a class="item" href="/statsform/form">
-                        Home
-                    </a>
-                </div>
-                <i class="right chevron icon divider"></i>
-                <div class="active section">
-                    <a class="item">'.t(ucfirst(statsform_session_variable_get('statsform', 'libraryName')).'</a>
-                </div>
-            </div>
-            <div class="right menu">
-                <a class="item">
-                    Login
-                </a>
-            </div>
-        </div>')
-    );
-
-    $form['pos1'] = array(
-        '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid">
-        <a href="#" class="eight wide column" onclick="myfunction1()" id="YRL"> <div class="verticalalign">',
-        '#suffix' => '</div></a></div',
-        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos1')).'')
-    );
-    $form['pos2'] = array(
-        '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid"><a href = "mockup"class="eight wide column" id="sec2"> <div class="verticalalign">',
-        '#suffix' => '</div></a></div',
-        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos2')).'')
-    );
-    $form['pos3'] = array(
-        '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid"><a href = "mockup"class="eight wide column" id="sec3"> <div class="verticalalign">',
-        '#suffix' => '</div></a></div',
-        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos3')).'')
-    );
-    $form['pos4'] = array(
-        '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid"><a href = "mockup"class="eight wide column" id="sec4"> <div class="verticalalign">',
-        '#suffix' => '</div></a></div',
-        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos4')).'')
-    );
-    $form['pos5'] = array(
-        '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid"><a href = "mockup"class="eight wide column" id="sec5"> <div class="verticalalign">',
-        '#suffix' => '</div></a></div',
-        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos5')).'')
-    );
-    $form['pos6'] = array(
-        '#type' => 'item',
-        '#prefix' => '<div class="ui equal width center aligned grid"><a href = "mockup"class="eight wide column" id="sec6"> <div class="verticalalign">',
-        '#suffix' => '</div></a></div',
-        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos6')).'')
-//        '#markup' => t(ucfirst(statsform_session_variable_get('statsform', 'pos6')).'</div>')
-    );
-
-    $form['bidhide'] = array(
-        '#type' => 'hidden', 
-        '#default_value' => $bid
-    );
-
-    $form['html_markup2'] = array(
-        '#markup' => '<div style="visibility:hidden;">'
-    );
-
-    $form['next2'] = array(
-        '#type'  => 'submit',
-        '#value' => t('Start'),
-        '#submit' => array('statsform_page_two_handler_submit'),
-    );
-
-    return $form;
-
-    $form['html_markup2'] = array('#markup' => '</div>');
-
-}
-
-
-
-
-
-/**
- * Page 1 submit handler.
- * Page 1 submit handler.
- * Page 1 submit handler.
- *
- * Save the vals from page one for a later final submit.
- */
-  // Values are saved for each page.
-  // to carry forward to subsequent pages in the form.
-  // The Forms API rebuilds the form.
-function statsform_page_one_handler_submit($form, &$form_state) {
-  $form_state['page_values'][1] = $form_state['values'];
-
-  // set page num if it does not yet exist, ie this is the first pass
-  if (empty($form_state['page_num'])) { $form_state['page_num'] = 1; } 
-
-  // go forward to page 2
-  $form_state['page_num'] = 2;
-
-  $form_state['rebuild'] = TRUE;
-}
-
-
-
-/**
- * Page 2 submit handler.
- * Page 2 submit handler.
- * Page 2 submit handler.
- *
- * Save the vals from page one for a later final submit.
- */
-  // Values are saved for each page.
-  // to carry forward to subsequent pages in the form.
-  // The Forms API rebuilds the form.
-function statsform_page_two_handler_submit($form, &$form_state) {
-  $form_state['page_values'][1] = $form_state['values'];
-
-  // set page num if it does not yet exist, ie this is the first pass
-  if (empty($form_state['page_num'])) { $form_state['page_num'] = 2; } 
-
-  // go forward to page 3
-  $form_state['page_num'] = 3;
-
-  $form_state['rebuild'] = TRUE;
-}
-
-
-
-/**
- * Page 2 submit handler.
- * Page 2 submit handler.
- * Page 2 submit handler.
- *
- * Save the vals from page one for a later final submit.
- */
-  // Values are saved for each page.
-  // to carry forward to subsequent pages in the form.
-  // The Forms API rebuilds the form.
-function statsform_page_two_oem_handler_submit($form, &$form_state) {
-  $form_state['page_values'][1] = $form_state['values'];
-
-  // set page num if it does not yet exist, ie this is the first pass
-  if (empty($form_state['page_num'])) { $form_state['page_num'] = 2; } 
-
-  // go forward to page 3
-  $form_state['page_num'] = 3;
-
-  $form_state['rebuild'] = TRUE;
-}
-
-
-
-function statsform_mockup($form, &$form_state) {
-  $form['test'] = array(
-        '#type' => 'submit',
-        '#value' => t('Submitq'),
-        '#prefix' => '
-<html>
-<head>
-    <title>Stats Redesign Project</title>
-
-    <!-- Include meta tag to ensure proper rendering and touch zooming -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Include jQuery Mobile stylesheets -->
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-
-    <!-- Include the jQuery library -->
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-    <!-- Include the jQuery Mobile library -->
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-    <!-- Semantic UI -->
-    <link rel="stylesheet" type="text/css" href="../assets/includes/semantic.min.css?v=1">
-    <script type="text/javascript" src="../assets/includes/semantic.min.js?v=1"></script>
-    <link rel="stylesheet" href="../assets/includes/calendar/dist/calendar.min.css">
-    <script type="text/javascript" src="../assets/includes/calendar/dist/calendar.min.js"></script>
-    <script scr="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/accordion.js"></script>
-
-
-    <!-- Customization -->
-    <link rel="stylesheet" type="text/css" href="../assets/includes/custom.accordion.css?v=1" />
-    <!-- IScroll Link here -->
-    <script type="text/javascript" src="../assets/includes/custom.accordion.js?v=1"></script>
-
-
-</head>
-<body>
-
-    <div class="ui secondary inverted menu">
-        <div class="ui huge breadcrumb">
-            <div class="section" >
-                <a class="item" href="index.html" rel="external" data-ajax="false">
-                    Home
-                </a>
-            </div>
-            <i class="right chevron icon divider"></i>
-            <div class="section">
-                <a class="item" href="../references.html" rel="external" data-ajax="false">
-                    Specific Library
-                </a>
-            </div>
-            <i class="right chevron icon divider"></i>
-            <div class="active section">
-                <a class="item">
-                    Stats Form
-                </a>
-            </div>
-        </div>
-        <div class="right menu">
-            <a class="item">
-                Login
-            </a>
-        </div>
-    </div>
-
-    <!-- Calendar -->
-    <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  </script>
-    <h3>Date only</h3>
-  <div class="ui calendar" id="calendar">
-    <div class="ui input left icon">
-      <i class="calendar icon"></i>
-      <input type="text" id="datepicker" placeholder="      Date">
-    </div>
-  </div>
-  <br/>
-
-
-    <!-- Accordion Start -->
-    <div class="ui styled accordion">
-
-        <!-- Quick Questions Section -->
-        <div class="active title">
-            <i class="dropdown icon"></i>
-            Quick Questions
-        </div>
-        <div class="active content">
-            <div class="ui equal width aligned grid">
-                <div class="eight wide column"> 
-                    <div class="ui fluid card withCount">
-                        <div class="content"> 
-                            <div class="ui inverted segment left floated" id="directions"> 
-                                <div class="ui tiny inverted statistics left floated"> 
-                                    <div class="statistic">
-                                        <div class="value"> 0 
-                                        </div> 
-                                        <div class="label"> Count </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <img class="ui tiny image left floated" src="../../img/directions.png"> 
-                            <div class="header"> Directional </div> 
-                            <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div> 
-                        </div>
-                    </div>
-                </div>
-                <div class="eight wide column"> 
-                    <div class="ui fluid card withCount">
-                        <div class="content">
-                            <div class="ui inverted segment left floated" id="lookup">
-                                <div class="ui tiny inverted statistics left floated"> 
-                                    <div class="statistic">
-                                        <div class="value"> 0
-                                        </div> 
-                                        <div class="label"> Count </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <img class="ui tiny image left floated" src="../../img/lookup.png"> 
-                            <div class="header"> Look Up Known Item </div>
-                            <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
-                        </div> 
-                    </div>
-
-                </div>
-                <div class="eight wide column"> 
-                    <div class="ui fluid card withCount">
-                        <div class="content">
-                            <div class="ui inverted segment left floated" id="policy">
-                                <div class="ui tiny inverted statistics left floated"> 
-                                    <div class="statistic">
-                                        <div class="value"> 0
-                                        </div> 
-                                        <div class="label"> Count </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <img class="ui tiny image left floated" src="../../img/policy.png"> 
-                            <div class="header"> Policy & Operations</div>
-                            <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="eight wide column"> 
-                    <div class="ui fluid card withCount">
-                        <div class="content">
-                            <div class="ui inverted segment left floated" id="research">
-                                <div class="ui tiny inverted statistics left floated"> 
-                                    <div class="statistic">
-                                        <div class="value"> 0
-                                        </div> 
-                                        <div class="label"> Count </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <img class="ui tiny image left floated" src="../../img/research.png">
-                            <div class="header"> Referral </div>
-                            <div class="meta"> Referral to advance research support, library location, campus support, etc. </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="eight wide column"> 
-                    <div class="ui fluid card withCount">
-                        <div class="content">
-                            <div class="ui inverted segment left floated" id="technical">
-                                <div class="ui tiny inverted statistics left floated"> 
-                                    <div class="statistic">
-                                        <div class="value"> 0
-                                        </div> 
-                                        <div class="label"> Count </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <img class="ui tiny image left floated" src="../../img/technical.png"> 
-                            <div class="header"> Technical Assistance </div>
-                            <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="eight wide column"> 
-                    <div class="ui fluid card ">',
-//                        <button style = "height: 120px" class=" ui button"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
-        '#suffix' => '
                     </div>
                 </div>
 
@@ -2039,150 +926,117 @@ function statsform_mockup($form, &$form_state) {
 
 </body>
 </html>
-        ',
-    );
-  return $form;
+',
+        );
+
+        $form['bidhide3'] = array(
+            '#type' => 'hidden', 
+            '#default_value' => 'zzz',
+        );
+
+        $form['html_markup1'] = array(
+            '#markup' => '<div style="visibility:hidden;">',
+        );
+
+        $form['submit'] = array(
+            '#type'  => 'submit',
+            '#value' => t('Start'),
+            '#submit' => array('statsform_page_three_handler_submit'),
+        );
+
+        return $form;
+
+        $form['html_markup2'] = array('#markup' => '</div>');
+
+    } else { // djc move this to the very end and indent the code between here and the end
+        $form['home'] = array(
+            '#type' => 'item',
+            '#markup' => '
+<html>
+    <body>
+        <h1>Stats Form App</h1>
+        Please log in or contact your supervisor to gain access<br>
+        Developer: Make sure that you are logged in to Drupal!
+    </body>
+</html>',
+        );
+        return $form;
+    }
 }
 
-/**
- * Returns the form for the second page of form_example_tutorial_8().
- *
- * @ingroup form_example
- */
-function statsform_form_page_two($form, &$form_state) {
-  $form['description'] = array(
-    '#type' => 'item',
-    '#title' => t('A basic multistep form (page 2)'),
-  );
 
-  $form['color'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Favorite color'),
-    '#required' => TRUE,
-    '#default_value' => !empty($form_state['values']['color']) ? $form_state['values']['color'] : '',
-  );
-  $form['submit'] = array(
-    '#type' => 'submit',
-    '#value' => t('Submit'),
-    '#submit' => array('statsform_form_page_two_submit'),
-  );
-  $form['back'] = array(
-    '#type' => 'submit',
-    '#value' => t('<< Back'),
-    '#submit' => array('statsform_form_page_two_back'),
-    // We won't bother validating the required 'color' field, since they
-    // have to come back to this page to submit anyway.
-    '#limit_validation_errors' => array(),
-  );
-  return $form;
-}
 
 /**
- * Validate handler for the next button on first page.
+ * Page 1 submit handler.
+ * Page 1 submit handler.
+ * Page 1 submit handler.
  *
- * @ingroup form_example
+ * Save the vals from page one for a later final submit.
  */
-function statsform_form_next_validate($form, &$form_state) {
-  $year_of_birth = $form_state['values']['year_of_birth'];
-  if ($year_of_birth && ($year_of_birth < 1900 || $year_of_birth > 2000)) {
-    form_set_error('year_of_birth', t('Enter a year between 1900 and 2000.'));
-  }
-}
-
-/**
- * Submit handler for form_example_tutorial_8() next button.
- *
- * Capture the values from page one and store them away so they can be used
- * at final submit time.
- *
- * @ingroup form_example
- */
-function statsform_form_next_submit($form, &$form_state) {
-
   // Values are saved for each page.
   // to carry forward to subsequent pages in the form.
-  // and we tell FAPI to rebuild the form.
+  // The Forms API rebuilds the form.
+function statsform_page_one_handler_submit($form, &$form_state) {
   $form_state['page_values'][1] = $form_state['values'];
 
-  if (!empty($form_state['page_values'][2])) {
-    $form_state['values'] = $form_state['page_values'][2];
-  }
+  // set page num if it does not yet exist, ie this is the first pass
+  if (empty($form_state['page_num'])) { $form_state['page_num'] = 1; } 
 
-  // When form rebuilds, it will look at this to figure which page to build.
+  // go forward to page 2
   $form_state['page_num'] = 2;
+
   $form_state['rebuild'] = TRUE;
 }
 
+
+
 /**
- * Back button handler submit handler.
+ * Page 2 submit handler.
+ * Page 2 submit handler.
+ * Page 2 submit handler.
  *
- * Since #limit_validation_errors = array() is set, values from page 2
- * will be discarded. We load the page 1 values instead.
- *
- * @ingroup form_example
+ * Save the vals from page one for a later final submit.
  */
-function statsform_form_page_two_back($form, &$form_state) {
-  $form_state['values'] = $form_state['page_values'][1];
+  // Values are saved for each page.
+  // to carry forward to subsequent pages in the form.
+  // The Forms API rebuilds the form.
+function statsform_page_two_handler_submit($form, &$form_state) {
+  $form_state['page_values'][1] = $form_state['values'];
+
+  // set page num if it does not yet exist, ie this is the first pass
+  if (empty($form_state['page_num'])) { $form_state['page_num'] = 2; } 
+
+  // go forward to page 3
+  $form_state['page_num'] = 3;
+
+  $form_state['rebuild'] = TRUE;
+}
+
+
+
+/**
+ * Page 3 submit handler.
+ * Page 3 submit handler.
+ * Page 3 submit handler.
+ *
+ * Save the vals from page one for a later final submit.
+ */
+  // Values are saved for each page.
+  // to carry forward to subsequent pages in the form.
+  // The Forms API rebuilds the form.
+function statsform_page_three_handler_submit($form, &$form_state) {
+  $form_state['page_values'][1] = $form_state['values'];
+krumo("dfghdfgh");
+  // set page num if it does not yet exist, ie this is the first pass
+  if (empty($form_state['page_num'])) { $form_state['page_num'] = 3; }
+
+  // go forward to page 4
   $form_state['page_num'] = 1;
+
   $form_state['rebuild'] = TRUE;
 }
 
-/**
- * The page 2 submit handler.
- *
- * This is the final submit handler. Gather all the data together and output
- * it in a drupal_set_message().
- *
- * @ingroup form_example
- */
-function statsform_form_page_two_submit($form, &$form_state) {
-  // Normally, some code would go here to alter the database with the data
-  // collected from the form. Instead sets a message with drupal_set_message()
-  // to validate that the code worked.
-  $page_one_values = $form_state['page_values'][1];
-  drupal_set_message(t('The form has been submitted. name="@first @last", year of birth=@year_of_birth',
-    array(
-      '@first' => $page_one_values['first'],
-      '@last' => $page_one_values['last'],
-      '@year_of_birth' => $page_one_values['year_of_birth'],
-    )
-  ));
 
-  if (!empty($page_one_values['first2'])) {
-    drupal_set_message(t('Second name: name="@first @last", year of birth=@year_of_birth',
-      array(
-        '@first' => $page_one_values['first2'],
-        '@last' => $page_one_values['last2'],
-        '@year_of_birth' => $page_one_values['year_of_birth2'],
-      )
-    ));
-  }
-  drupal_set_message(t('And the favorite color is @color', array('@color' => $form_state['values']['color'])));
-  
-  // If we wanted to redirect on submission, set $form_state['redirect']. For
-  // simple redirects, the value can be a string of the path to redirect to. For
-  // example, to redirect to /node, one would specify the following:
-  //
-  // $form_state['redirect'] = 'node';
-  //
-  // For more complex redirects, this value can be set to an array of options to
-  // pass to drupal_goto(). For example, to redirect to /foo?bar=1#baz, one
-  // would specify the following:
-  //
-  // @code
-  // $form_state['redirect'] = array(
-  //   'foo',
-  //   array(
-  //     'query' => array('bar' => 1),
-  //     'fragment' => 'baz',
-  //   ),
-  // );
-  // @endcode
-  //
-  // The first element in the array is the path to redirect to, and the second
-  // element in the array is the array of options. For more information on the
-  // available options, see http://api.drupal.org/url.
-}
 
 /**
  * session variable functions
