@@ -371,8 +371,8 @@ function statsform_page_three($form, &$form_state) {
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
     <!-- Semantic UI -->
-    <link rel="stylesheet" type="text/css" href="../assets/includes/semantic.min.css?v=1">
-    <script type="text/javascript" src="../assets/includes/semantic.min.js?v=1"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css?v=1">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
     <link rel="stylesheet" href="../assets/includes/calendar/dist/calendar.min.css">
     <script type="text/javascript" src="../assets/includes/calendar/dist/calendar.min.js"></script>
     <script scr="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/accordion.js"></script>

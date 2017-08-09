@@ -1,0 +1,146 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+#black {
+    background-color: black;
+    color: white;
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+
+body{ 
+font-family: 'Montserrat', sans-serif;
+font-weight: bold; <link rel="stylesheet" type="text/css" href="css/style.css">
+
+}
+
+#white {
+    background-color: white;
+    color: white;
+}
+
+
+.grid {
+    height: 100%;
+
+}
+
+
+
+.column {
+    font-size: 50px;
+    line-height: 90px;
+}
+
+.ui.secondary.inverted.menu {
+    background-color: #3284bf;
+    font-size: 20px;
+}
+
+.wide.column, .wide.column:hover {
+    height:300px;
+    color:white;
+    border-style:solid;
+    border-width:10px;
+    border-color:white;
+    overflow: hidden;
+}
+
+.column img {
+    width: 500px;
+    height: 300px;
+}
+
+.ui.equal.width.center.aligned.grid {
+    margin:20px;
+}
+
+
+
+.verticalalign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#YRL {
+    background-color: #ffb300;
+}
+
+#BL {
+    background-color: #1e4b87;
+}
+
+#POWELL {
+    background-color: #3284bf; 
+}
+
+#AL {
+    background-color: #1e4b87;
+}
+
+#ML {
+    background-color: #ffb300;
+}
+
+#sec1 {
+    background-color: #1e4b87;
+}
+
+#sec2 {
+    background-color: #3284bf;
+}
+
+#sec3 {
+    background-color: #3284bf;
+}
+
+#sec4 {
+    background-color: #1e4b87;
+}
+
+#sec5 {
+    background-color: #1e4b87;
+}
+
+#sec6 {
+    background-color: #3284bf;
+}
+
+.containerBox {
+    position: relative;
+    display: inline-block;
+}
+.text-box {
+    position: absolute;    
+    height: 100%;
+    text-align: center;    
+    width: 100%;
+}
+.text-box:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+h4 {
+   display: inline-block;
+   font-size: 80px; /*or whatever you want*/
+   color: white;   
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
