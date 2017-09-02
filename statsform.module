@@ -1,5 +1,6 @@
 <?php
 
+
 //=============================================================================
 /**
  * Implements hook_menu().
@@ -14,7 +15,28 @@ function statsform_menu() {
     'access callback' => TRUE,
     'description' => 'For statsform use',
   );
+
+  // Create a path for the AJAX request
+  $items['statsform/ajax'] = array(
+    'title' => 'Ajax Request',
+    'page callback' => 'ajax_request_callback2',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+ 
   return $items;
+}
+
+
+//=============================================================================
+/**
+ * Implements hook_page_alter().
+ */
+function statsform_page_alter(&$page) {
+    if (arg(0) == 'statsform') {
+        $page['variables'] = drupal_get_token();
+        $page['#theme'] = 'hijack'; 
+  }
 }
 
 //=============================================================================
@@ -24,6 +46,7 @@ function statsform_menu() {
 function statsform_theme($existing, $type, $theme, $path) {
     return array(
         'hijack' => array(
+#            'variables' => array('output' => 'test21'), // limited scope
             'template' => 'page--hijacked',
             'render element' => 'page',
             'path' => drupal_get_path('module', 'statsform') . '/templates',
@@ -31,14 +54,6 @@ function statsform_theme($existing, $type, $theme, $path) {
     );
 }
 
-/**
- * Implements hook_page_alter().
- */
-function statsform_page_alter(&$page) {
-    if (arg(0) == 'statsform') {
-        $page['#theme'] = 'hijack'; 
-  }
-}
 /**
  * Implements hook_form_alter().
  */
@@ -59,7 +74,75 @@ function statsform_page_alter(&$page) {
 ////    print_r($form['actions']['submit']['#attributes']);
 //  }
 //}
+
 //=============================================================================
+/**
+ * Callback function for /statsform/ajax.
+ */
+function ajax_request_callback2() {
+  if (isset($_POST['sfLogout']) && $_POST['sfLogout']) {
+    session_destroy();
+    $statsUrl="/support/research-help";
+    drupal_goto($statsUrl);
+    // Return an empty json array for incorrect request
+    $response = array(
+      'message' => t('loggedOut'),
+    );
+    drupal_json_output($response);
+    exit;
+  }
+  if (isset($_POST['from_js']) && $_POST['from_js']) {
+    if (isset($_POST['statsformToken'])) {
+      // Return the time if the from_js request para is set to true
+      $response = array(
+//        'message' => t($_POST['statsformToken']),
+//        'message' => $_POST['statsformInputDatetime'],
+//        'message' => $_POST['statsformInputTime'],
+//        'message' => $_POST['statsformInputLocation'],
+//        'message' => $_POST['statsformInputServicePoint'],
+        'message' => $_POST['statsformUserName'],
+//        'message' => $_POST['statsformUserMenu'],
+      );
+      drupal_json_output($response);
+      exit;
+    } else {
+      // Return an empty json array for incorrect request
+      $response = array(
+        'message' => t('Error #asdf90g: Missing token.'),
+      );
+      drupal_json_output($response);
+      exit;
+    }
+  } else {
+    // Return an empty json array for missing token
+    $response = array(
+      'message' => t('Error #df89b: The server cannot find the expected JSON data.'),
+    );
+    drupal_json_output($response);
+    exit;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
 * page 1 - Choose a Library ..............................................................................................................
