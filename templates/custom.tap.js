@@ -5,8 +5,7 @@
  *****************************************************************************/
 
 $(document).ready(function() {
-    $('.ui.accordion').accordion();
-    $('.dropdown').dropdown();
+    $('#ref').click(showReferral);
 
     $('.withCount').click(function() {
         incrementCount($(this));
@@ -38,6 +37,45 @@ function incrementCount(object) {
             .children('div.ui.tiny.inverted.statistics.left.floated')
             .children('div.statistic')
             .children('div.value');
+
+    var nameObject =
+        $(object)
+            .children('div.content')
+            .children('div.header');
+
+    var bName = nameObject.text();
+
+
+
+/// dhc: prototype to fire ajax on single tap
+///var animalContainer = document.getElementById("animal-info2");
+///
+///        $.ajax({
+///          type: "POST",
+///          url: "/statsform/ajax",
+///          data: {
+///            // For server checking
+///            'bName': bName
+///          },
+///          dataType: "json",
+///          success: function (data) {
+///            // Display the time from successful response
+///            if (data.message) {
+///
+///
+///animalContainer.insertAdjacentHTML('beforeend', data.message);
+///
+///              $(".messages").remove();
+///              $("#content").postpend('<br><br><br><br><br><br><div class="messages status">' + data.message + '</div>');
+///            }
+///          },
+///          error: function (xmlhttp) {
+///            // Error alert for failure
+///            alert('Error occured: ' + xmlhttp.status);
+///          }
+///        });
+
+
 
     /* Update the count in integer form. */
     var count = parseInt(countObject.text());

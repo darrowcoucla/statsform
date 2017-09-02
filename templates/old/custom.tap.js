@@ -5,8 +5,7 @@
  *****************************************************************************/
 
 $(document).ready(function() {
-    $('.ui.accordion').accordion();
-    $('.dropdown').dropdown();
+    $('#ref').click(showReferral);
 
     $('.withCount').click(function() {
         incrementCount($(this));

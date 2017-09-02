@@ -13,7 +13,6 @@ body {
     color: white;
 }
 
-
 .ui.equal.width.center.aligned.grid {
     height: 100%;
 }
@@ -55,3 +54,14 @@ a.column {
     color: black;
 }
 
+.overlay {
+    z-index: 99;
+    width: 70%;
+    height: 50;
+    /* margin-left: 15%; */
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
