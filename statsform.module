@@ -80,20 +80,21 @@ function statsform_theme($existing, $type, $theme, $path) {
  * Callback function for /statsform/ajax.
  */
 function ajax_request_callback2() {
-  if (isset($_POST['sfLogout']) && $_POST['sfLogout']) {
-    session_destroy();
-    $statsUrl="/support/research-help";
-    drupal_goto($statsUrl);
-    // Return an empty json array for incorrect request
-    $response = array(
-      'message' => t('loggedOut'),
-    );
-    drupal_json_output($response);
-    exit;
-  }
-  if (isset($_POST['from_js']) && $_POST['from_js']) {
-    if (isset($_POST['statsformToken'])) {
-      // Return the time if the from_js request para is set to true
+  if (isset($_POST['statsformToken'])) {
+    if (isset($_POST['sfLogout']) && $_POST['sfLogout']) {
+      // Return the Logged Out flag and exit
+      $response = array(
+        'message' => 'sfLoggedOut',
+      );
+      drupal_json_output($response);
+      session_destroy();
+      drupal_goto('user');
+      exit;
+    } else {
+      // Pass the JSON on to the WS and Return the response
+      // Set up the JSON here (if needed)
+      // Send to WS here
+      // Return the response
       $response = array(
 //        'message' => t($_POST['statsformToken']),
 //        'message' => $_POST['statsformInputDatetime'],
@@ -105,25 +106,16 @@ function ajax_request_callback2() {
       );
       drupal_json_output($response);
       exit;
-    } else {
-      // Return an empty json array for incorrect request
-      $response = array(
-        'message' => t('Error #asdf90g: Missing token.'),
-      );
-      drupal_json_output($response);
-      exit;
     }
   } else {
-    // Return an empty json array for missing token
+    // Return Missing Token message
     $response = array(
-      'message' => t('Error #df89b: The server cannot find the expected JSON data.'),
+      'message' => t('Error #asdf90g: Missing token.'),
     );
     drupal_json_output($response);
     exit;
   }
 }
-
-
 
 
 

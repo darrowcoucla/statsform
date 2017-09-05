@@ -1031,10 +1031,15 @@
                   success: function (data) {
                     // Display the time from successful response
                     if (data.message) {
-                      alert(data.message);
-                      tempAjaxContainer.insertAdjacentHTML('beforeend', data.message);
-                      $(".messages").remove();
-                      $("#content").append('<br><br><br><br><br><br><div class="messages status">' + data.message + '</div>');
+                      expr = /sfLoggedOut/;  // no quotes here
+                      if (expr.test(data.message)) {
+                        alert(data.message);
+                        window.location.href = "https://www-test.library.ucla.edu/Shibboleth.sso/logout?return=https://shb.ais.ucla.edu/shibboleth-idp/logout";
+///                        window.location.href = "/support/research-help";
+                      }
+                    tempAjaxContainer.insertAdjacentHTML('beforeend', data.message);
+                    $(".messages").remove();
+                    $("#content").append('<br><br><br><br><br><br><div class="messages status">' + data.message + '</div>');
                     }
                   },
                   error: function (xmlhttp) {
