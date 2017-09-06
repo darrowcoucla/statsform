@@ -88,13 +88,55 @@ function ajax_request_callback2() {
       );
       drupal_json_output($response);
       session_destroy();
-      drupal_goto('user');
+//      drupal_goto('user');
       exit;
     } else {
       // Pass the JSON on to the WS and Return the response
-      // Set up the JSON here (if needed)
-      // Send to WS here
-      // Return the response
+      // 1. Set up the JSON here (if needed)
+      $sf_json = array (
+        'Submission' => 
+        array (
+          'unitID' => 'YRL03',
+          'pointID' => '01',
+          'dateTime' => '2017-09-01 14:15:00',
+          'operator' => 'drickard1967',
+          'timeSpent' => 5,
+          'detailed' => true,
+          'stats' => 
+          array (
+            0 => 
+            array (
+              'typeID' => '02',
+              'modeID' => '03',
+              'count' => 3,
+            ),
+          ),
+          'Referral' => 
+          array (
+            'text' => 'sent to Professor X for more info',
+          ),
+          'Interaction' => 
+          array (
+            'topic' => 'linear differential equations',
+            'departmentID' => 79,
+            'course' => 'Math 305',
+            'staffFeedback' => '',
+            'patronType' => 2,
+            'patronFeedback' => 'thanks',
+          ),
+        ),
+      );
+      $sf_params = json_encode($sf_json);
+
+      // 2. Send to WS here
+      $sf_url = "https://webservices-test.library.ucla.edu/pss/stats/submit";
+      $sf_response = drupal_http_request($sf_url, array(
+        'method' => 'PUT',
+        'data' => $sf_params,
+        'headers' => array('Content-Type' => 'application/json')
+      ));
+
+      // 3. Return the response
       $response = array(
 //        'message' => t($_POST['statsformToken']),
 //        'message' => $_POST['statsformInputDatetime'],
@@ -104,7 +146,7 @@ function ajax_request_callback2() {
         'message' => $_POST['statsformUserName'],
 //        'message' => $_POST['statsformUserMenu'],
       );
-      drupal_json_output($response);
+      drupal_json_output($sf_response);
       exit;
     }
   } else {

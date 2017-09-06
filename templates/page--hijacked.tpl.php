@@ -416,13 +416,10 @@
                 <div class="huge ui labeled button" tabindex="0">
                   <div class="huge ui text menu">
                     <div class="huge ui right dropdown item" id="select45">
-                      <div id="userName" name="userName">
-                        Darrow Cole
-                      </div>
+                      <div id="userName" name="userName">Darrow Cole</div>
                       <i class="dropdown icon"></i>
                       <div class="huge menu" id="userMenu" name="userMenu">
-                        <div class="item">Settings</div>
-                        <div class="item">Settings</div>
+                        <div class="item">My Settings</div>
                         <div class="item">Logout</div>
                       </div>
                     </div>
@@ -475,8 +472,7 @@
                     <div class="ui inverted segment left floated" id="directions"> 
                       <div class="ui tiny inverted statistics left floated"> 
                         <div class="statistic">
-                          <div class="value" id="Directional"> 0 
-                          </div> 
+                          <div class="value" id="directional">0</div> 
                           <div class="label"> Count </div>
                         </div>
                       </div>
@@ -494,8 +490,7 @@
                     <div class="ui inverted segment left floated" id="lookup">
                       <div class="ui tiny inverted statistics left floated"> 
                         <div class="statistic">
-                          <div class="value"> 0
-                          </div> 
+                          <div class="value" id="lookUp">0</div> 
                           <div class="label"> Count </div>
                         </div>
                       </div>
@@ -513,8 +508,7 @@
                     <div class="ui inverted segment left floated" id="policy">
                       <div class="ui tiny inverted statistics left floated"> 
                         <div class="statistic">
-                          <div class="value"> 0
-                          </div> 
+                          <div class="value" id="policyVal">0</div> 
                           <div class="label"> Count </div>
                         </div>
                       </div>
@@ -532,8 +526,7 @@
                     <div class="ui inverted segment left floated" id="research">
                       <div class="ui tiny inverted statistics left floated"> 
                         <div class="statistic">
-                          <div class="value"> 0
-                          </div> 
+                          <div class="value" id="referral">0</div> 
                           <div class="label"> Count </div>
                         </div>
                       </div>
@@ -551,8 +544,7 @@
                     <div class="ui inverted segment left floated" id="technical">
                       <div class="ui tiny inverted statistics left floated"> 
                         <div class="statistic">
-                          <div class="value"> 0
-                          </div> 
+                          <div class="value" id="technicalVal">0</div> 
                           <div class="label"> Count </div>
                         </div>
                       </div>
@@ -935,17 +927,18 @@
           .accordion()
         ;
       
-        ///dhc ajax test
+        /// ajax section
         (function ($) {
 
           Drupal.behaviors.statsformAjax = {
             attach: function (context, settings) {
+
               // Bind an AJAX callback to our link
               var statsformAjaxLink = $('#submit1');
 //              var tempAjaxContainer = document.getElementById("inputDatetime");
               var tempAjaxContainer = document.getElementById("temp-ajax-msg");
 
-
+              // SUBMIT Section
               statsformAjaxLink.click(function(event) {
                 var statsformAjaxTokenElement = document.getElementById("statsformToken");
                 var statsformInputDatetimeElement = document.getElementsByName("inputDatetime")[0].value;
@@ -953,9 +946,11 @@
                 var statsformInputLocationElement = result.textContent;
                 var statsformInputServicePointElement = servicePoint.textContent;
                 var statsformUserNameElement = userName.textContent;
-///             var statsformUserMenuElement = document.getElementsByName("userMenu")[0].selected;
-///             var statsformInputTimeElement = document.getElementsByName("inputTime")[0].value;
-///             var statsformInputLocationElement = document.getElementsByName("result")[0].value;
+                var statsformDirectionalElement = document.getElementById("directional").textContent;
+                var statsformLookUpElement = document.getElementById("lookUp").textContent;
+                var statsformPolicyValElement = document.getElementById("policyVal").textContent;
+                var statsformReferralElement = document.getElementById("referral").textContent;
+                var statsformTechnicalValElement = document.getElementById("technicalVal").textContent;
 
                 // Prevent the default link action
                 event.preventDefault();
@@ -965,7 +960,6 @@
                   type: "POST",
                   url: "/statsform/ajax",
                   data: {
-                    // For server checking
                     'from_js': true,
                     'statsformToken': statsformAjaxTokenElement.dataset.value,
 ///                 'statsformToken': 'badTokenTest'
@@ -974,7 +968,11 @@
                     'statsformInputLocation': statsformInputLocationElement,
                     'statsformInputServicePoint': statsformInputServicePointElement,
                     'statsformUserName': statsformUserNameElement,
-///                 'statsformUserMenu': statsformUserMenuElement
+                    'statsformDirectional': statsformDirectionalElement,
+                    'statsformLookUp': statsformLookUpElement,
+                    'statsformPolicyVal': statsformPolicyValElement,
+                    'statsformReferral': statsformReferralElement,
+                    'statsformTechnicalVal': statsformTechnicalValElement,
                   },
                   dataType: "json",
                   success: function (data) {
@@ -993,103 +991,61 @@
                 });
               });
 
-
-
+              // LOGOUT section
               $('#select45').dropdown({
                 onChange: function(value) {
+                  var statsformAjaxTokenElement = document.getElementById("statsformToken");
+                  var statsformInputDatetimeElement = document.getElementsByName("inputDatetime")[0].value;
+                  var statsformInputTimeElement = document.getElementsByName("inputTime")[0].value;
+                  var statsformInputLocationElement = result.textContent;
+                  var statsformInputServicePointElement = servicePoint.textContent;
+                  var statsformUserNameElement = userName.textContent;
 
-//            statsformAjaxLink.click(function(event) {
-                var statsformAjaxTokenElement = document.getElementById("statsformToken");
-                var statsformInputDatetimeElement = document.getElementsByName("inputDatetime")[0].value;
-                var statsformInputTimeElement = document.getElementsByName("inputTime")[0].value;
-                var statsformInputLocationElement = result.textContent;
-                var statsformInputServicePointElement = servicePoint.textContent;
-                var statsformUserNameElement = userName.textContent;
-///             var statsformUserMenuElement = document.getElementsByName("userMenu")[0].selected;
-///             var statsformInputTimeElement = document.getElementsByName("inputTime")[0].value;
-///             var statsformInputLocationElement = document.getElementsByName("result")[0].value;
-
-                // Get the request URL without the query string
-                ///var ajaxUrl = statsformAjaxLink.attr('href').split('?');
-                $.ajax({
-                  type: "POST",
-                  url: "/statsform/ajax",
-                  data: {
-                    // For server checking
-                    'sfLogout': true,
-                    'from_js': true,
-                    'statsformToken': statsformAjaxTokenElement.dataset.value,
-///                 'statsformToken': 'badTokenTest'
-                    'statsformInputDatetime': statsformInputDatetimeElement,
-                    'statsformInputTime': statsformInputTimeElement,
-                    'statsformInputLocation': statsformInputLocationElement,
-                    'statsformInputServicePoint': statsformInputServicePointElement,
-                    'statsformUserName': statsformUserNameElement,
-///                 'statsformUserMenu': statsformUserMenuElement
-                  },
-                  dataType: "json",
-                  success: function (data) {
-                    // Display the time from successful response
-                    if (data.message) {
-                      expr = /sfLoggedOut/;  // no quotes here
-                      if (expr.test(data.message)) {
-                        alert(data.message);
-                        window.location.href = "https://www-test.library.ucla.edu/Shibboleth.sso/logout?return=https://shb.ais.ucla.edu/shibboleth-idp/logout";
-///                        window.location.href = "/support/research-help";
+                  // Get the request URL without the query string
+                  ///var ajaxUrl = statsformAjaxLink.attr('href').split('?');
+                  $.ajax({
+                    type: "POST",
+                    url: "/statsform/ajax",
+                    data: {
+                      // For server checking
+                      'sfLogout': true,
+                      'from_js': true,
+                      'statsformToken': statsformAjaxTokenElement.dataset.value,
+///                   'statsformToken': 'badTokenTest'
+                      'statsformInputDatetime': statsformInputDatetimeElement,
+                      'statsformInputTime': statsformInputTimeElement,
+                      'statsformInputLocation': statsformInputLocationElement,
+                      'statsformInputServicePoint': statsformInputServicePointElement,
+                      'statsformUserName': statsformUserNameElement,
+///                   'statsformUserMenu': statsformUserMenuElement
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                      // Display the time from successful response
+                      if (data.message) {
+                        expr = /sfLoggedOut/;  // no quotes here
+                        if (expr.test(data.message)) {
+                          alert(data.message);
+///                       window.location.href = "https://www-test.library.ucla.edu/Shibboleth.sso/logout?return=https://shb.ais.ucla.edu/shibboleth-idp/logout";
+                          window.location.href = "/support/research-help";
+                        }
+                      tempAjaxContainer.insertAdjacentHTML('beforeend', data.message);
+                      $(".messages").remove();
+                      $("#content").append('<br><br><br><br><br><br><div class="messages status">' + data.message + '</div>');
                       }
-                    tempAjaxContainer.insertAdjacentHTML('beforeend', data.message);
-                    $(".messages").remove();
-                    $("#content").append('<br><br><br><br><br><br><div class="messages status">' + data.message + '</div>');
+                    },
+                    error: function (xmlhttp) {
+                      // Error alert for failure
+                      alert('Error occured on Logout: ' + xmlhttp.status);
                     }
-                  },
-                  error: function (xmlhttp) {
-                    // Error alert for failure
-                    alert('Error occured on Logout: ' + xmlhttp.status);
-                  }
-                });
-//            });
-                }
-              });
+                  }); // ajax
 
+                } // onchange
+              }); // logout section
 
-            }
-          };
+            } // attach
+          }; // behaviors
         })(jQuery);
-
-
-
-
-//ajaxWrite();
-//               
-//function ajaxWrite() {
-//  alert("The function called 'function_two' has been called.");
-//}
-
-
-
-
-
-
-
-
-//        $('#select45OFF').dropdown({
-//          onChange: function(value) {
-//            alert("poipoi");
-//          }
-//        });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       </script>
       <!--------------------------------------------------------------------------------->
