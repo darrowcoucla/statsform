@@ -10,15 +10,16 @@
       <script type="text/javascript" src="http://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.time.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
-      <script type="text/javascript" src="http://bodswirth.com/custom.tap.js"></script>
+
+      <script type="text/javascript" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.tap.js"></script>
 
       <link rel="stylesheet" type="text/css" href="http://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.css">
       <link rel="stylesheet" type="text/css" href="http://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.date.css">
       <link rel="stylesheet" type="text/css" href="http://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.time.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.css">
-      <link rel="stylesheet" type="text/css" src="wickedpicker.min.css">
-      <link rel="stylesheet" type="text/css" src="http://bodswirth.com/custom.tap.css">
+
+      <link rel="stylesheet" type="text/css" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.tap.css">
     
       <script type='text/javascript'>
         $(window).load(function(){
@@ -132,7 +133,7 @@
                       <div class="ui inverted dimmer">
                         <h2 class="ui aligned inverted header">Powell Library</h2>
                       </div>
-                      <img src="http://bodswirth.com/powellnight.png">
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/powellnight.png">
                       <div class="ui large label">
                         <center>Powell Library</center>
                       </div>
@@ -151,7 +152,7 @@
                       <div class="ui inverted dimmer">
                         <h2 class="ui aligned inverted header">Young Research Library</h2>
                       </div>
-                      <img src="http://bodswirth.com/yrl_pods.png">
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
                       <div class="ui large label"><center>Young Research Library</center></div>
                       <div class="meta">
                         <span class="right"><i></i>Providing service since 1937&nbsp;</span>
@@ -168,7 +169,7 @@
                       <div class="ui inverted dimmer">
                         <h2 class="ui aligned inverted header">Science and Engineering Library</h2>
                       </div>
-                      <img src="http://bodswirth.com/sel_00.png">
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/sel_00.png">
                       <div class="ui large label">
                         <center>Science and Engineering Library</center>
                       </div>
@@ -187,7 +188,7 @@
                       <div class="ui inverted dimmer">
                         <h2 class="ui aligned inverted header">Music Library</h2>
                       </div>
-                      <img src="http://bodswirth.com/music_00.png">
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/music_00.png">
                       <div class="ui large label">
                         <center>Music Library</center>
                       </div>
@@ -206,7 +207,7 @@
                       <div class="ui inverted dimmer">
                         <h2 class="ui aligned inverted header">Biomedical Library</h2>
                       </div>
-                      <img src="http://bodswirth.com/library.png">
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
                       <div class="ui large label">
                         <center>Biomedical Library</center>
                       </div>
@@ -225,7 +226,7 @@
                       <div class="ui inverted dimmer">
                         <h2 class="ui aligned inverted header">Arts Library</h2>
                       </div>
-                      <img src="http://bodswirth.com/library.png">
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
                       <div class="ui large label">
                         <center>Arts Library</center>
                       </div>
@@ -268,7 +269,7 @@
                       <div class="ui inverted dimmer">
                         <h2 class="ui aligned inverted header">Circulation Desk</h2>
                       </div>
-                      <img class="ui small image" src="http://bodswirth.com/service_desk.png">
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/service_desk.png">
                       <div class="ui large label">
                         <center>Circulation Desk</center>
                       </div>
@@ -287,7 +288,7 @@
                       <div class="ui inverted dimmer">
                         <h2 class="ui aligned inverted header">A Level Service Desk</h2>
                       </div>
-                      <img class="ui small image" src="http://bodswirth.com/yrl_pods.png">
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
                       <div class="ui large label">
                         <center>A Level Service Desk</center>
                       </div>
@@ -306,7 +307,7 @@
                       <div class="ui inverted dimmer">
                         <h2 class="ui aligned inverted header">Science and Engineering Library Service</h2>
                       </div>
-                      <img class="ui small image" src="http://bodswirth.com/library.png">
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
                       <div class="ui large label">
                         <center>Science and Engineering Library Service</center>
                       </div>
@@ -325,7 +326,7 @@
                       <div class="ui inverted dimmer">
                         <h2 class="ui aligned inverted header">Information Desk</h2>
                       </div>
-                      <img class="ui small image" src="http://bodswirth.com/library.png">
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
                       <div class="ui large label">
                         <center>Information Desk</center>
                       </div>
@@ -344,7 +345,7 @@
                       <div class="ui inverted dimmer">
                         <h2 class="ui aligned inverted header">Cashier Window</h2>
                       </div>
-                      <img class="ui small image" src="http://bodswirth.com/library.png">
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
                       <div class="ui large label">
                         <center>Cashier Window</center>
                       </div>
@@ -363,7 +364,7 @@
                       <div class="ui inverted dimmer">
                         <h2 class="ui aligned inverted header">Phone Answering Station</h2>
                       </div>
-                      <img class="ui small image" src="http://bodswirth.com/library.png">
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
                       <div class="ui large label">
                         <center>Phone Answering Station</center>
                       </div>
@@ -436,16 +437,8 @@
       <p>
       <p>
 
-
-
-
-
-
-<!--
-<?php print( $page['variables'] ); ?>
--->
-
-<div id="statsformToken" data-value="<?php print( $page['variables'] ); ?>">
+      <div id="statsformToken" data-value="<?php print( $page['variables'] ); ?>">
+      <div id="statsformPath" data-value="<?php print( $page['sf_path'] ); ?>">
 
       <!-- center aligned grid -->
       <div class="ui equal width height center aligned grid">
@@ -477,7 +470,7 @@
                         </div>
                       </div>
                     </div>
-                    <img class="ui tiny image left floated" src="../../img/directions.png"> 
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/directions.png">
                     <div class="header"> Directional </div> 
                     <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div> 
                   </div>
@@ -495,7 +488,7 @@
                         </div>
                       </div>
                     </div>
-                    <img class="ui tiny image left floated" src="../../img/lookup.png"> 
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
                     <div class="header"> Look Up Known Item </div>
                     <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
                   </div> 
@@ -513,7 +506,7 @@
                         </div>
                       </div>
                     </div>
-                    <img class="ui tiny image left floated" src="../../img/policy.png"> 
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/policy.png"> 
                     <div class="header"> Policy & Operations</div>
                     <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
                   </div> 
@@ -531,7 +524,7 @@
                         </div>
                       </div>
                     </div>
-                    <img class="ui tiny image left floated" src="../../img/research.png">
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/research.png">
                     <div class="header"> Referral </div>
                     <div class="meta"> Referral to advance research support, library location, campus support, etc. </div>
                   </div> 
@@ -549,7 +542,7 @@
                         </div>
                       </div>
                     </div>
-                    <img class="ui tiny image left floated" src="../../img/technical.png"> 
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/technical.png"> 
                     <div class="header"> Technical Assistance </div>
                     <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
                   </div> 
@@ -582,7 +575,7 @@
               <div class="eight wide column">
                 <div class="ui fluid card">
                   <div class="content">
-                    <img class="ui tiny image left floated" src="../../img/research.png"> 
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/research.png"> 
                     <div class="header"> Research Assistance </div>
                     <div class="meta"> Help patron with research strategy, advice, overview of resources (drop-in). </div>
                   </div> 
@@ -592,7 +585,7 @@
               <div class="eight wide column">
                 <div class="ui fluid card">
                   <div class="content">
-                    <img class="ui tiny image left floated" src="../../img/technical.png"> 
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/technical.png"> 
                     <div class="header"> Technical Assistance </div>
                     <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
                   </div> 
@@ -602,7 +595,7 @@
               <div class="eight wide column">
                 <div class="ui fluid card">
                   <div class="content">
-                    <img class="ui tiny image left floated" src="../../img/lookup.png"> 
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
                     <div class="header"> Look up Known Item </div>
                     <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
                   </div> 
@@ -612,7 +605,7 @@
               <div class="eight wide column">
                 <div class="ui fluid card">
                   <div class="content">
-                    <img class="ui tiny image left floated" src="../../img/directions.png"> 
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/directions.png"> 
                     <div class="header"> Directional </div>
                     <div class="meta"> Location or directions provided e.g. rooms, events, contact information, etc. </div>
                   </div> 
@@ -622,7 +615,7 @@
               <div class="eight wide column">
                 <div class="ui fluid card">
                   <div class="content">
-                    <img class="ui tiny image left floated" src="../../img/policy.png"> 
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/policy.png"> 
                     <div class="header"> Policy & Operations </div>
                     <div class="meta"> Hours, access privileges, borrowing, space reservations, other policies. </div>
                   </div> 
@@ -826,8 +819,6 @@
       <!-- center aligned grid END -->
 
 
-
-
             <td class="ui center aligned">
               <h2 class="ui center aligned">
       
@@ -835,9 +826,6 @@
       
               </h2>
             </td>
-
-
-
 
 
       <!--------------------------------------------------------------------------------->
