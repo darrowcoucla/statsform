@@ -114,6 +114,8 @@
     </head>
     <body>
 
+    <br>
+
       <!-- MODAL #1 -->
       <!-- MODAL #1 -->
       <!-- MODAL #1 -->
@@ -388,31 +390,35 @@
       <table class="ui celled padded table">
         <tbody>
           <tr>
-            <td class="ui center aligned">
-              <h2 class="ui center aligned">
-                <div class="ui input right icon">
-                  <i id="icon" class="large calendar icon"></i>
-                  <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-value="dhc">
-                </div>
-              </h2>
-            </td>
-            <td class="ui center aligned">
-              <h2 class="ui center aligned">
-                <div class="ui input right icon">
-                  <i class="large clock icon"></i>
-                  <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
-                </div>
-              </h2>
-            </td>
-            <td class="ui center aligned">
+
+            <td class="ui center aligned" width="20%">
               <h2 class="ui center aligned">
                 <div class="large ui labeled button" tabindex="0">
-                  <div data-modal="modal1" class="show huge ui red button" id="result" name="result"><i class="university icon"></i>Young Research Library</div>
+                  <div data-modal="modal1" class="show huge ui red button" id="result" name="result">Young Research Library</div>
                   <a data-modal="modal2" class="show huge ui basic black left pointing label" id="servicePoint">Circulation Desk</a>
                 </div>
               </h2>
             </td>
-            <td class="ui center aligned" width="25%">
+
+            <td class="ui center aligned" width="30%">
+              <h2 class="ui center aligned">
+                <div class="ui small input right icon">
+                  <i id="iconCal" class="large calendar icon"></i>
+                  <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-value="dhc">
+                </div>
+              </h2>
+            </td>
+
+            <td class="ui center aligned" width="30%">
+              <h2 class="ui center aligned">
+                <div class="ui small input right icon">
+                  <i id="iconTim" class="large clock icon"></i>
+                  <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
+                </div>
+              </h2>
+            </td>
+
+            <td class="ui center aligned" width="20%">
               <h2 class="ui center aligned">
                 <div class="huge ui labeled button" tabindex="0">
                   <div class="huge ui text menu">
@@ -472,8 +478,7 @@
                     </div>
                     <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/directions.png">
                     <div class="header"> Directional </div> 
-                    <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div> 
-                  </div>
+                    <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div></div>
                 </div>
               </div>
 
@@ -490,8 +495,7 @@
                     </div>
                     <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
                     <div class="header"> Look Up Known Item </div>
-                    <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
-                  </div> 
+                    <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div></div> 
                 </div>
               </div>
 
@@ -1013,7 +1017,8 @@
                       if (data.message) {
                         expr = /sfLoggedOut/;  // no quotes here
                         if (expr.test(data.message)) {
-                          alert(data.message);
+                          alert("Log out - Yes/No?");
+///                       alert(data.message);
 ///                       window.location.href = "https://www-test.library.ucla.edu/Shibboleth.sso/logout?return=https://shb.ais.ucla.edu/shibboleth-idp/logout";
                           window.location.href = "/support/research-help";
                         }

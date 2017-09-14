@@ -1,4 +1,5 @@
 <?php
+require_once('Array2XML.php');
 //=============================================================================
 /**
  * Implements hook_menu().
@@ -95,9 +96,77 @@ function ajax_request_callback2() {
       exit;
     } else {
       // Pass the JSON on to the WS and Return the response
+
       // 1. Set up the JSON here (if needed)
+      $sf_xml = "
+<Submission>
+	<unitID>YRL03</unitID>
+	<pointID>01</pointID>
+	<dateTime>2017-09-01 14:15</dateTime>
+	<operator>drickard1967</operator>
+	<timeSpent>5</timeSpent>
+	<detailed>true</detailed>
+	<stats>
+		<typeID>02</typeID>
+		<modeID>03</modeID>
+		<count>3</count>
+	</stats>
+	<Referral>
+		<text>sent to Professor X for more info</text>
+	</Referral>
+	<Interaction>
+		<topic>linear differential equations</topic>
+		<departmentID>79</departmentID>
+		<course>Math 305</course>
+		<staffFeedback></staffFeedback>
+		<patronType>2</patronType>
+		<patronFeedback>thanks</patronFeedback>
+	</Interaction>
+</Submission>
+      ";
+      $sf_json = array (
+        'Submission' => 
+        array (
+          'unitID' => 'YRL03',
+          'pointID' => '01',
+          'dateTime' => '2017-09-01 14:15:00',
+          'operator' => 'drickard1967',
+          'timeSpent' => 5,
+          'detailed' => true,
+          'stats' => 
+          array (
+            0 => 
+            array (
+              'typeID' => '02',
+              'modeID' => '03',
+              'count' => 3,
+            ),
+          ),
+          'Referral' => 
+          array (
+            'text' => 'sent to Professor X for more info',
+          ),
+          'Interaction' => 
+          array (
+            'topic' => 'linear differential equations',
+            'departmentID' => 79,
+            'course' => 'Math 305',
+            'staffFeedback' => '',
+            'patronType' => 2,
+            'patronFeedback' => 'thanks',
+          ),
+        ),
+      );
+      $sf_params = json_encode($sf_json);
 
       // 2. Send to WS here
+      $sf_url = "https://webservices-test.library.ucla.edu/pss/stats/submit";
+      $sf_response2 = drupal_http_request($sf_url, array(
+        'method' => 'PUT',
+        'data' => $sf_xml,
+        'headers' => array('Content-Type' => 'text/xml; charset=UTF-8'),
+        ///'headers' => array('Content-Type' => 'application/json')
+      ));
 
       // 3. Return the response
       $sf_response = array(
@@ -109,7 +178,18 @@ function ajax_request_callback2() {
         'message' => $_POST['statsformUserName'],
 //        'message' => $_POST['statsformUserMenu'],
       );
-      drupal_json_output($sf_response);
+
+      drupal_json_output($sf_response2);
+///      $sf_response = array(
+/////        'message' => t($_POST['statsformToken']),
+/////        'message' => $_POST['statsformInputDatetime'],
+/////        'message' => $_POST['statsformInputTime'],
+/////        'message' => $_POST['statsformInputLocation'],
+/////        'message' => $_POST['statsformInputServicePoint'],
+///        'message' => $_POST['statsformUserName'],
+/////        'message' => $_POST['statsformUserMenu'],
+//////      );
+///      drupal_json_output($sf_response);
       exit;
     }
   } else {
@@ -127,8 +207,8 @@ function ajax_request_callback2() {
 /**
  * Callback function for /statsform/form for testing
  */
+
 function statsform_page_one() {
   $sf_path = drupal_get_path('module', 'statsform');
-  print_r("===>".$sf_path);
 }
 
