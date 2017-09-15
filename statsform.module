@@ -7,6 +7,14 @@ require_once('Array2XML.php');
 function statsform_menu() {
   $items = array();
   
+  $items['services/statsformLogin'] = array(
+    'title' => 'Stats Form Login',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('statsform_page_one'),
+    'access callback' => TRUE,
+    'description' => 'For statsform use',
+  );
+
   $items['statsform/form'] = array(
     'title' => 'Stats Form',
     'page callback' => 'drupal_get_form',
@@ -18,10 +26,11 @@ function statsform_menu() {
   // Create a path for the AJAX request
   $items['statsform/ajax'] = array(
     'title' => 'Ajax Request',
-    'page callback' => 'ajax_request_callback2',
+    'page callback' => 'ajax_request_callback',
     'access callback' => TRUE,
     'type' => MENU_CALLBACK,
   );
+ 
  
   return $items;
 }
@@ -32,10 +41,15 @@ function statsform_menu() {
  * Implements hook_page_alter().
  */
 function statsform_page_alter(&$page) {
+print_r(arg(1));
     if (arg(0) == 'statsform') {
         $page['variables'] = drupal_get_token();
         $page['sf_path'] = drupal_get_path('module', 'statsform');
-        $page['#theme'] = 'hijack'; 
+        $page['#theme'] = 'hijack';
+        $page['sfTemplate'] = 'page--hijacked';
+  } else if (arg(1) == 'statsformLogin') {
+        $page['sf_path'] = drupal_get_path('module', 'statsform');
+        $page['#theme'] = 'hijackLogin'; 
   }
 }
 
@@ -44,15 +58,21 @@ function statsform_page_alter(&$page) {
 /**
  * Implements hook_theme().
  */
-function statsform_theme($existing, $type, $theme, $path) {
-    return array(
-        'hijack' => array(
-#            'variables' => array('output' => 'test21'), // limited scope
-            'template' => 'page--hijacked',
-            'render element' => 'page',
-            'path' => drupal_get_path('module', 'statsform') . '/templates',
-            ),
-    );
+function statsform_theme($existing, $type, $theme, $path, $sfTemplate) {
+  return array(
+    'hijack' => array(
+#     'variables' => array('output' => 'test21'), // limited scope
+      'template' => 'page--hijacked',
+      'render element' => 'page',
+      'path' => drupal_get_path('module', 'statsform') . '/templates',
+    ),
+    'hijackLogin' => array(
+#     'variables' => array('output' => 'test21'), // limited scope
+      'template' => 'page--hijackedOFF',
+      'render element' => 'page',
+      'path' => drupal_get_path('module', 'statsform') . '/templates',
+    ),
+  );
 }
 
 
@@ -83,7 +103,7 @@ function statsform_theme($existing, $type, $theme, $path) {
 /**
  * Callback function for /statsform/ajax.
  */
-function ajax_request_callback2() {
+function ajax_request_callback() {
   if (isset($_POST['statsformToken'])) {
     if (isset($_POST['sfLogout']) && $_POST['sfLogout']) {
       // Return the Logged Out flag and exit
