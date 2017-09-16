@@ -68,7 +68,7 @@ function statsform_theme($existing, $type, $theme, $path, $sfTemplate) {
     ),
     'hijackLogin' => array(
 #     'variables' => array('output' => 'test21'), // limited scope
-      'template' => 'page--hijackedOFF',
+      'template' => 'page--hijackedLogin',
       'render element' => 'page',
       'path' => drupal_get_path('module', 'statsform') . '/templates',
     ),

@@ -1,0 +1,771 @@
+<div>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>JS Bin</title>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js" charset="utf-8"></script>
+      <script type="text/javascript" src="http://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.js"></script>
+      <script type="text/javascript" src="http://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.date.js"></script>
+      <script type="text/javascript" src="http://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.time.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+
+      <script type="text/javascript" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.tap.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="http://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.css">
+      <link rel="stylesheet" type="text/css" href="http://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.date.css">
+      <link rel="stylesheet" type="text/css" href="http://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.time.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.css">
+
+      <link rel="stylesheet" type="text/css" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.tap.css">
+    
+      <script type='text/javascript'>
+        $(window).load(function(){
+          var bcolor = "show huge ui blue button";
+
+          $('#inputTime2').pickatime({
+            editable: false,
+            interval: 1
+          });
+
+          $('#inputTime').pickatime({
+            format: 'h:i a',
+            formatSubmit: 'HH:i',
+            hiddenName: true,
+            editable: false,
+            interval: 1
+          });
+
+          $('#inputDatetime').pickadate({
+            format: 'mm/dd/yy',
+            formatSubmit: 'dd-yyyy-mm',
+            hiddenName: true,
+            selectYears: 2,
+            selectMonths: true
+          });
+        });
+      </script>
+
+      <style id="jsbin-css">
+        @charset "UTF-8";
+
+        /* Global Styles */
+        body {
+          margin: 0px;
+          padding: 9px;
+          font-family: Helvetica;
+          font-size: 16px;
+        }
+
+        #black {
+          background-color: black;
+          color: white;
+        }
+          .ui.equal.width.center.aligned.grid {
+          height: 100%;
+        }
+
+        a.column {
+          font-size: 50px;
+          line-height: 80px;
+        }
+
+        .ui.secondary.inverted.menu {
+          background-color: black;
+          font-size: 20px;
+        }
+
+        .inverted.segment {
+          height: 80px;
+        }
+
+        .ui.negative.button, .ui.negative.button:hover {
+          background-color: #CF322D;
+        }
+
+        .ui.positive.button, .ui.positive.button:hover {
+          background-color: #68863F;
+        }
+
+        .ui.styled.accordion {
+          width: 100%;
+        }
+
+        .shift {
+          width: 100%;
+          height: 50%;
+          background-color: #68863F;
+          font-size: 30px;
+          vertical-align: middle;
+        }
+
+        .ui.styled.accordion .title, .ui.styled.accordion .title:hover {
+          background-color: grey;
+          color: white;
+        }
+
+        .ui.styled.accordion .active.title, .ui.styled.accordion .active.title:hover {
+          background-color: pink;
+          color: black;
+        }
+      </style>
+    </head>
+    <body>
+
+    <br>
+
+      <!-- MODAL #1 -->
+      <!-- MODAL #1 -->
+      <!-- MODAL #1 -->
+      <div class="ui sp united large modal" id="modal1">
+        <div class="header">
+          Please select a main location
+        </div>
+
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="powell">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Powell Library</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/powellnight.png">
+                      <div class="ui large label">
+                        <center>Powell Library</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1929&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Young Research Library">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Young Research Library</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label"><center>Young Research Library</center></div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1937&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="Science and Engineering Library">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Science and Engineering Library</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/sel_00.png">
+                      <div class="ui large label">
+                        <center>Science and Engineering Library</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1937&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="Music Library">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Music Library</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/music_00.png">
+                      <div class="ui large label">
+                        <center>Music Library</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1945&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="Biomedical Library">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Biomedical Library</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
+                      <div class="ui large label">
+                        <center>Biomedical Library</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1937&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="Arts Library">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Arts Library</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
+                      <div class="ui large label">
+                        <center>Arts Library</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1937&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <!-- albums END -->
+
+          </div>
+          <!-- library choice END -->
+
+        </div>
+        <!-- content END -->
+
+      </div>
+      <!-- MODAL #1 END-->
+
+
+      <!-- modal #2 -->
+      <!-- modal #2 -->
+      <!-- modal #2 -->
+      <div class="ui united large modal" id="modal2">
+        <div class="header">
+          Please service point
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Circulation Desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Circulation Desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/service_desk.png">
+                      <div class="ui large label">
+                        <center>Circulation Desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="A Level Service Desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">A Level Service Desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>A Level Service Desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Science and Engineering Library Service">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Science and Engineering Library Service</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
+                      <div class="ui large label">
+                        <center>Science and Engineering Library Service</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="Information Desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Information Desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
+                      <div class="ui large label">
+                        <center>Information Desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Cashier Window">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Cashier Window</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
+                      <div class="ui large label">
+                        <center>Cashier Window</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="Phone Answering Station">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Phone Answering Station</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
+                      <div class="ui large label">
+                        <center>Phone Answering Station</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL #2 END-->
+
+      <p>
+      <p>
+
+      <div id="statsformToken" data-value="<?php print( $page['variables'] ); ?>">
+      <div id="statsformPath" data-value="<?php print( $page['sf_path'] ); ?>">
+
+      <!-- center aligned grid -->
+      <div class="ui equal width height center aligned grid">
+
+
+
+
+
+<div class="ui last container">
+  <div class="ui three steps">
+
+    <div class="active step">
+      <div class="content">
+        <div class="ui icon warning message">
+          <i class="lock icon"></i>
+          <div class="content">
+            <div class="header">
+              Set both Unit and Service Point
+            </div>
+          </div>
+        </div>
+        <h2 class="ui center aligned">
+          <div class="large ui labeled button" tabindex="0">
+            <div data-modal="modal1" class="show huge ui red button" id="result" name="result">Choose Library Unit</div>
+            <a data-modal="modal2" class="show huge ui basic black left pointing label" id="servicePoint">Choose Service Point</a>
+          </div>
+        </h2>
+      </div>
+    </div>
+
+    <div class="active step">
+      <div class="content">
+        <div class="ui icon warning message">
+          <i class="lock icon"></i>
+          <div class="content">
+            <div class="header">
+              Set both Unit and Service Point
+            </div>
+          </div>
+        </div>
+        <h2 class="ui center aligned">
+          <div class="two huge ui buttons">
+            <button class="ui yellow button">Choose<br>Single<br>Login</button>
+            <div class="or" style="height: 4.57142857em"></div>
+            <button class="ui positive button">Choose<br>Group<br>Login</button>
+          </div>
+        </h2>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="disabled step">
+      <div class="content">
+        <div class="ui icon warning message">
+          <i class="lock icon"></i>
+          <div class="content">
+            <div class="header">
+              Login to StatsForm!
+            </div>
+          </div>
+        </div>
+        <div class="description">Choose your shipping options</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div>
+<br>&nbsp;zxczxc
+<br>&nbsp;
+<br>&nbsp;
+</div>
+
+
+
+
+<div class="page-login">
+  <div class="ui centered grid container">
+    <div class="six wide column">
+      <div class="ui icon warning message">
+        <i class="lock icon"></i>
+        <div class="content">
+          <div class="header">
+            Choose your Location!
+          </div>
+        </div>
+      </div>
+      <div class="ui fluid card">
+        <div class="content">
+        <form class="ui form" method="POST">
+          <div class="field">
+            <label>User</label>
+            <input type="text" name="user" placeholder="User">
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <input type="password" name="pass" placeholder="Password">
+          </div>
+          <button class="ui primary labeled icon button" type="submit">
+            <i class="unlock alternate icon"></i>
+            Login
+          </button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <!-- center aligned grid END -->
+
+
+            <td class="ui center aligned">
+              <h2 class="ui center aligned">
+      
+                <div id="temp-ajax-msg"></div>
+      
+              </h2>
+            </td>
+
+
+      <!--------------------------------------------------------------------------------->
+      <!------- SCRIPTING TEMP LOCATION ------------------------------------------------->
+      <!--------------------------------------------------------------------------------->
+      
+      <script type="text/javascript">
+        $(document).on("click", ".show", function () {
+          modal = $(this).attr('data-modal');
+          $('#'+modal+'.modal').modal("setting", {
+            closable: false,
+            onApprove: function () {
+              return false;
+            }
+          }).modal("show");
+        }).on("click", ".ui.button", function () {
+          switch ($(this).data("value")) {
+            case 'powell':
+              $("#result").html("UCLA Powell Library");
+              document.getElementById('result').className = 'show huge ui green button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'Young Research Library':
+              $("#result").html("Young Research Library");
+              document.getElementById('result').className = 'show huge ui red button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'Science and Engineering Library':
+              $("#result").html("Science and Engineering Library");
+              document.getElementById('result').className = 'show huge ui blue button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'Music Library':
+              $("#result").html("Music Library");
+              document.getElementById('result').className = 'show huge ui yellow button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'Biomedical Library':
+              $("#result").html("Biomedical Library");
+              document.getElementById('result').className = 'show huge ui purple button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'Arts Library':
+              $("#result").html("Arts Library");
+              document.getElementById('result').className = 'show huge ui pink button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'Circulation Desk':servicePoint
+              $("#servicePoint").html("Circulation Desk");
+              document.getElementById('servicePoint').className = 'show huge ui basic black left pointing label';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'Science and Engineering Library Service':
+              $("#servicePoint").html("Science and Engineering Library Service");
+              document.getElementById('servicePoint').className = 'show huge ui basic brown left pointing label';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'A Level Service Desk':
+              $("#servicePoint").html("A Level Service Desk");
+              document.getElementById('servicePoint').className = 'show huge ui basic brown left pointing label';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'Information Desk':
+              $("#servicePoint").html("Information Desk");
+              document.getElementById('servicePoint').className = 'show huge ui basic grey left pointing label';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'Cashier Window':
+              $("#servicePoint").html("Cashier Window");
+              document.getElementById('servicePoint').className = 'show huge ui basic olive left pointing label';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'Phone Answering Station':
+              $("#servicePoint").html("Phone Answering Station");
+              document.getElementById('servicePoint').className = 'show huge ui basic pink left pointing label';
+              $(".ui.modal").modal("hide");
+              break;
+          }
+        });
+      
+      
+        /// default setting - still needed?
+        document.getElementById('result').className = 'show huge ui red button';
+        document.getElementById('servicePoint').className = 'show huge ui basic black left pointing label';
+      
+        $('.ui.accordion')
+          .accordion()
+        ;
+      
+        /// ajax section
+        (function ($) {
+
+          Drupal.behaviors.statsformAjax = {
+            attach: function (context, settings) {
+
+              // Bind an AJAX callback to our link
+              var statsformAjaxLink = $('#submit1');
+//              var tempAjaxContainer = document.getElementById("inputDatetime");
+              var tempAjaxContainer = document.getElementById("temp-ajax-msg");
+
+              // SUBMIT Section
+              statsformAjaxLink.click(function(event) {
+                var statsformAjaxTokenElement = document.getElementById("statsformToken");
+                var statsformInputDatetimeElement = document.getElementsByName("inputDatetime")[0].value;
+                var statsformInputTimeElement = document.getElementsByName("inputTime")[0].value;
+                var statsformInputLocationElement = result.textContent;
+                var statsformInputServicePointElement = servicePoint.textContent;
+                var statsformUserNameElement = userName.textContent;
+                var statsformDirectionalElement = document.getElementById("directional").textContent;
+                var statsformLookUpElement = document.getElementById("lookUp").textContent;
+                var statsformPolicyValElement = document.getElementById("policyVal").textContent;
+                var statsformReferralElement = document.getElementById("referral").textContent;
+                var statsformTechnicalValElement = document.getElementById("technicalVal").textContent;
+
+                // Prevent the default link action
+                event.preventDefault();
+                // Get the request URL without the query string
+                ///var ajaxUrl = statsformAjaxLink.attr('href').split('?');
+                $.ajax({
+                  type: "POST",
+                  url: "/statsform/ajax",
+                  data: {
+                    'from_js': true,
+                    'statsformToken': statsformAjaxTokenElement.dataset.value,
+///                 'statsformToken': 'badTokenTest'
+                    'statsformInputDatetime': statsformInputDatetimeElement,
+                    'statsformInputTime': statsformInputTimeElement,
+                    'statsformInputLocation': statsformInputLocationElement,
+                    'statsformInputServicePoint': statsformInputServicePointElement,
+                    'statsformUserName': statsformUserNameElement,
+                    'statsformDirectional': statsformDirectionalElement,
+                    'statsformLookUp': statsformLookUpElement,
+                    'statsformPolicyVal': statsformPolicyValElement,
+                    'statsformReferral': statsformReferralElement,
+                    'statsformTechnicalVal': statsformTechnicalValElement,
+                  },
+                  dataType: "json",
+                  success: function (data) {
+                    // Display the time from successful response
+                    if (data.message) {
+                      /// alert(data.message);
+                      tempAjaxContainer.insertAdjacentHTML('beforeend', data.message);
+                      $(".messages").remove();
+                      $("#content").append('<br><br><br><br><br><br><div class="messages status">' + data.message + '</div>');
+                    }
+                  },
+                  error: function (xmlhttp) {
+                    // Error alert for failure
+                    alert('Error occured: ' + xmlhttp.status);
+                  }
+                });
+              });
+
+              // LOGOUT section
+              $('#select45').dropdown({
+                onChange: function(value) {
+                  var statsformAjaxTokenElement = document.getElementById("statsformToken");
+                  var statsformInputDatetimeElement = document.getElementsByName("inputDatetime")[0].value;
+                  var statsformInputTimeElement = document.getElementsByName("inputTime")[0].value;
+                  var statsformInputLocationElement = result.textContent;
+                  var statsformInputServicePointElement = servicePoint.textContent;
+                  var statsformUserNameElement = userName.textContent;
+
+                  // Get the request URL without the query string
+                  ///var ajaxUrl = statsformAjaxLink.attr('href').split('?');
+                  $.ajax({
+                    type: "POST",
+                    url: "/statsform/ajax",
+                    data: {
+                      // For server checking
+                      'sfLogout': true,
+                      'from_js': true,
+                      'statsformToken': statsformAjaxTokenElement.dataset.value,
+///                   'statsformToken': 'badTokenTest'
+                      'statsformInputDatetime': statsformInputDatetimeElement,
+                      'statsformInputTime': statsformInputTimeElement,
+                      'statsformInputLocation': statsformInputLocationElement,
+                      'statsformInputServicePoint': statsformInputServicePointElement,
+                      'statsformUserName': statsformUserNameElement,
+///                   'statsformUserMenu': statsformUserMenuElement
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                      // Display the time from successful response
+                      if (data.message) {
+                        expr = /sfLoggedOut/;  // no quotes here
+                        if (expr.test(data.message)) {
+                          alert("Log out - Yes/No?");
+///                       alert(data.message);
+///                       window.location.href = "https://www-test.library.ucla.edu/Shibboleth.sso/logout?return=https://shb.ais.ucla.edu/shibboleth-idp/logout";
+                          window.location.href = "/support/research-help";
+                        }
+                      tempAjaxContainer.insertAdjacentHTML('beforeend', data.message);
+                      $(".messages").remove();
+                      $("#content").append('<br><br><br><br><br><br><div class="messages status">' + data.message + '</div>');
+                      }
+                    },
+                    error: function (xmlhttp) {
+                      // Error alert for failure
+                      alert('Error occured on Logout: ' + xmlhttp.status);
+                    }
+                  }); // ajax
+
+                } // onchange
+              }); // logout section
+
+            } // attach
+          }; // behaviors
+        })(jQuery);
+
+      </script>
+      <!--------------------------------------------------------------------------------->
+      <!------- SCRIPTING TEMP LOCATION ------------------------------------------------->
+      <!--------------------------------------------------------------------------------->
+
+
+
+<div class="fluid ui buttons">
+  <button class="ui orange button">Cancel</button>
+  <div class="or"></div>
+  <button class="ui positive button">Save</button>
+</div>
+
+    <div class="active step">
+      <div class="content">
+<div class="two ui buttons">
+  <button class="ui yellow button">Cancel</button>
+  <div class="or"></div>
+  <button class="ui positive button">Save</button>
+</div>
+      </div>
+    </div>
+
+
+
+
+
+
+    </body>
+  </html>
+</div>
