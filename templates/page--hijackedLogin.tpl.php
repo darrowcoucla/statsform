@@ -9,6 +9,7 @@
       <script type="text/javascript" src="http://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.date.js"></script>
       <script type="text/javascript" src="http://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.time.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.js"></script>
+
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
 
       <script type="text/javascript" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.tap.js"></script>
@@ -410,12 +411,12 @@
             </div>
           </div>
         </div>
-        <h2 class="ui center aligned">
+
           <div class="large ui labeled button" tabindex="0">
             <div data-modal="modal1" class="show huge ui red button" id="result" name="result">Choose Library Unit</div>
             <a data-modal="modal2" class="show huge ui basic black left pointing label" id="servicePoint">Choose Service Point</a>
           </div>
-        </h2>
+
       </div>
     </div>
 
@@ -425,88 +426,39 @@
           <i class="lock icon"></i>
           <div class="content">
             <div class="header">
-              Set both Unit and Service Point
+              Set Login Type
             </div>
           </div>
         </div>
-        <h2 class="ui center aligned">
-          <div class="two huge ui buttons">
-            <button class="ui yellow button">Choose<br>Single<br>Login</button>
-            <div class="or" style="height: 4.57142857em"></div>
-            <button class="ui positive button">Choose<br>Group<br>Login</button>
+
+          <div class="field">
+            <input type="radio" name="example2" checked="checked" id="100">
+            <label for="100">Individual Login</label>
           </div>
-        </h2>
+          <div class="field">
+            <input type="radio" name="example2" id="101">
+            <label for="101">Group Login</label>
+          </div>
+
       </div>
     </div>
 
-
-
-
-
-
-    <div class="disabled step">
+    <div class="step">
       <div class="content">
-        <div class="ui icon warning message">
-          <i class="lock icon"></i>
-          <div class="content">
-            <div class="header">
-              Login to StatsForm!
-            </div>
-          </div>
-        </div>
-        <div class="description">Choose your shipping options</div>
+
+
+
+<form class="ui form" method="POST">
+            <button class="positive huge ui button">Go to Login Page</button>
+</form>
+
+
+
       </div>
     </div>
 
   </div>
 </div>
-
-
-
-
-<div>
-<br>&nbsp;zxczxc
-<br>&nbsp;
-<br>&nbsp;
-</div>
-
-
-
-
-<div class="page-login">
-  <div class="ui centered grid container">
-    <div class="six wide column">
-      <div class="ui icon warning message">
-        <i class="lock icon"></i>
-        <div class="content">
-          <div class="header">
-            Choose your Location!
-          </div>
-        </div>
-      </div>
-      <div class="ui fluid card">
-        <div class="content">
-        <form class="ui form" method="POST">
-          <div class="field">
-            <label>User</label>
-            <input type="text" name="user" placeholder="User">
-          </div>
-          <div class="field">
-            <label>Password</label>
-            <input type="password" name="pass" placeholder="Password">
-          </div>
-          <button class="ui primary labeled icon button" type="submit">
-            <i class="unlock alternate icon"></i>
-            Login
-          </button>
-        </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
 
 
@@ -519,7 +471,6 @@
 
       </div>
       <!-- center aligned grid END -->
-
 
             <td class="ui center aligned">
               <h2 class="ui center aligned">
@@ -742,27 +693,6 @@
       <!--------------------------------------------------------------------------------->
       <!------- SCRIPTING TEMP LOCATION ------------------------------------------------->
       <!--------------------------------------------------------------------------------->
-
-
-
-<div class="fluid ui buttons">
-  <button class="ui orange button">Cancel</button>
-  <div class="or"></div>
-  <button class="ui positive button">Save</button>
-</div>
-
-    <div class="active step">
-      <div class="content">
-<div class="two ui buttons">
-  <button class="ui yellow button">Cancel</button>
-  <div class="or"></div>
-  <button class="ui positive button">Save</button>
-</div>
-      </div>
-    </div>
-
-
-
 
 
 
