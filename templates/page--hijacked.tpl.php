@@ -119,7 +119,7 @@
       <!-- MODAL #1 -->
       <!-- MODAL #1 -->
       <!-- MODAL #1 -->
-      <div class="ui sp united large modal" id="modal1">
+      <div class="ui sp united large modal" id="modal3">
         <div class="header">
           Please select a main location
         </div>
@@ -129,15 +129,15 @@
             <div class="ui three stackable link cards" id="albums">
       
               <div class="actions">
-                <div class="ui approve button" data-value="powell">
+                <div class="ui approve button" data-value="UCLA Powell Library">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">Powell Library</h2>
+                        <h2 class="ui aligned inverted header">UCLA Powell Library</h2>
                       </div>
                       <img src="/<?php print( $page['sf_path'] ); ?>/img/powellnight.png">
                       <div class="ui large label">
-                        <center>Powell Library</center>
+                        <center>UCLA Powell Library</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>Providing service since 1929&nbsp;</span>
@@ -184,15 +184,15 @@
               </div>
     
               <div class="actions">
-                <div class="ui approve button" data-value="Music Library">
+                <div class="ui approve button" data-value="UCLA Music Library">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">Music Library</h2>
+                        <h2 class="ui aligned inverted header">UCLA Music Library</h2>
                       </div>
                       <img src="/<?php print( $page['sf_path'] ); ?>/img/music_00.png">
                       <div class="ui large label">
-                        <center>Music Library</center>
+                        <center>UCLA Music Library</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>Providing service since 1945&nbsp;</span>
@@ -203,15 +203,15 @@
               </div>
     
               <div class="actions">
-                <div class="ui approve button" data-value="Biomedical Library">
+                <div class="ui approve button" data-value="UCLA Biomedical Library">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">Biomedical Library</h2>
+                        <h2 class="ui aligned inverted header">UCLA Biomedical Library</h2>
                       </div>
                       <img src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
                       <div class="ui large label">
-                        <center>Biomedical Library</center>
+                        <center>UCLA Biomedical Library</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>Providing service since 1937&nbsp;</span>
@@ -222,15 +222,15 @@
               </div>
     
               <div class="actions">
-                <div class="ui approve button" data-value="Arts Library">
+                <div class="ui approve button" data-value="UCLA Arts Library">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">Arts Library</h2>
+                        <h2 class="ui aligned inverted header">UCLA Arts Library</h2>
                       </div>
                       <img src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
                       <div class="ui large label">
-                        <center>Arts Library</center>
+                        <center>UCLA Arts Library</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>Providing service since 1937&nbsp;</span>
@@ -256,24 +256,24 @@
       <!-- modal #2 -->
       <!-- modal #2 -->
       <!-- modal #2 -->
-      <div class="ui united large modal" id="modal2">
+      <div class="ui united large modal" id="modal4">
         <div class="header">
-          Please service point
+          Please pick a service point
         </div>
         <div class="content">
           <div id="libraryChoice">
             <div class="ui three stackable link cards" id="albums">
       
               <div class="actions">
-                <div class="ui approve button" data-value="Circulation Desk">
+                <div class="ui approve button" data-value="The Circulation Desk">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">Circulation Desk</h2>
+                        <h2 class="ui aligned inverted header">The Circulation Desk</h2>
                       </div>
                       <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/service_desk.png">
                       <div class="ui large label">
-                        <center>Circulation Desk</center>
+                        <center>The Circulation Desk</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>310-555-5555&nbsp;</span>
@@ -284,15 +284,15 @@
               </div>
       
               <div class="actions">
-                <div class="ui approve button" data-value="A Level Service Desk">
+                <div class="ui approve button" data-value="A-Level Service Desk">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">A Level Service Desk</h2>
+                        <h2 class="ui aligned inverted header">A-Level Service Desk</h2>
                       </div>
                       <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
                       <div class="ui large label">
-                        <center>A Level Service Desk</center>
+                        <center>A-Level Service Desk</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>310-555-5555&nbsp;</span>
@@ -322,15 +322,15 @@
               </div>
     
               <div class="actions">
-                <div class="ui approve button" data-value="Information Desk">
+                <div class="ui approve button" data-value="The Information Desk">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">Information Desk</h2>
+                        <h2 class="ui aligned inverted header">The Information Desk</h2>
                       </div>
                       <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
                       <div class="ui large label">
-                        <center>Information Desk</center>
+                        <center>The Information Desk</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>310-555-5555&nbsp;</span>
@@ -341,15 +341,15 @@
               </div>
       
               <div class="actions">
-                <div class="ui approve button" data-value="Cashier Window">
+                <div class="ui approve button" data-value="The Cashier Window">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">Cashier Window</h2>
+                        <h2 class="ui aligned inverted header">The Cashier Window</h2>
                       </div>
                       <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
                       <div class="ui large label">
-                        <center>Cashier Window</center>
+                        <center>The Cashier Window</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>310-555-5555&nbsp;</span>
@@ -393,10 +393,13 @@
 
             <td class="ui center aligned" width="20%">
               <h2 class="ui center aligned">
-                <div class="large ui labeled button" tabindex="0">
-                  <div data-modal="modal1" class="show huge ui red button" id="result" name="result">Young Research Library</div>
-                  <a data-modal="modal2" class="show huge ui basic black left pointing label" id="servicePoint">Circulation Desk</a>
+
+                <div class="ui huge fluid buttons">
+                  <button data-modal="modal3" class="show ui basic red button" id="result" name="result">Choose <br>Library <br>Unit</button>
+                  <div class="and" style="height: 4.57142857em"></div>
+                  <button data-modal="modal4" class="show ui basic black button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
                 </div>
+
               </h2>
             </td>
 
@@ -444,6 +447,10 @@
       <p>
 
       <div id="statsformToken" data-value="<?php print( $page['variables'] ); ?>">
+      <div id="sfUnit" data-value="<?php print( $page['sfUnit'] ); ?>">
+      <div id="sfUnitColor" data-value="<?php print( $page['sfUnitColor'] ); ?>">
+      <div id="sfServicePoint" data-value="<?php print( $page['sfServicePoint'] ); ?>">
+      <div id="sfServicePointColor" data-value="<?php print( $page['sfServicePointColor'] ); ?>">
       <div id="statsformPath" data-value="<?php print( $page['sf_path'] ); ?>">
 
       <!-- center aligned grid -->
@@ -847,78 +854,131 @@
           }).modal("show");
         }).on("click", ".ui.button", function () {
           switch ($(this).data("value")) {
-            case 'powell':
-              $("#result").html("UCLA Powell Library");
-              document.getElementById('result').className = 'show huge ui green button';
+            case 'UCLA Powell Library':
+              $("#result").html("UCLA<br>Powell<br>Library");
+              document.getElementById('result').className = 'show ui green button';
               $(".ui.modal").modal("hide");
               break;
             case 'Young Research Library':
-              $("#result").html("Young Research Library");
-              document.getElementById('result').className = 'show huge ui red button';
+              $("#result").html("Young<br>Research<br>Library");
+              document.getElementById('result').className = 'show ui red button';
               $(".ui.modal").modal("hide");
               break;
             case 'Science and Engineering Library':
-              $("#result").html("Science and Engineering Library");
-              document.getElementById('result').className = 'show huge ui blue button';
+              $("#result").html("UCLA<br>SEL<br>Library");
+              document.getElementById('result').className = 'show ui blue button';
               $(".ui.modal").modal("hide");
               break;
-            case 'Music Library':
-              $("#result").html("Music Library");
-              document.getElementById('result').className = 'show huge ui yellow button';
+            case 'UCLA Music Library':
+              $("#result").html("UCLA<br>Music<br>Library");
+              document.getElementById('result').className = 'show ui yellow button';
               $(".ui.modal").modal("hide");
               break;
-            case 'Biomedical Library':
-              $("#result").html("Biomedical Library");
-              document.getElementById('result').className = 'show huge ui purple button';
+            case 'UCLA Biomedical Library':
+              $("#result").html("UCLA<br>Biomedical<br>Library");
+              document.getElementById('result').className = 'show ui purple button';
               $(".ui.modal").modal("hide");
               break;
-            case 'Arts Library':
-              $("#result").html("Arts Library");
-              document.getElementById('result').className = 'show huge ui pink button';
+            case 'UCLA Arts Library':
+              $("#result").html("UCLA<br>Arts<br>Library");
+              document.getElementById('result').className = 'show ui pink button';
               $(".ui.modal").modal("hide");
               break;
-            case 'Circulation Desk':servicePoint
-              $("#servicePoint").html("Circulation Desk");
-              document.getElementById('servicePoint').className = 'show huge ui basic black left pointing label';
+            case 'The Circulation Desk':
+              $("#servicePoint").html("The<br>Circulation<br>Desk");
+              document.getElementById('servicePoint').className = 'show ui black button';
               $(".ui.modal").modal("hide");
               break;
             case 'Science and Engineering Library Service':
-              $("#servicePoint").html("Science and Engineering Library Service");
-              document.getElementById('servicePoint').className = 'show huge ui basic brown left pointing label';
+              $("#servicePoint").html("SEL<br>Library<br>Service");
+              document.getElementById('servicePoint').className = 'show ui brown button';
               $(".ui.modal").modal("hide");
               break;
-            case 'A Level Service Desk':
-              $("#servicePoint").html("A Level Service Desk");
-              document.getElementById('servicePoint').className = 'show huge ui basic brown left pointing label';
+            case 'A-Level Service Desk':
+              $("#servicePoint").html("A-Level<br>Service<br>Desk");
+              document.getElementById('servicePoint').className = 'show ui brown button';
               $(".ui.modal").modal("hide");
               break;
-            case 'Information Desk':
-              $("#servicePoint").html("Information Desk");
-              document.getElementById('servicePoint').className = 'show huge ui basic grey left pointing label';
+            case 'The Information Desk':
+              $("#servicePoint").html("The<br>Information<br>Desk");
+              document.getElementById('servicePoint').className = 'show ui gray button';
               $(".ui.modal").modal("hide");
               break;
-            case 'Cashier Window':
-              $("#servicePoint").html("Cashier Window");
-              document.getElementById('servicePoint').className = 'show huge ui basic olive left pointing label';
+            case 'The Cashier Window':
+              $("#servicePoint").html("The<br>Cashier<br>Window");
+              document.getElementById('servicePoint').className = 'show ui olive button';
               $(".ui.modal").modal("hide");
               break;
             case 'Phone Answering Station':
-              $("#servicePoint").html("Phone Answering Station");
-              document.getElementById('servicePoint').className = 'show huge ui basic pink left pointing label';
+              $("#servicePoint").html("Phone<br>Answering<br>Station");
+              document.getElementById('servicePoint').className = 'show ui pink button';
               $(".ui.modal").modal("hide");
               break;
           }
         });
       
       
-        /// default setting - still needed?
-        document.getElementById('result').className = 'show huge ui red button';
-        document.getElementById('servicePoint').className = 'show huge ui basic black left pointing label';
-      
+        /// default setting - still needed? ===> yes
+
+              // set on page load (from login page thru the drupal module)
+
+  var sfUnit = document.getElementById("sfUnit").dataset.value;
+  var sfServicePoint = document.getElementById("sfServicePoint").dataset.value;
+
+  sfUnit = sfUnit.replace(" ", " <cr>");
+  sfServicePoint = sfServicePoint.replace(" ", " <cr>");
+
+
+//  sfUnit = "dfgdfg";
+
+              // set Unit name
+              $("#result").html( sfUnit );
+
+              // set Unit color
+              $sfUnitColor = document.getElementById("sfUnitColor").dataset.value;
+              $sfUnitColor = 'show ui '+ $sfUnitColor + ' button';
+              document.getElementById('result').className = $sfUnitColor;
+
+              // set Service Point name
+              $("#servicePoint").html( document.getElementById("sfServicePoint").dataset.value );
+//              $("#servicePoint").html("asdasd");
+
+              // set Service Point color
+              $sfServicePointColor = document.getElementById("sfServicePointColor").dataset.value;
+              $sfServicePointColor = 'show ui ' + $sfServicePointColor + ' button';
+              document.getElementById('servicePoint').className = $sfServicePointColor;
+
+///              $("#servicePoint").html("Circulation Desk");
+///              document.getElementById('servicePoint').className = 'show huge ui basic black left pointing label';
+///
+///
+///
+///$("#servicePoint").html("Phone Answering Station");
+///document.getElementById('servicePoint').className = 'show huge ui basic pink left pointing label';
+///
+///
+///
+///        document.getElementById('result').className = 'show huge ui blue button';
+///        document.getElementById('servicePoint').className = 'show huge ui basic black left pointing label';
+
+
+
         $('.ui.accordion')
           .accordion()
         ;
-      
+
+
+var sfUnit = document.getElementById("sfUnit").dataset.value;
+var sfUnitColor = document.getElementById("sfUnitColor").dataset.value;
+var sfServicePoint = document.getElementById("sfServicePoint").dataset.value;
+
+
+
+
+
+
+
+
         /// ajax section
         (function ($) {
 

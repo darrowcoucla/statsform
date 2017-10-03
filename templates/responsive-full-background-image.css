@@ -1,0 +1,70 @@
+/* Responsive Full Background Image Using CSS
+ * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
+*/
+body {
+  /* Location of the image */
+  background-image: url(../img/powellnight.png) !important;
+  
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover !important;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+
+@media (min-height: 320px) {
+  .ui.footer.form-page { /* Increased specificity for SO snippet priority */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.masthead{ max-height: 100%; }
+
+.masthead{
+    width: 95%!important;
+    left: 2.5%!important;
+    margin: 1em auto;
++   height: 100%;
+}
+
+
+.ui-page.ui-body-c {
+    background: url(../img/powellnight.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;  
+}
+
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url(images/background-photo-mobile-devices.jpg);
+  }
+	}
+
+html, body {
+    height: 100%;
+}
+
+.ui.grid {
+    height: 100%;    
+}
