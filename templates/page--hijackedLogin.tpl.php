@@ -246,13 +246,6 @@
           font-weight: bold;
           font-color: #ffffff;
         }
-
-
-
-
-
-
-
       </style>
 
     </head>
@@ -743,93 +736,89 @@
       </div>
       <!-- MODAL #5 END-->
 
-
-
-
-  <div class="ui stackable grid container">
-    <div class="row">
-      <div class="column">&nbsp;
+      <!-- HEADER -->
+      <!-- HEADER -->
+      <!-- HEADER -->
+      <div class="ui stackable grid container">
+        <div class="row">
+          <div class="column">&nbsp;
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">&nbsp;
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="column">&nbsp;
-      </div>
-    </div>
-  </div>
 
-  <div class="ui main stackable grid container">
-    <div class="three column row">
+      <div class="ui main stackable grid container">
+        <div class="three column row">
 
-      <div class="column">
+          <div class="column">
 
-        <div class="ui icon warning message">
-          <i class="university icon"></i>
-          <div class="content">
-            <div class="header" align="left">
-              1. Set Unit <br>
-              2. Set Service Point
+            <div class="ui icon warning message">
+              <i class="university icon"></i>
+              <div class="content">
+                <div class="header" align="left">
+                  1. Set Unit <br>
+                  2. Set Service Point
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="content">
-          <div class="ui fluid buttons">
-            <button data-modal="modal3" class="show ui basic blue huge  button" id="result" name="result">Choose <br>Library <br>Unit</button>
-            <div class="and" style="height: 4.57142857em"></div>
-            <button data-modal="modal4" class="show ui basic black huge  button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="column">
-
-        <div class="ui icon warning message">
-          <i class="lock icon"></i>
-          <div class="content">
-            <div class="header" align="left">
-              Choose Login Method:<br>
-              Single or Group
+            <div class="content">
+              <div class="ui fluid buttons">
+                <button data-modal="modal3" class="show ui basic blue huge  button" id="result" name="result">Choose <br>Library <br>Unit</button>
+                <div class="and" style="height: 4.57142857em"></div>
+                <button data-modal="modal4" class="show ui basic black huge  button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="content">
-          <div class="ui fluid buttons">
-            <button data-modal="modal6" class="show ui basic yellow   button" id="statsformLogin" name="statsformLogin">Choose <br>Single <br>Login</button>
-            <div class="or" style="height: 4.57142857em"></div>
-            <button data-modal="modal5" class="show ui basic blue   button" id="unitGroup" name="unitGroup">Choose <br>Group <br>Login</button>
           </div>
-        </div>
+
+          <div class="column">
+
+            <div class="ui icon warning message">
+              <i class="users icon"></i>
+              <div class="content">
+                <div class="header" align="left">
+                  Choose Login Method:<br>
+                  Single or Group
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="ui fluid buttons">
+                <button data-modal="modal6" class="show ui basic orange   button" id="statsformLogin" name="statsformLogin">Choose <br>Single <br>Login</button>
+                <div class="or" style="height: 4.57142857em"></div>
+                <button data-modal="modal5" class="show ui basic blue   button" id="unitGroup" name="unitGroup">Choose <br>Group <br>Login</button>
+              </div>
+            </div>
 
 <!-- dhc - dont double huge the buttons! -->
 
-
-      </div>
-
-      <div class="column">
-
-        <div class="ui icon warning message">
-          <i class="lock icon"></i>
-          <div class="content">
-            <div class="header">
-              Go to the<br>
-              login page<br>
-            </div>
           </div>
-        </div>
 
-        <div class="content">
-          <button class=" ui positive  fluid button" id="submit0"> <h1 > SUBMIT </h1> </button>
-        </div>
+          <div class="column">
 
+            <div class="ui icon warning message">
+              <i class="lock icon"></i>
+              <div class="content">
+                <div class="header">
+                  Go to the<br>
+                  login page<br>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <button class=" ui positive  fluid button" id="submit0"> <h1 > SUBMIT </h1> </button>
+            </div>
+
+          </div>
+
+        </div>
       </div>
-
-    </div>
-  </div>
-
-
-
 
       <!--------------------------------------------------------------------------------->
       <!------- SCRIPTING TEMP LOCATION ------------------------------------------------->
@@ -910,63 +899,63 @@
             case 'Group-A':
               $("#unitGroup").html("Login with <br>Group-A");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic yellow button';
+              document.getElementById('statsformLogin').className = 'show ui basic orange button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'East Group':
               $("#unitGroup").html("Login with <br>East <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic yellow button';
+              document.getElementById('statsformLogin').className = 'show ui basic orange button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'The Big Group':
               $("#unitGroup").html("Login with <br>The Big <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic yellow button';
+              document.getElementById('statsformLogin').className = 'show ui basic orange button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'The Large Group':
               $("#unitGroup").html("Login with <br>The Large <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic yellow button';
+              document.getElementById('statsformLogin').className = 'show ui basic orange button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'Test Group':
               $("#unitGroup").html("Login with <br>Test <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic yellow button';
+              document.getElementById('statsformLogin').className = 'show ui basic orange button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'First Group':
               $("#unitGroup").html("Login with <br>First <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic yellow button';
+              document.getElementById('statsformLogin').className = 'show ui basic orange button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'Group-A1':
               $("#unitGroup").html("Login with <br>Group-A1");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic yellow button';
+              document.getElementById('statsformLogin').className = 'show ui basic orange button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'Morning Group':
               $("#unitGroup").html("Login with <br>Morning <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic yellow button';
+              document.getElementById('statsformLogin').className = 'show ui basic orange button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'Night Group':
               $("#unitGroup").html("Login with <br>Night <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic yellow button';
+              document.getElementById('statsformLogin').className = 'show ui basic orange button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
@@ -980,32 +969,28 @@
               break;
           }
         });
-      
-      
+
         /// default setting - still needed?
         document.getElementById('result').className = 'show ui basic red button';
         document.getElementById('servicePoint').className = 'show ui basic black button';
-
 
         $('.ui.accordion')
           .accordion()
         ;
 
+        $('#submit0').click(function() {
 
+          var sfUnitColor = document.getElementById('result').className;
+          var sfServicePointColor = document.getElementById('servicePoint').className;
+        
+          var sfUnitColorArray = sfUnitColor.split(" ");
+          var sfServicePointColorArray = sfServicePointColor.split(" ");
 
-$('#submit0').click(function() {
+          sfUnitColor = sfUnitColorArray[2];
+          sfServicePointColor = sfServicePointColorArray[2];
 
-  var sfUnitColor = document.getElementById('result').className;
-  var sfServicePointColor = document.getElementById('servicePoint').className;
-
-  var sfUnitColorArray = sfUnitColor.split(" ");
-  var sfServicePointColorArray = sfServicePointColor.split(" ");
-
-  sfUnitColor = sfUnitColorArray[2];
-  sfServicePointColor = sfServicePointColorArray[2];
-
-  location.href = '/statsform/form?sfUnit='+result.textContent+'&sfServicepoint='+servicePoint.textContent+'&sfUnitColor='+sfUnitColor+'&sfServicePointColor='+sfServicePointColor;
-});
+          location.href = '/statsform/form?sfUnit='+result.textContent+'&sfServicepoint='+servicePoint.textContent+'&sfUnitColor='+sfUnitColor+'&sfServicePointColor='+sfServicePointColor;
+        });
 
       
         /// ajax section
@@ -1173,35 +1158,8 @@ $('#submit0').click(function() {
 
       </script>
       <!--------------------------------------------------------------------------------->
-      <!------- SCRIPTING TEMP LOCATION ------------------------------------------------->
+      <!------- SCRIPTING TEMP LOCATION END --------------------------------------------->
       <!--------------------------------------------------------------------------------->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<div class="ui padded equal height grid">
-  <div class="two wide purple column">
-     
-  </div>
-  <div class="fourteen wide stretched column">
-    <div class="ui equal height grid">
-      <div class="sixteen wide red column"></div>
-      <div class="eight wide orange column"></div>
-      <div class="eight wide blue column"></div>
-    </div>
-  </div>
-</div>
--->
 
     </body>
   </html>
