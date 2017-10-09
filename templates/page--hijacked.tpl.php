@@ -1,6 +1,7 @@
-<div>
   <html>
+
     <head>
+
       <meta charset="utf-8">
       <title>JS Bin</title>
 
@@ -9,8 +10,9 @@
       <script type="text/javascript" src="http://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.date.js"></script>
       <script type="text/javascript" src="http://amsul.ca/pickadate.js/vendor/pickadate/lib/picker.time.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.js"></script>
+<!--
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
-
+-->
       <script type="text/javascript" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.tap.js"></script>
 
       <link rel="stylesheet" type="text/css" href="http://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.css">
@@ -20,6 +22,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.css">
 
       <link rel="stylesheet" type="text/css" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.tap.css">
+
+      <link rel="stylesheet" type="text/css" href="/<?php print( $page['sf_path'] ); ?>/templates/responsive-full-background-image.css">
     
       <script type='text/javascript'>
         $(window).load(function(){
@@ -63,6 +67,13 @@
           background-color: black;
           color: white;
         }
+          .ui.container {
+          height: auto;
+        }
+          .ui.main.container{
+          background-color: rgba(255, 250, 243, 0.5);
+          border-radius: 8px;
+        }
           .ui.equal.width.center.aligned.grid {
           height: 100%;
         }
@@ -86,7 +97,7 @@
         }
 
         .ui.positive.button, .ui.positive.button:hover {
-          background-color: #68863F;
+          background-color: #CF322D;
         }
 
         .ui.styled.accordion {
@@ -110,15 +121,161 @@
           background-color: pink;
           color: black;
         }
+
+        .actions {
+          margin: 0px;
+          padding-bottom: 8px;
+        }
+        .ui.fluid.large.label {
+          margin: 0px;
+          padding-bottom: -5px;
+        }
+        .huge.icon {
+          margin: 4px;
+          padding-bottom: 0px;
+        }
+        .show.ui.positive.button.label {
+          margin: 0px;
+          padding-left: 34px;
+        }
+
+        /*-------------------
+              And Sizes
+        --------------------*/
+
+        .ui.mini.buttons .button,
+        .ui.mini.buttons .and,
+        .ui.mini.button {
+          font-size: 0.71428571rem;
+        }
+
+        .ui.tiny.buttons .button,
+        .ui.tiny.buttons .and,
+        .ui.tiny.button {
+          font-size: 0.85714286rem;
+        }
+
+        .ui.small.buttons .button,
+        .ui.small.buttons .and,
+        .ui.small.button {
+          font-size: 0.92857143rem;
+        }
+
+        .ui.buttons .button,
+        .ui.buttons .and,
+        .ui.button {
+          font-size: 1rem;
+        }
+
+        .ui.large.buttons .button,
+        .ui.large.buttons .and,
+        .ui.large.button {
+          font-size: 1.14285714rem;
+        }
+
+        .ui.big.buttons .button,
+        .ui.big.buttons .and,
+        .ui.big.button {
+          font-size: 1.28571429rem;
+        }
+
+        .ui.huge.buttons .button,
+        .ui.huge.buttons .and,
+        .ui.huge.button {
+          font-size: 1.42857143rem;
+        }
+
+        .ui.massive.buttons .button,
+        .ui.massive.buttons .and,
+        .ui.massive.button {
+          font-size: 1.71428571rem;
+        }
+
+
+
+        /*-------------------
+              And Buttons
+        --------------------*/
+
+        .ui.buttons .and {
+          position: relative;
+          width: 0.3em;
+          height: 2.57142857em;
+          z-index: 3;
+        }
+
+        .ui.buttons .and:before {
+          position: absolute;
+          text-align: center;
+          border-radius: 500rem;
+          content: 'and';
+          top: 50%;
+          left: 50%;
+          background-color: #ffffff;
+          text-shadow: none;
+          margin-top: -0.89285714em;
+          margin-left: -1.1em;
+          width: 2.2em;
+          height: 1.78571429em;
+          line-height: 1.78571429em;
+          color: rgba(0, 0, 0, 0.4);
+          font-style: normal;
+          font-weight: bold;
+          box-shadow: 0px 0px 0px 1px transparent inset;
+          z-index: 4444;
+        }
+
+        .ui.buttons .and[data-text]:before {
+          content: attr(data-text);
+        }
+
+        /* Fluid And */
+
+        .ui.fluid.buttons .and {
+          width: 0em !important;
+        }
+
+        .ui.fluid.buttons .and:after {
+          display: none;
+        }
+        .ui.borderless.column {
+          background-color: rgba(255, 255, 255, 0.0);
+          border-color: black;
+          border-radius: 8px;
+          border: 1px;
+          margin-bottom: 15px;
+        }
+        .ui.message {
+          background-color: rgba(255, 255, 255, 0.0);
+          border-style: none;
+          border-style: hidden;
+          border-radius: 8px;
+        }
+        .ui.sfWhite.button {
+          background-color: rgba(255, 255, 255, 1.0);
+        }
+        .ui.combo.sfWhite.button {
+          background-color: rgba(244, 244, 244, 1.0);
+        }
+        .ui.buttons {
+          background-color: rgba(255, 255, 255, 0.7);
+          border-radius: 8px;
+        }
+        .ui.button:hover {
+          font-weight: bold;
+          font-color: #ffffff;
+        }
+
+.dimmable.dimmed > .dimmer {
+  overflow: auto !important;
+}
       </style>
+
     </head>
     <body>
-
-    <br>
-
-      <!-- MODAL #1 -->
-      <!-- MODAL #1 -->
-      <!-- MODAL #1 -->
+      <!-- MODAL #3 -->
+      <!-- MODAL #3 -->
+      <!-- MODAL #3 -->
       <div class="ui sp united large modal" id="modal3">
         <div class="header">
           Please select a main location
@@ -384,67 +541,312 @@
       </div>
       <!-- MODAL #2 END-->
 
-      <!-- HEADER ------------------------------------------------------------>
-      <!-- HEADER ------------------------------------------------------------>
-      <!-- HEADER ------------------------------------------------------------>
-      <table class="ui celled padded table">
-        <tbody>
-          <tr>
 
-            <td class="ui center aligned" width="20%">
-              <h2 class="ui center aligned">
-
-                <div class="ui huge fluid buttons">
-                  <button data-modal="modal3" class="show ui basic red button" id="result" name="result">Choose <br>Library <br>Unit</button>
-                  <div class="and" style="height: 4.57142857em"></div>
-                  <button data-modal="modal4" class="show ui basic black button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
-                </div>
-
-              </h2>
-            </td>
-
-            <td class="ui center aligned" width="30%">
-              <h2 class="ui center aligned">
-                <div class="ui small input right icon">
-                  <i id="iconCal" class="large calendar icon"></i>
-                  <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-value="dhc">
-                </div>
-              </h2>
-            </td>
-
-            <td class="ui center aligned" width="30%">
-              <h2 class="ui center aligned">
-                <div class="ui small input right icon">
-                  <i id="iconTim" class="large clock icon"></i>
-                  <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
-                </div>
-              </h2>
-            </td>
-
-            <td class="ui center aligned" width="20%">
-              <h2 class="ui center aligned">
-                <div class="huge ui labeled button" tabindex="0">
-                  <div class="huge ui text menu">
-                    <div class="huge ui right dropdown item" id="select45">
-                      <div id="userName" name="userName">Darrow Cole</div>
-                      <i class="dropdown icon"></i>
-                      <div class="huge menu" id="userMenu" name="userMenu">
-                        <div class="item">My Settings</div>
-                        <div class="item">Logout</div>
+      <!-- modal #5 -->
+      <!-- modal #5 -->
+      <!-- modal #5 -->
+      <div class="ui united large modal" id="modal5">
+        <div class="header">
+          Please pick a User Group
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Group-A">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui center">
+                        <i class="huge spy icon"></i>
+                      </div>
+                      <div class="ui fluid large label">
+                        <center>Group-A</center>
                       </div>
                     </div>
                   </div>
                 </div>
-              </h2>
-            </td>
-      
-          </tr>
-        </tbody>
-      </table>
-      <!-- HEADER END -->
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="East Group">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui center">
+                        <i class="huge doctor icon"></i>
+                      </div>
+                      <div class="ui fluid large label">
+                        <center>East Group</center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="The Big Group">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui center">
+                        <i class="huge child icon"></i>
+                      </div>
+                      <div class="ui fluid large label">
+                        <center>The Big Group</center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="The Large Group">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui center">
+                        <i class="huge users icon"></i>
+                      </div>
+                      <div class="ui fluid large label">
+                        <center>The Large Group</center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="Test Group">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui center">
+                        <i class="huge thumbs outline up icon"></i>
+                      </div>
+                      <div class="ui fluid large label">
+                        <center>Test Group</center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="First Group">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui center">
+                        <i class="huge comment outline icon"></i>
+                      </div>
+                      <div class="ui fluid large label">
+                        <center>First Group</center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="Group-A1">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui center">
+                        <i class="huge idea icon"></i>
+                      </div>
+                      <div class="ui fluid large label">
+                        <center>Group-A1</center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="Morning Group">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui center">
+                        <i class="huge book icon"></i>
+                      </div>
+                      <div class="ui fluid large label">
+                        <center>Morning Group</center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve button" data-value="Night Group">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui center">
+                        <i class="huge paw icon"></i>
+                      </div>
+                      <div class="ui fluid large label">
+                        <center>Night Group</center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
 
-      <p>
-      <p>
+        <div class="actions">
+          <div class="ui black deny button">
+            Cancel
+          </div>
+        </div>
+
+      </div>
+      <!-- MODAL #5 END-->
+
+      <!-- modal #6 -->
+      <!-- modal #6 -->
+      <!-- modal #6 -->
+      <div class="ui united large modal" id="modal6">
+        <div class="header">
+          Please pick a Login Provider
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="UCLA Login">
+                  <div class="ui card">
+
+                    <div class="image">
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/b_ucla.jpg">
+                    </div>
+
+                    <div class="blurring dimmable image">
+                      <div class="ui fluid large label">
+                        <center>UCLA Login</center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="actions">
+                <div class="ui approve disabled button" data-value="Future Login">
+                  <div class="ui card">
+
+                    <div class="image">
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/social-icons2.png">
+                    </div>
+
+                    <div class="blurring dimmable image">
+                      <div class="ui fluid large label">
+                        <center>Future Login</center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <div class="ui black deny button">
+            Cancel
+          </div>
+        </div>
+
+      </div>
+      <!-- MODAL #5 END-->
+
+      <!-- HEADER -->
+      <!-- HEADER -->
+      <!-- HEADER -->
+      <div class="ui stackable grid container">
+        <div class="row">
+          <div class="column">&nbsp;
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">&nbsp;
+          </div>
+        </div>
+      </div>
+
+      <div class="ui main stackable grid container">
+        <div class="four column row">
+
+          <div class="ui column">
+            <div class="content">
+              <div class="ui fluid buttons">
+                <button data-modal="modal3" class="show ui basic blue button" id="result" name="result">Choose <br>Library <br>Unit</button>
+                <div class="and" style="height: 4.57142857em"></div>
+                <button data-modal="modal4" class="show ui basic black button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <div class="ui center aligned">
+                <div class="ui massive fluid input right icon">
+                  <i id="iconCal" class="large calendar icon"></i>
+                  <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-value="dhc">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <div class="ui center aligned">
+                <div class="ui massive fluid input right icon">
+                  <i id="iconTim" class="large clock icon"></i>
+                  <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui column">
+            <div class="content">
+
+
+
+<div class="ui massive fluid buttons">
+  <div class="ui sfWhite button">Hi Darrow</div>
+  <div class="ui combo top right pointing dropdown icon sfWhite button">
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div class="item"><i class="user icon"></i> You are logged in as Darrow Cole</div>
+      <div class="item"><i class="edit icon"></i> Logout</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
 
       <div id="statsformToken" data-value="<?php print( $page['variables'] ); ?>">
       <div id="sfUnit" data-value="<?php print( $page['sfUnit'] ); ?>">
@@ -452,392 +854,6 @@
       <div id="sfServicePoint" data-value="<?php print( $page['sfServicePoint'] ); ?>">
       <div id="sfServicePointColor" data-value="<?php print( $page['sfServicePointColor'] ); ?>">
       <div id="statsformPath" data-value="<?php print( $page['sf_path'] ); ?>">
-
-      <!-- center aligned grid -->
-      <div class="ui equal width height center aligned grid">
-
-        <!-- ACCORDION -->
-        <!-- ACCORDION -->
-        <!-- ACCORDION -->
-        <div class="ui styled accordion">
-
-          <!-- ACCORDION Quick Questions ------------------------------------------------------------>
-          <!-- ACCORDION Quick Questions ------------------------------------------------------------>
-          <!-- ACCORDION Quick Questions ------------------------------------------------------------>
-          <div class="title">
-            <i class="dropdownOFF icon"></i>
-            Quick Questions
-          </div>
-
-          <div class="active content">
-            <div class="ui equal width aligned grid">
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content"> 
-                    <div class="ui inverted segment left floated" id="directions"> 
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="directional">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
-                      </div>
-                    </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/directions.png">
-                    <div class="header"> Directional </div> 
-                    <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div></div>
-                </div>
-              </div>
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content">
-                    <div class="ui inverted segment left floated" id="lookup">
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="lookUp">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
-                      </div>
-                    </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
-                    <div class="header"> Look Up Known Item </div>
-                    <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div></div> 
-                </div>
-              </div>
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content">
-                    <div class="ui inverted segment left floated" id="policy">
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="policyVal">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
-                      </div>
-                    </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/policy.png"> 
-                    <div class="header"> Policy & Operations</div>
-                    <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
-                  </div> 
-                </div>
-              </div>
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content">
-                    <div class="ui inverted segment left floated" id="research">
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="referral">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
-                      </div>
-                    </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/research.png">
-                    <div class="header"> Referral </div>
-                    <div class="meta"> Referral to advance research support, library location, campus support, etc. </div>
-                  </div> 
-                </div>
-              </div>
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content">
-                    <div class="ui inverted segment left floated" id="technical">
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="technicalVal">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
-                      </div>
-                    </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/technical.png"> 
-                    <div class="header"> Technical Assistance </div>
-                    <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
-                  </div> 
-                </div>
-              </div>
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card ">
-                  <button style = "height: 120px" class=" ui button" id="submit1"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <!-- ACCORDION Quick Questions END -->
-
-
-          <!-- ACCORDION Referral Section ------------------------------------------------------------>
-          <!-- ACCORDION Referral Section ------------------------------------------------------------>
-          <!-- ACCORDION Referral Section ------------------------------------------------------------>
-          <div class="title">
-            <i class="dropdownOFF icon"></i>
-              Research Assistance
-          </div>
-          <div class="content">
-    
-            <!-- GRID -->
-            <div class="ui equal width aligned grid">
-    
-              <div class="eight wide column">
-                <div class="ui fluid card">
-                  <div class="content">
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/research.png"> 
-                    <div class="header"> Research Assistance </div>
-                    <div class="meta"> Help patron with research strategy, advice, overview of resources (drop-in). </div>
-                  </div> 
-                </div>
-              </div>
-    
-              <div class="eight wide column">
-                <div class="ui fluid card">
-                  <div class="content">
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/technical.png"> 
-                    <div class="header"> Technical Assistance </div>
-                    <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
-                  </div> 
-                </div>
-              </div>
-    
-              <div class="eight wide column">
-                <div class="ui fluid card">
-                  <div class="content">
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
-                    <div class="header"> Look up Known Item </div>
-                    <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
-                  </div> 
-                </div>
-              </div>
-    
-              <div class="eight wide column">
-                <div class="ui fluid card">
-                  <div class="content">
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/directions.png"> 
-                    <div class="header"> Directional </div>
-                    <div class="meta"> Location or directions provided e.g. rooms, events, contact information, etc. </div>
-                  </div> 
-                </div>
-              </div>
-    
-              <div class="eight wide column">
-                <div class="ui fluid card">
-                  <div class="content">
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/policy.png"> 
-                    <div class="header"> Policy & Operations </div>
-                    <div class="meta"> Hours, access privileges, borrowing, space reservations, other policies. </div>
-                  </div> 
-                </div>
-              </div>
-    
-              <div class="eight wide column">
-
-                <form class="ui form">
-                  <div class="field">
-                    <label>
-                      Question Topic
-                    </label>
-                    <input type="text" name="topic" placeholder="Add topic here." height="200">
-                  </div>
-                  <div class="grouped fields">
-                    <label for="referral">Referral?</label>
-                    <div class="field">
-                      <div class="ui radio checkbox">
-                        <input type="radio" name="referral" tabindex="0" class="hidden">
-                        <label>Yes</label>
-                      </div>
-                    </div>
-                    <div class="field">
-                      <div class="ui radio checkbox">
-                        <input type="radio" name="referral" tabindex="0" class="hidden">
-                        <label>No</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="field">
-                    <label>
-                      Department / Unit
-                    </label>
-                    <div class="ui selection dropdownOFF">
-                      <input type="hidden" name="department">
-                      <i class="dropdownOFF icon"></i>
-                      <div class="default text">
-                        Choose your department
-                      </div>
-                      <div class="menu">
-                        <div class="item" data-value="none">N/A</div>
-                        <div class="item" data-value="linguistics">Linguistics</div>
-                        <div class="item" data-value="cs">Computer Science</div>
-                        <div class="item" data-value="commstudies">Communications</div>
-                        <div class="item" data-value="arts">Fine Arts</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="field">
-                    <label>Course / Section</label>
-                    <input type="text" name="course" placeholder="CRS###/SEC###">
-                  </div>
-                </form>
-
-              </div>
-    
-            </div>
-            <!-- GRID END -->
-        
-            <!-- GRID -->
-            <div class="ui equal width aligned grid">
-
-              <!-- eight wide -->
-              <div class="eight wide column">
-
-                <!-- aligned grid -->
-                <div class="ui equal width aligned grid">
-
-                  <div class="four wide column">
-                    <div class="ui inverted segment">
-                      <div class="ui tiny inverted statistics">
-                        <div class="statistic">
-                          <div class="value">
-                            0
-                          </div>
-                          <div class="label">
-                            People
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <div class="four wide column">
-                    <div class="ui inverted segment">
-                      <div class="ui tiny inverted statistics">
-                        <div class="statistic">
-                          <div class="value">
-                            0
-                          </div>
-                          <div class="label">
-                            Minutes
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <div class="ui form">
-                    <div class="inline fields">
-                      <label>How did you help the patron?</label>
-                      <div class="field">
-                        <div class="ui radio checkbox">
-                          <input type="radio" name="frequency" checked="checked">
-                          <label>In-Person</label>
-                        </div>
-                      </div>
-                      <div class="field">
-                        <div class="ui radio checkbox">
-                          <input type="radio" name="frequency">
-                          <label>E-mail</label>
-                        </div>
-                      </div>
-                      <div class="field">
-                        <div class="ui radio checkbox">
-                          <input type="radio" name="frequency">
-                          <label>Telephone</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- ------------------------->
-                  <div class="eight wide column">
-                    <form class="ui form">
-                      <div class="grouped fields">
-
-                        <label for="status" style = "font-size: 30px">Patron Status</label>
-
-                        <div class="field">
-                          <div class="ui radio checkbox">
-                            <input type="radio" name="status" tabindex="0" checked="" class="hidden">
-                            <label>Unknown</label>
-                          </div>
-                        </div>
-
-                        <div class="field">
-                          <div class="ui radio checkbox">
-                            <input type="radio" name="status" tabindex="0" class="hidden">
-                            <label>UCLA undergrad</label>
-                          </div>
-                        </div>
-
-                        <div class="field">
-                          <div class="ui radio checkbox">
-                            <input type="radio" name="status" tabindex="0" class="hidden">
-                            <label>UCLA graduate student</label>
-                          </div>
-                        </div>
-
-                        <div class="field">
-                          <div class="ui radio checkbox">
-                            <input type="radio" name="status" tabindex="0" class="hidden">
-                            <label>UCLA faculty</label>
-                          </div>
-                        </div>
-
-                        <div class="field">
-                          <div class="ui radio checkbox">
-                            <input type="radio" name="status" tabindex="0" class="hidden">
-                            <label>UCLA researcher/other</label>
-                          </div>
-                        </div>
-
-                        <div class="field">
-                          <div class="ui radio checkbox">
-                            <input type="radio" name="status" tabindex="0" class="hidden">
-                            <label>UCLA alumnus/a</label>
-                          </div>
-                        </div>
-
-                        <div class="field">
-                          <div class="ui radio checkbox">
-                            <input type="radio" name="status" tabindex="0" class="hidden">
-                            <label>non-UCLA</label>
-                          </div>
-                        </div>
-
-                      </div>
-                    </form>
-                  </div>
-                  <!-- ------------------------->
-
-                </div>
-                <!-- aligned grid END -->
-
-              </div>
-              <!-- eight wide END -->
-
-            </div>
-            <!-- GRID END-->
-
-          </div>
-          <!-- ACCORDION Referral Section END -->
-
-        </div>
-        <!-- ACCORDION END -->
-
-      </div>
-      <!-- center aligned grid END -->
-
-
-            <td class="ui center aligned">
-              <h2 class="ui center aligned">
-      
-                <div id="temp-ajax-msg"></div>
-      
-              </h2>
-            </td>
-
 
       <!--------------------------------------------------------------------------------->
       <!------- SCRIPTING TEMP LOCATION ------------------------------------------------->
@@ -848,6 +864,9 @@
           modal = $(this).attr('data-modal');
           $('#'+modal+'.modal').modal("setting", {
             closable: false,
+            detachable: false,
+            observeChanges:true,
+            height: 500px !important,
             onApprove: function () {
               return false;
             }
@@ -922,11 +941,12 @@
 
               // set on page load (from login page thru the drupal module)
 
+
   var sfUnit = document.getElementById("sfUnit").dataset.value;
   var sfServicePoint = document.getElementById("sfServicePoint").dataset.value;
 
-  sfUnit = sfUnit.replace(" ", " <cr>");
-  sfServicePoint = sfServicePoint.replace(" ", " <cr>");
+  sfUnit = sfUnit.replace(/ /g, " <br>");
+  sfServicePoint = sfServicePoint.replace(/ /g, " <br>");
 
 
 //  sfUnit = "dfgdfg";
@@ -940,7 +960,8 @@
               document.getElementById('result').className = $sfUnitColor;
 
               // set Service Point name
-              $("#servicePoint").html( document.getElementById("sfServicePoint").dataset.value );
+              $("#servicePoint").html( sfServicePoint );
+//              $("#servicePoint").html( document.getElementById("sfServicePoint").dataset.value );
 //              $("#servicePoint").html("asdasd");
 
               // set Service Point color
@@ -968,10 +989,11 @@
         ;
 
 
-var sfUnit = document.getElementById("sfUnit").dataset.value;
-var sfUnitColor = document.getElementById("sfUnitColor").dataset.value;
-var sfServicePoint = document.getElementById("sfServicePoint").dataset.value;
-
+$('.combo.dropdown')
+  .dropdown({
+    action: 'combo'
+  })
+;
 
 
 

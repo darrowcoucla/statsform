@@ -222,7 +222,7 @@
           font-style: normal;
           font-weight: bold;
           box-shadow: 0px 0px 0px 1px transparent inset;
-          z-index: 4444;
+          z-index: 8888;
         }
 
         .ui.buttons .and[data-text]:before {
@@ -238,13 +238,27 @@
         .ui.fluid.buttons .and:after {
           display: none;
         }
+        .ui.borderless.column {
+          background-color: rgba(255, 255, 255, 0.0);
+          border-color: black;
+          border-radius: 8px;
+          border: 1px;
+          margin-bottom: 15px;
+        }
+        .ui.message {
+          background-color: rgba(255, 255, 255, 0.0);
+          border-style: none;
+          border-style: hidden;
+          border-radius: 8px;
+        }
         .ui.buttons {
-          background-color: rgba(255, 255, 255, 0.7);
+          background-color: rgba(255, 255, 255, 0.75);
           border-radius: 8px;
         }
         .ui.button:hover {
           font-weight: bold;
-          font-color: #ffffff;
+          color: rgba(123, 255, 255, 0.8);
+          font-color: #1122ff;
         }
       </style>
 
@@ -299,15 +313,15 @@
               </div>
     
               <div class="actions">
-                <div class="ui approve button" data-value="Science and Engineering Library">
+                <div class="ui approve button" data-value="UCLA SEL Library">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">Science and Engineering Library</h2>
+                        <h2 class="ui aligned inverted header">UCLA SEL Library</h2>
                       </div>
                       <img src="/<?php print( $page['sf_path'] ); ?>/img/sel_00.png">
                       <div class="ui large label">
-                        <center>Science and Engineering Library</center>
+                        <center>UCLA SEL Library</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>Providing service since 1937&nbsp;</span>
@@ -753,9 +767,10 @@
       <div class="ui main stackable grid container">
         <div class="three column row">
 
-          <div class="column">
 
-            <div class="ui icon warning message">
+          <div class="ui column">
+
+            <div class="ui icon message">
               <i class="university icon"></i>
               <div class="content">
                 <div class="header" align="left">
@@ -767,17 +782,18 @@
 
             <div class="content">
               <div class="ui fluid buttons">
-                <button data-modal="modal3" class="show ui basic blue huge  button" id="result" name="result">Choose <br>Library <br>Unit</button>
+                <button data-modal="modal3" class="show ui basic blue button" id="result" name="result">Choose <br>Library <br>Unit</button>
                 <div class="and" style="height: 4.57142857em"></div>
-                <button data-modal="modal4" class="show ui basic black huge  button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
+                <button data-modal="modal4" class="show ui basic black button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
               </div>
             </div>
 
           </div>
 
+
           <div class="column">
 
-            <div class="ui icon warning message">
+            <div class="ui icon message">
               <i class="users icon"></i>
               <div class="content">
                 <div class="header" align="left">
@@ -789,19 +805,19 @@
 
             <div class="content">
               <div class="ui fluid buttons">
-                <button data-modal="modal6" class="show ui basic orange   button" id="statsformLogin" name="statsformLogin">Choose <br>Single <br>Login</button>
+                <!-- dhc - dont double huge the buttons! -->
+                <button data-modal="modal6" class="show ui basic orange button" id="statsformLogin" name="statsformLogin">Choose <br>Single <br>Login</button>
                 <div class="or" style="height: 4.57142857em"></div>
-                <button data-modal="modal5" class="show ui basic blue   button" id="unitGroup" name="unitGroup">Choose <br>Group <br>Login</button>
+                <button data-modal="modal5" class="show ui basic blue button" id="unitGroup" name="unitGroup">Choose <br>Group <br>Login</button>
               </div>
             </div>
 
-<!-- dhc - dont double huge the buttons! -->
-
           </div>
+
 
           <div class="column">
 
-            <div class="ui icon warning message">
+            <div class="ui icon message">
               <i class="lock icon"></i>
               <div class="content">
                 <div class="header">
@@ -812,13 +828,17 @@
             </div>
 
             <div class="content">
-              <button class=" ui positive  fluid button" id="submit0"> <h1 > SUBMIT </h1> </button>
+              <div class="ui massive fluid buttons">
+                <div class="show ui basic green button" id="submit0" name="submit0">Submit</div>
+              </div>
             </div>
 
           </div>
 
+
         </div>
       </div>
+
 
       <!--------------------------------------------------------------------------------->
       <!------- SCRIPTING TEMP LOCATION ------------------------------------------------->
@@ -845,7 +865,7 @@
               document.getElementById('result').className = 'show ui red button';
               $(".ui.modal").modal("hide");
               break;
-            case 'Science and Engineering Library':
+            case 'UCLA SEL Library':
               $("#result").html("UCLA <br>SEL <br>Library");
               document.getElementById('result').className = 'show ui blue button';
               $(".ui.modal").modal("hide");
