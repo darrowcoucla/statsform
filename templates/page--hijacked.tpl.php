@@ -273,10 +273,10 @@
 
     </head>
     <body>
-      <!-- MODAL #3 -->
-      <!-- MODAL #3 -->
-      <!-- MODAL #3 -->
-      <div class="ui sp united large modal" id="modal3">
+      <!-- MODAL #1 -->
+      <!-- MODAL #1 -->
+      <!-- MODAL #1 -->
+      <div class="ui sp united large modal" id="modal1">
         <div class="header">
           Please select a main location
         </div>
@@ -413,7 +413,7 @@
       <!-- modal #2 -->
       <!-- modal #2 -->
       <!-- modal #2 -->
-      <div class="ui united large modal" id="modal4">
+      <div class="ui united large modal" id="modal2">
         <div class="header">
           Please pick a service point
         </div>
@@ -542,231 +542,10 @@
       <!-- MODAL #2 END-->
 
 
-      <!-- modal #5 -->
-      <!-- modal #5 -->
-      <!-- modal #5 -->
-      <div class="ui united large modal" id="modal5">
-        <div class="header">
-          Please pick a User Group
-        </div>
-        <div class="content">
-          <div id="libraryChoice">
-            <div class="ui three stackable link cards" id="albums">
-      
-              <div class="actions">
-                <div class="ui approve button" data-value="Group-A">
-                  <div class="ui card">
-                    <div class="blurring dimmable image">
-                      <div class="ui center">
-                        <i class="huge spy icon"></i>
-                      </div>
-                      <div class="ui fluid large label">
-                        <center>Group-A</center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="actions">
-                <div class="ui approve button" data-value="East Group">
-                  <div class="ui card">
-                    <div class="blurring dimmable image">
-                      <div class="ui center">
-                        <i class="huge doctor icon"></i>
-                      </div>
-                      <div class="ui fluid large label">
-                        <center>East Group</center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="actions">
-                <div class="ui approve button" data-value="The Big Group">
-                  <div class="ui card">
-                    <div class="blurring dimmable image">
-                      <div class="ui center">
-                        <i class="huge child icon"></i>
-                      </div>
-                      <div class="ui fluid large label">
-                        <center>The Big Group</center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="actions">
-                <div class="ui approve button" data-value="The Large Group">
-                  <div class="ui card">
-                    <div class="blurring dimmable image">
-                      <div class="ui center">
-                        <i class="huge users icon"></i>
-                      </div>
-                      <div class="ui fluid large label">
-                        <center>The Large Group</center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="actions">
-                <div class="ui approve button" data-value="Test Group">
-                  <div class="ui card">
-                    <div class="blurring dimmable image">
-                      <div class="ui center">
-                        <i class="huge thumbs outline up icon"></i>
-                      </div>
-                      <div class="ui fluid large label">
-                        <center>Test Group</center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="actions">
-                <div class="ui approve button" data-value="First Group">
-                  <div class="ui card">
-                    <div class="blurring dimmable image">
-                      <div class="ui center">
-                        <i class="huge comment outline icon"></i>
-                      </div>
-                      <div class="ui fluid large label">
-                        <center>First Group</center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="actions">
-                <div class="ui approve button" data-value="Group-A1">
-                  <div class="ui card">
-                    <div class="blurring dimmable image">
-                      <div class="ui center">
-                        <i class="huge idea icon"></i>
-                      </div>
-                      <div class="ui fluid large label">
-                        <center>Group-A1</center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="actions">
-                <div class="ui approve button" data-value="Morning Group">
-                  <div class="ui card">
-                    <div class="blurring dimmable image">
-                      <div class="ui center">
-                        <i class="huge book icon"></i>
-                      </div>
-                      <div class="ui fluid large label">
-                        <center>Morning Group</center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="actions">
-                <div class="ui approve button" data-value="Night Group">
-                  <div class="ui card">
-                    <div class="blurring dimmable image">
-                      <div class="ui center">
-                        <i class="huge paw icon"></i>
-                      </div>
-                      <div class="ui fluid large label">
-                        <center>Night Group</center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-            </div>
-          </div>
-        </div>
-
-        <div class="actions">
-          <div class="ui black deny button">
-            Cancel
-          </div>
-        </div>
-
-      </div>
-      <!-- MODAL #5 END-->
-
-      <!-- modal #6 -->
-      <!-- modal #6 -->
-      <!-- modal #6 -->
-      <div class="ui united large modal" id="modal6">
-        <div class="header">
-          Please pick a Login Provider
-        </div>
-        <div class="content">
-          <div id="libraryChoice">
-            <div class="ui three stackable link cards" id="albums">
-      
-              <div class="actions">
-                <div class="ui approve button" data-value="UCLA Login">
-                  <div class="ui card">
-
-                    <div class="image">
-                      <img src="/<?php print( $page['sf_path'] ); ?>/img/b_ucla.jpg">
-                    </div>
-
-                    <div class="blurring dimmable image">
-                      <div class="ui fluid large label">
-                        <center>UCLA Login</center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="actions">
-                <div class="ui approve disabled button" data-value="Future Login">
-                  <div class="ui card">
-
-                    <div class="image">
-                      <img src="/<?php print( $page['sf_path'] ); ?>/img/social-icons2.png">
-                    </div>
-
-                    <div class="blurring dimmable image">
-                      <div class="ui fluid large label">
-                        <center>Future Login</center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="actions">
-          <div class="ui black deny button">
-            Cancel
-          </div>
-        </div>
-
-      </div>
-      <!-- MODAL #5 END-->
-
       <!-- HEADER -->
       <!-- HEADER -->
       <!-- HEADER -->
       <div class="ui stackable grid container">
-        <div class="row">
-          <div class="column">&nbsp;
-          </div>
-        </div>
         <div class="row">
           <div class="column">&nbsp;
           </div>
@@ -779,9 +558,9 @@
           <div class="ui column">
             <div class="content">
               <div class="ui fluid buttons">
-                <button data-modal="modal3" class="show ui basic blue button" id="result" name="result">Choose <br>Library <br>Unit</button>
+                <button data-modal="modal1" class="show ui basic blue button" id="result" name="result">Choose <br>Library <br>Unit</button>
                 <div class="and" style="height: 4.57142857em"></div>
-                <button data-modal="modal4" class="show ui basic black button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
+                <button data-modal="modal2" class="show ui basic black button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
               </div>
             </div>
           </div>
@@ -810,43 +589,25 @@
 
           <div class="ui column">
             <div class="content">
-
-
-
-<div class="ui massive fluid buttons">
-  <div class="ui sfWhite button">Hi Darrow</div>
-  <div class="ui combo top right pointing dropdown icon sfWhite button">
-    <i class="dropdown icon"></i>
-    <div class="menu">
-      <div class="item"><i class="user icon"></i> You are logged in as Darrow Cole</div>
-      <div class="item"><i class="edit icon"></i> Logout</div>
-    </div>
-  </div>
-</div>
-
-
-
-
+              <div class="ui massive fluid buttons">
+                <div class="ui sfWhite button">Hi Darrow</div>
+                <div class="ui combo top right pointing dropdown icon sfWhite button">
+                  <i class="dropdown icon"></i>
+                  <div class="menu">
+                    <div class="item"><i class="user icon"></i> You are logged in as Darrow Cole</div>
+                    <div class="item"><i class="edit icon"></i> Logout</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
       </div>
+      <!-- HEADER END -->
+      <!-- HEADER END -->
+      <!-- HEADER END -->
+
 
       <div id="statsformToken" data-value="<?php print( $page['variables'] ); ?>">
       <div id="sfUnit" data-value="<?php print( $page['sfUnit'] ); ?>">
@@ -854,6 +615,64 @@
       <div id="sfServicePoint" data-value="<?php print( $page['sfServicePoint'] ); ?>">
       <div id="sfServicePointColor" data-value="<?php print( $page['sfServicePointColor'] ); ?>">
       <div id="statsformPath" data-value="<?php print( $page['sf_path'] ); ?>">
+
+
+      <!-- BODY -->
+      <!-- BODY -->
+      <!-- BODY -->
+      <div class="ui stackable grid container">
+        <div class="row">
+          <div class="column">&nbsp;
+          </div>
+        </div>
+      </div>
+
+      <div class="ui main stackable grid container">
+        <div class="one column row">
+
+          <div class="ui column">
+            <div class="content">
+              <div class="ui fluid buttons">
+              <div class="ui two item stackable tabs menu">
+                <a class="active item" data-tab="overview">Overview</a>
+                <a class="item" data-tab="test">Test</a>
+              </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="ui main stackable grid container">
+        <div class="one column row">
+
+          <div class="ui column">
+            <div class="content">
+              <div class="ui active tab" data-tab="overview">
+                <h2 class="ui dividing header">What's In Our Reset</h2>
+                <p>Semantic's default theme includes the latest <a href="http://necolas.github.io/normalize.css/">Normalize CSS</a> to provide a base line HTML reset. In addition, Semantic UI requires a <b>Box-sizing</b> reset, to make sure that elements handle width definitions in the same way.</p>
+                <h2 class="ui dividing header">Reset Options</h2>
+                <p>The <b>basic</b> themes <b>only</b> includes the required <code>box-sizing</code> reset and nothing else. The <b>resetcss</b> theme provides a version of <a href="http://meyerweb.com/eric/tools/css/reset/">Reset CSS</a>, a less opinionated CSS reset.</p>
+              </div>
+
+              <div class="ui tab" data-tab="test">
+                <h2 class="ui dividing header">In addition</h2>
+                <p>lock caching is inactive because you have enabled modules defining content access restrictions.</p>
+                <h2 class="ui dividing header">the required</h2>
+                <p>External resources can be optimized automatically, which can reduce both the size and number of requests made to your website.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- BODY END -->
+      <!-- BODY END -->
+      <!-- BODY END -->
+
+
+
 
       <!--------------------------------------------------------------------------------->
       <!------- SCRIPTING TEMP LOCATION ------------------------------------------------->
@@ -864,9 +683,6 @@
           modal = $(this).attr('data-modal');
           $('#'+modal+'.modal').modal("setting", {
             closable: false,
-            detachable: false,
-            observeChanges:true,
-            height: 500px !important,
             onApprove: function () {
               return false;
             }
@@ -874,62 +690,62 @@
         }).on("click", ".ui.button", function () {
           switch ($(this).data("value")) {
             case 'UCLA Powell Library':
-              $("#result").html("UCLA<br>Powell<br>Library");
+              $("#result").html("UCLA <br>Powell <br>Library");
               document.getElementById('result').className = 'show ui green button';
               $(".ui.modal").modal("hide");
               break;
             case 'Young Research Library':
-              $("#result").html("Young<br>Research<br>Library");
+              $("#result").html("Young <br>Research <br>Library");
               document.getElementById('result').className = 'show ui red button';
               $(".ui.modal").modal("hide");
               break;
-            case 'Science and Engineering Library':
-              $("#result").html("UCLA<br>SEL<br>Library");
+            case 'UCLA SEL Library':
+              $("#result").html("UCLA <br>SEL <br>Library");
               document.getElementById('result').className = 'show ui blue button';
               $(".ui.modal").modal("hide");
               break;
             case 'UCLA Music Library':
-              $("#result").html("UCLA<br>Music<br>Library");
+              $("#result").html("UCLA <br>Music <br>Library");
               document.getElementById('result').className = 'show ui yellow button';
               $(".ui.modal").modal("hide");
               break;
             case 'UCLA Biomedical Library':
-              $("#result").html("UCLA<br>Biomedical<br>Library");
+              $("#result").html("UCLA <br>Biomedical <br>Library");
               document.getElementById('result').className = 'show ui purple button';
               $(".ui.modal").modal("hide");
               break;
             case 'UCLA Arts Library':
-              $("#result").html("UCLA<br>Arts<br>Library");
+              $("#result").html("UCLA <br>Arts <br>Library");
               document.getElementById('result').className = 'show ui pink button';
               $(".ui.modal").modal("hide");
               break;
             case 'The Circulation Desk':
-              $("#servicePoint").html("The<br>Circulation<br>Desk");
+              $("#servicePoint").html("The <br>Circulation <br>Desk");
               document.getElementById('servicePoint').className = 'show ui black button';
               $(".ui.modal").modal("hide");
               break;
             case 'Science and Engineering Library Service':
-              $("#servicePoint").html("SEL<br>Library<br>Service");
+              $("#servicePoint").html("SEL <br>Library <br>Service");
               document.getElementById('servicePoint').className = 'show ui brown button';
               $(".ui.modal").modal("hide");
               break;
             case 'A-Level Service Desk':
-              $("#servicePoint").html("A-Level<br>Service<br>Desk");
+              $("#servicePoint").html("A-Level <br>Service <br>Desk");
               document.getElementById('servicePoint').className = 'show ui brown button';
               $(".ui.modal").modal("hide");
               break;
             case 'The Information Desk':
-              $("#servicePoint").html("The<br>Information<br>Desk");
+              $("#servicePoint").html("The <br>Information <br>Desk");
               document.getElementById('servicePoint').className = 'show ui gray button';
               $(".ui.modal").modal("hide");
               break;
             case 'The Cashier Window':
-              $("#servicePoint").html("The<br>Cashier<br>Window");
+              $("#servicePoint").html("The <br>Cashier <br>Window");
               document.getElementById('servicePoint').className = 'show ui olive button';
               $(".ui.modal").modal("hide");
               break;
             case 'Phone Answering Station':
-              $("#servicePoint").html("Phone<br>Answering<br>Station");
+              $("#servicePoint").html("Phone <br>Answering <br>Station");
               document.getElementById('servicePoint').className = 'show ui pink button';
               $(".ui.modal").modal("hide");
               break;
@@ -947,6 +763,13 @@
 
   sfUnit = sfUnit.replace(/ /g, " <br>");
   sfServicePoint = sfServicePoint.replace(/ /g, " <br>");
+
+
+/// Tabs
+$(document).ready(function() {
+  $('.menu .item').tab();
+});
+
 
 
 //  sfUnit = "dfgdfg";
