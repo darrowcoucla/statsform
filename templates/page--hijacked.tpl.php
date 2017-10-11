@@ -43,7 +43,7 @@
           });
 
           $('#inputDatetime').pickadate({
-            format: 'mm/dd/yy',
+            format: 'dd mmm',
             formatSubmit: 'dd-yyyy-mm',
             hiddenName: true,
             selectYears: 2,
@@ -542,6 +542,19 @@
       <!-- MODAL #2 END-->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
       <!-- HEADER -->
       <!-- HEADER -->
       <!-- HEADER -->
@@ -552,12 +565,14 @@
         </div>
       </div>
 
-      <div class="ui main stackable grid container">
-        <div class="four column row">
+      <div class="ui main stackable middle aligned grid container">
+        <div class="sixteen column row">
 
-          <div class="ui column">
+
+
+          <div class="ui five wide column">
             <div class="content">
-              <div class="ui fluid buttons">
+              <div class="ui buttons">
                 <button data-modal="modal1" class="show ui basic blue button" id="result" name="result">Choose <br>Library <br>Unit</button>
                 <div class="and" style="height: 4.57142857em"></div>
                 <button data-modal="modal2" class="show ui basic black button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
@@ -565,48 +580,89 @@
             </div>
           </div>
 
-          <div class="column">
-            <div class="content">
-              <div class="ui center aligned">
-                <div class="ui massive fluid input right icon">
-                  <i id="iconCal" class="large calendar icon"></i>
-                  <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-value="dhc">
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="column">
-            <div class="content">
-              <div class="ui center aligned">
-                <div class="ui massive fluid input right icon">
-                  <i id="iconTim" class="large clock icon"></i>
-                  <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="ui column">
-            <div class="content">
-              <div class="ui massive fluid buttons">
-                <div class="ui sfWhite button">Hi Darrow</div>
-                <div class="ui combo top right pointing dropdown icon sfWhite button">
-                  <i class="dropdown icon"></i>
-                  <div class="menu">
-                    <div class="item"><i class="user icon"></i> You are logged in as Darrow Cole</div>
-                    <div class="item"><i class="edit icon"></i> Logout</div>
+
+          <div class="ui eleven wide column">
+<div class="ui main stackable middle aligned grid container">
+<div class="sixteen column row">
+                <div class="ui four wide column">
+                  <div class="content">
+                    <div class="ui center aligned">
+                      <div class="ui fluid input right icon">
+                        <i id="iconCal" class="large calendar icon"></i>
+                        <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-      value="dhc">
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+
+                <div class="ui four wide column">
+                  <div class="content">
+                    <div class="ui center aligned">
+                      <div class="ui fluid input right icon">
+                        <i id="iconTim" class="large clock icon"></i>
+                        <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ui eight wide column">
+                  <div class="content">
+
+<div class="ui selection top right pointing dropdown dropdown">
+  <input name="gender" type="hidden">
+  <div class="text">Hi Darrow</div>
+  <i class="dropdown icon"></i>
+  <div class="menu icon">
+      <div class="item disabled" data-value="0"><center><i class="user icon"></i> You are logged in as: Darrow Cole</center></div>
+      <div class="item" data-value="1"><i class="edit icon"></i> Logout</div>
+  </div>
+ </div>
+
+                  </div>
+                </div>
+</div>
+</div>
+          </div>
+
+
+
             </div>
           </div>
 
-        </div>
-      </div>
+
+
+
       <!-- HEADER END -->
       <!-- HEADER END -->
       <!-- HEADER END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       <div id="statsformToken" data-value="<?php print( $page['variables'] ); ?>">
@@ -1011,10 +1067,17 @@ $('.combo.dropdown')
   })
 ;
 
+$('.clear.example .button')
+  .on('click', function() {
+    $('.clear.example .ui.dropdown')
+      .dropdown('clear')
+    ;
+  })
+;
 
-
-
-
+$('.ui.dropdown')
+  .dropdown()
+;
 
 
         /// ajax section
