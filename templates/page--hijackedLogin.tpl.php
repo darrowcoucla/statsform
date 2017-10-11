@@ -797,7 +797,7 @@
               <i class="users icon"></i>
               <div class="content">
                 <div class="header" align="left">
-                  Choose Login Method:<br>
+                  Choose Login:<br>
                   Single or Group
                 </div>
               </div>

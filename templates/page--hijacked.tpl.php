@@ -634,8 +634,8 @@
             <div class="content">
               <div class="ui fluid buttons">
               <div class="ui two item stackable tabs menu">
-                <a class="active item" data-tab="overview">Overview</a>
-                <a class="item" data-tab="test">Test</a>
+                <a class="active item" data-tab="overview">Quick Questions</a>
+                <a class="item" data-tab="test">Research Assistance</a>
               </div>
               </div>
             </div>
@@ -645,25 +645,218 @@
       </div>
 
       <div class="ui main stackable grid container">
-        <div class="one column row">
+        <div class="sixteen column row">
 
-          <div class="ui column">
+
+
+          <div class="ui sixteen wide column">
             <div class="content">
+
+
               <div class="ui active tab" data-tab="overview">
-                <h2 class="ui dividing header">What's In Our Reset</h2>
-                <p>Semantic's default theme includes the latest <a href="http://necolas.github.io/normalize.css/">Normalize CSS</a> to provide a base line HTML reset. In addition, Semantic UI requires a <b>Box-sizing</b> reset, to make sure that elements handle width definitions in the same way.</p>
-                <h2 class="ui dividing header">Reset Options</h2>
-                <p>The <b>basic</b> themes <b>only</b> includes the required <code>box-sizing</code> reset and nothing else. The <b>resetcss</b> theme provides a version of <a href="http://meyerweb.com/eric/tools/css/reset/">Reset CSS</a>, a less opinionated CSS reset.</p>
+
+
+
+
+
+          <div class="active content">
+            <div class="ui equal width aligned grid">
+
+              <div class="eight wide column"> 
+                <div class="ui fluid card withCount">
+                  <div class="content"> 
+                    <div class="ui inverted segment left floated" id="directions"> 
+                      <div class="ui tiny inverted statistics left floated"> 
+                        <div class="statistic">
+                          <div class="value" id="directional">0</div> 
+                          <div class="label"> Count </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/directions.png">
+                    <div class="header"> Directional </div> 
+                    <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div></div>
+                </div>
               </div>
 
-              <div class="ui tab" data-tab="test">
-                <h2 class="ui dividing header">In addition</h2>
-                <p>lock caching is inactive because you have enabled modules defining content access restrictions.</p>
-                <h2 class="ui dividing header">the required</h2>
-                <p>External resources can be optimized automatically, which can reduce both the size and number of requests made to your website.</p>
+              <div class="eight wide column"> 
+                <div class="ui fluid card withCount">
+                  <div class="content">
+                    <div class="ui inverted segment left floated" id="lookup">
+                      <div class="ui tiny inverted statistics left floated"> 
+                        <div class="statistic">
+                          <div class="value" id="lookUp">0</div> 
+                          <div class="label"> Count </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
+                    <div class="header"> Look Up Known Item </div>
+                    <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div></div> 
+                </div>
               </div>
+
+              <div class="eight wide column"> 
+                <div class="ui fluid card withCount">
+                  <div class="content">
+                    <div class="ui inverted segment left floated" id="policy">
+                      <div class="ui tiny inverted statistics left floated"> 
+                        <div class="statistic">
+                          <div class="value" id="policyVal">0</div> 
+                          <div class="label"> Count </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/policy.png"> 
+                    <div class="header"> Policy & Operations</div>
+                    <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="eight wide column"> 
+                <div class="ui fluid card withCount">
+                  <div class="content">
+                    <div class="ui inverted segment left floated" id="research">
+                      <div class="ui tiny inverted statistics left floated"> 
+                        <div class="statistic">
+                          <div class="value" id="referral">0</div> 
+                          <div class="label"> Count </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/research.png">
+                    <div class="header"> Referral </div>
+                    <div class="meta"> Referral to advance research support, library location, campus support, etc. </div>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="eight wide column"> 
+                <div class="ui fluid card withCount">
+                  <div class="content">
+                    <div class="ui inverted segment left floated" id="technical">
+                      <div class="ui tiny inverted statistics left floated"> 
+                        <div class="statistic">
+                          <div class="value" id="technicalVal">0</div> 
+                          <div class="label"> Count </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/technical.png"> 
+                    <div class="header"> Technical Assistance </div>
+                    <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="eight wide column"> 
+                <div class="ui fluid card ">
+                  <button style = "height: 120px" class=" ui button" id="submit1"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
+                </div>
+              </div>
+
             </div>
           </div>
+
+
+
+
+
+
+
+
+
+              </div>
+
+
+              <div class="ui tab" data-tab="test">
+
+
+
+
+
+          <div class="active content">
+            <div class="ui equal width aligned grid">
+
+              <div class="eight wide column"> 
+                <div class="ui fluid card withCount">
+                  <div class="content">
+                    <div class="ui inverted segment left floated" id="policy">
+                      <div class="ui tiny inverted statistics left floated"> 
+                        <div class="statistic">
+                          <div class="value" id="policyVal">0</div> 
+                          <div class="label"> Count </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/policy.png"> 
+                    <div class="header"> Policy & Operations</div>
+                    <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="eight wide column"> 
+                <div class="ui fluid card withCount">
+                  <div class="content">
+                    <div class="ui inverted segment left floated" id="research">
+                      <div class="ui tiny inverted statistics left floated"> 
+                        <div class="statistic">
+                          <div class="value" id="referral">0</div> 
+                          <div class="label"> Count </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/research.png">
+                    <div class="header"> Referral </div>
+                    <div class="meta"> Referral to advance research support, library location, campus support, etc. </div>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="eight wide column"> 
+                <div class="ui fluid card withCount">
+                  <div class="content">
+                    <div class="ui inverted segment left floated" id="technical">
+                      <div class="ui tiny inverted statistics left floated"> 
+                        <div class="statistic">
+                          <div class="value" id="technicalVal">0</div> 
+                          <div class="label"> Count </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/technical.png"> 
+                    <div class="header"> Technical Assistance </div>
+                    <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="eight wide column"> 
+                <div class="ui fluid card ">
+                  <button style = "height: 120px" class=" ui button" id="submit1"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+              </div>
+
+
+            </div>
+          </div>
+
+
 
         </div>
       </div>
