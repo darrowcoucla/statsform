@@ -558,6 +558,8 @@
       <!-- HEADER -->
       <!-- HEADER -->
       <!-- HEADER -->
+
+      <!-- SPACER -->
       <div class="ui stackable grid container">
         <div class="row">
           <div class="column">&nbsp;
@@ -565,28 +567,42 @@
         </div>
       </div>
 
-      <div class="ui main stackable middle aligned grid container">
+      <!-- HEADER CONTENT -->
+      <div class="ui main stackable center aligned middle aligned grid container">
         <div class="sixteen column row">
 
-
-
-          <div class="ui five wide column">
+          <!-- OUTER LEFT COLUMN -->
+          <div class="ui seven wide column">
             <div class="content">
+        <div class="ui center aligned">
               <div class="ui buttons">
                 <button data-modal="modal1" class="show ui basic blue button" id="result" name="result">Choose <br>Library <br>Unit</button>
                 <div class="and" style="height: 4.57142857em"></div>
                 <button data-modal="modal2" class="show ui basic black button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
               </div>
+        </div>
             </div>
           </div>
 
+          <!-- OUTER RIGHT COLUMN -->
+          <div class="ui nine wide right floated column">
+            <div class="ui main stackable middle aligned grid container">
+              <div class="sixteen column row">
 
-
-
-          <div class="ui eleven wide column">
-<div class="ui main stackable middle aligned grid container">
-<div class="sixteen column row">
-                <div class="ui four wide column">
+                <!-- INNER LEFT COLUMN -->
+                <!-- large screen -->
+                <div class="ui four wide right floated column">
+                  <div class="content">
+                    <div class="ui center aligned">
+                      <div class="ui fluid input right icon">
+                        <i id="iconCal" class="large calendar icon"></i>
+                        <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-      value="dhc">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- tablet screen -->
+                <div class="ui four wide tablet only right floated column">
                   <div class="content">
                     <div class="ui center aligned">
                       <div class="ui fluid input right icon">
@@ -597,7 +613,20 @@
                   </div>
                 </div>
 
-                <div class="ui four wide column">
+                <!-- INNER CENTER COLUMN -->
+                <!-- large screen -->
+                <div class="ui four wide right floated column">
+                  <div class="content">
+                    <div class="ui center aligned">
+                      <div class="ui fluid input right icon">
+                        <i id="iconTim" class="large clock icon"></i>
+                        <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- tablet screen -->
+                <div class="ui four wide tablet only right floated column">
                   <div class="content">
                     <div class="ui center aligned">
                       <div class="ui fluid input right icon">
@@ -608,60 +637,32 @@
                   </div>
                 </div>
 
-                <div class="ui eight wide column">
+                <!-- INNER RIGHT COLUMN -->
+                <div class="ui four wide right floated column">
                   <div class="content">
-
-<div class="ui selection top right pointing dropdown dropdown">
-  <input name="gender" type="hidden">
-  <div class="text">Hi Darrow</div>
-  <i class="dropdown icon"></i>
-  <div class="menu icon">
-      <div class="item disabled" data-value="0"><center><i class="user icon"></i> You are logged in as: Darrow Cole</center></div>
-      <div class="item" data-value="1"><i class="edit icon"></i> Logout</div>
-  </div>
- </div>
-
+                    <div class="ui dropdown">
+                      <div class="text">Hi Darrow</div>
+                      <i class="dropdown icon"></i>
+                      <div class="menu icon">
+                          <div class="item disabled" data-value="0"><i class="user icon"></i>Darrow Cole</div>
+                          <div class="item" data-value="1"><i class="edit icon"></i> Logout</div>
+                      </div>
+                     </div>
                   </div>
                 </div>
-</div>
-</div>
+
+              </div> <!-- 16 column row -->
+            </div> <!-- grid container -->
           </div>
+          <!-- OUTER RIGHT COLUMN END -->
 
-
-
-            </div>
-          </div>
-
-
-
+        </div> <!-- 16 column row -->
+      </div> <!-- grid container -->
+      <!-- HEADER CONTENT END -->
 
       <!-- HEADER END -->
       <!-- HEADER END -->
       <!-- HEADER END -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
