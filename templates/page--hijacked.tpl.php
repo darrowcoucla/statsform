@@ -574,13 +574,23 @@
           <!-- OUTER LEFT COLUMN -->
           <div class="ui seven wide column">
             <div class="content">
-        <div class="ui center aligned">
-              <div class="ui buttons">
-                <button data-modal="modal1" class="show ui basic blue button" id="result" name="result">Choose <br>Library <br>Unit</button>
-                <div class="and" style="height: 4.57142857em"></div>
-                <button data-modal="modal2" class="show ui basic black button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
+              <div class="ui stackable grid container">
+                <div class="two column row">
+
+                  <div class="ui column">
+                    <div class="ui fluid buttons">
+                      <button data-modal="modal1" class="show ui basic blue button" id="result" name="result">Choose <br>Library <br>Unit</button>
+                    </div>
+                  </div>
+
+                  <div class="ui column">
+                    <div class="ui fluid buttons">
+                      <button data-modal="modal2" class="show ui basic black button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
+                    </div>
+                  </div>
+
+                </div>
               </div>
-        </div>
             </div>
           </div>
 
@@ -591,18 +601,7 @@
 
                 <!-- INNER LEFT COLUMN -->
                 <!-- large screen -->
-                <div class="ui four wide right floated column">
-                  <div class="content">
-                    <div class="ui center aligned">
-                      <div class="ui fluid input right icon">
-                        <i id="iconCal" class="large calendar icon"></i>
-                        <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-      value="dhc">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- tablet screen -->
-                <div class="ui four wide tablet only right floated column">
+                <div class="ui six wide right floated column">
                   <div class="content">
                     <div class="ui center aligned">
                       <div class="ui fluid input right icon">
@@ -615,18 +614,7 @@
 
                 <!-- INNER CENTER COLUMN -->
                 <!-- large screen -->
-                <div class="ui four wide right floated column">
-                  <div class="content">
-                    <div class="ui center aligned">
-                      <div class="ui fluid input right icon">
-                        <i id="iconTim" class="large clock icon"></i>
-                        <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- tablet screen -->
-                <div class="ui four wide tablet only right floated column">
+                <div class="ui six wide right floated column">
                   <div class="content">
                     <div class="ui center aligned">
                       <div class="ui fluid input right icon">

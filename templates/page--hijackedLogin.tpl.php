@@ -252,12 +252,14 @@
           border-radius: 8px;
         }
         .ui.buttons {
-          background-color: rgba(255, 255, 255, 0.75);
+          background-color: rgba(255, 255, 255, 1.0);
+          border-color: black;
           border-radius: 8px;
+          border: 1px;
         }
         .ui.button:hover {
           font-weight: bold;
-          color: rgba(123, 255, 255, 0.8);
+          color: rgba(255, 255, 255, 0.8);
           font-color: #1122ff;
         }
       </style>
@@ -767,7 +769,6 @@
       <div class="ui main stackable grid container">
         <div class="three column row">
 
-
           <div class="ui column">
 
             <div class="ui icon message">
@@ -779,17 +780,27 @@
                 </div>
               </div>
             </div>
-
             <div class="content">
-              <div class="ui fluid buttons">
-                <button data-modal="modal3" class="show ui basic blue button" id="result" name="result">Choose <br>Library <br>Unit</button>
-                <div class="and" style="height: 4.57142857em"></div>
-                <button data-modal="modal4" class="show ui basic black button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
+              <div class="ui stackable grid container">
+                <div class="two column row">
+
+                  <div class="ui column">
+                    <div class="ui fluid buttons">
+                      <button data-modal="modal3" class="show ui basic blue button" id="result" name="result">Choose <br>Library <br>Unit</button>
+                    </div>
+                  </div>
+
+                  <div class="ui column">
+                    <div class="ui fluid buttons">
+                      <button data-modal="modal4" class="show ui basic black button" id="servicePoint" name="servicePoint">Choose <br>Service <br>Point</button>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
 
           </div>
-
 
           <div class="column">
 
@@ -802,18 +813,23 @@
                 </div>
               </div>
             </div>
+            <div class="column">
+              <div class="ui stackable grid container">
+                <div class="one column row">
 
-            <div class="content">
-              <div class="ui fluid buttons">
-                <!-- dhc - dont double huge the buttons! -->
-                <button data-modal="modal6" class="show ui basic orange button" id="statsformLogin" name="statsformLogin">Choose <br>Single <br>Login</button>
-                <div class="or" style="height: 4.57142857em"></div>
-                <button data-modal="modal5" class="show ui basic blue button" id="unitGroup" name="unitGroup">Choose <br>Group <br>Login</button>
+                  <div class="ui column">
+                    <div class="ui fluid buttons">
+                      <!-- dhc - dont double huge the buttons! -->
+                      <button data-modal="modal6" class="show ui basic orange button" id="statsformLogin" name="statsformLogin">Choose <br>Single <br>Login</button>
+                      <div class="or" style="height: 4.57142857em"></div>
+                      <button data-modal="modal5" class="show ui basic blue button" id="unitGroup" name="unitGroup">Choose <br>Group <br>Login</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
           </div>
-
 
           <div class="column">
 
@@ -821,15 +837,25 @@
               <i class="lock icon"></i>
               <div class="content">
                 <div class="header">
-                  Go to the<br>
-                  login page<br>
+                  Go to the single or<br>
+                  group login page<br>
                 </div>
               </div>
             </div>
 
             <div class="content">
+            <div class="ui stackable grid container">
+              <div class="one column row">
+
+
+
               <div class="ui massive fluid buttons">
                 <div class="show ui basic green button" id="submit0" name="submit0">Submit</div>
+              </div>
+
+
+
+                </div>
               </div>
             </div>
 
@@ -919,63 +945,63 @@
             case 'Group-A':
               $("#unitGroup").html("Login with <br>Group-A");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic orange button';
+              document.getElementById('statsformLogin').className = 'show ui basic rgba(255, 255, 255, 0.15) button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'East Group':
               $("#unitGroup").html("Login with <br>East <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic orange button';
+              document.getElementById('statsformLogin').className = 'show ui basic rgba(255, 255, 255, 0.15) button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'The Big Group':
               $("#unitGroup").html("Login with <br>The Big <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic orange button';
+              document.getElementById('statsformLogin').className = 'show ui basic rgba(255, 255, 255, 0.15) button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'The Large Group':
               $("#unitGroup").html("Login with <br>The Large <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic orange button';
+              document.getElementById('statsformLogin').className = 'show ui basic rgba(255, 255, 255, 0.15) button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'Test Group':
               $("#unitGroup").html("Login with <br>Test <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic orange button';
+              document.getElementById('statsformLogin').className = 'show ui basic rgba(255, 255, 255, 0.15) button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'First Group':
               $("#unitGroup").html("Login with <br>First <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic orange button';
+              document.getElementById('statsformLogin').className = 'show ui basic rgba(255, 255, 255, 0.15) button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'Group-A1':
               $("#unitGroup").html("Login with <br>Group-A1");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic orange button';
+              document.getElementById('statsformLogin').className = 'show ui basic rgba(255, 255, 255, 0.15) button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'Morning Group':
               $("#unitGroup").html("Login with <br>Morning <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic orange button';
+              document.getElementById('statsformLogin').className = 'show ui basic rgba(255, 255, 255, 0.15) button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
             case 'Night Group':
               $("#unitGroup").html("Login with <br>Night <br>Group");
               document.getElementById('unitGroup').className = 'show ui positive button label';
-              document.getElementById('statsformLogin').className = 'show ui basic orange button';
+              document.getElementById('statsformLogin').className = 'show ui basic rgba(255, 255, 255, 0.15) button';
               $("#statsformLogin").html("Choose <br>Single <br>Login");
               $(".ui.modal").modal("hide");
               break;
@@ -983,7 +1009,7 @@
             case 'UCLA Login':
               $("#statsformLogin").html("Set to use <br>UCLA <br>Login");
               document.getElementById('statsformLogin').className = 'show ui positive button';
-              document.getElementById('unitGroup').className = 'show ui basic blue button label';
+              document.getElementById('unitGroup').className = 'show ui basic rgba(255, 255, 255, 0.15) button label';
               $("#unitGroup").html("Choose <br>Group <br>Login");
               $(".ui.modal").modal("hide");
               break;
@@ -991,8 +1017,11 @@
         });
 
         /// default setting - still needed?
-        document.getElementById('result').className = 'show ui basic red button';
-        document.getElementById('servicePoint').className = 'show ui basic black button';
+        document.getElementById('result').className = 'show ui rgba(255, 255, 255, 0.15) button';
+        document.getElementById('servicePoint').className = 'show ui rgba(255, 255, 255, 0.15) button';
+        document.getElementById('statsformLogin').className = 'show ui rgba(255, 255, 255, 0.15) button';
+        document.getElementById('unitGroup').className = 'show ui rgba(255, 255, 255, 0.15) button';
+        document.getElementById('submit0').className = 'show ui rgba(255, 255, 255, 0.15) button';
 
         $('.ui.accordion')
           .accordion()
