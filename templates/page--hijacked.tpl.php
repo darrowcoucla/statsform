@@ -13,16 +13,25 @@
 <!--
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
 -->
+      <script type="text/javascript" src="/<?php print( $page['sf_path'] ); ?>/templates/accordion.js"></script>
       <script type="text/javascript" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.tap.js"></script>
+<!--
+      <script type="text/javascript" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.accordion.js"></script>
+-->
+      <script type="text/javascript" src="/<?php print( $page['sf_path'] ); ?>/templates/jquery.touchSwipe.min.js"></script>
+
 
       <link rel="stylesheet" type="text/css" href="http://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.css">
       <link rel="stylesheet" type="text/css" href="http://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.date.css">
       <link rel="stylesheet" type="text/css" href="http://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.time.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css">
+<!--
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.css">
-
+-->
       <link rel="stylesheet" type="text/css" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.tap.css">
-
+<!--
+      <link rel="stylesheet" type="text/css" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.accordion.css">
+-->
       <link rel="stylesheet" type="text/css" href="/<?php print( $page['sf_path'] ); ?>/templates/responsive-full-background-image.css">
     
       <script type='text/javascript'>
@@ -677,7 +686,7 @@
 
           <div class="ui column">
             <div class="content">
-              <div class="ui fluid buttons">
+              <div class="ui buttons">
               <div class="ui two item stackable tabs menu">
                 <a class="active item" data-tab="overview">Quick Questions</a>
                 <a class="item" data-tab="test">Research Assistance</a>
@@ -719,8 +728,11 @@
                       </div>
                     </div>
                     <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/directions.png">
-                    <div class="header"> Directional </div> 
-                    <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div></div>
+                    <div class="ui left aligned">
+                      <div class="header"> Directional </div> 
+                      <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -735,9 +747,12 @@
                         </div>
                       </div>
                     </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
-                    <div class="header"> Look Up Known Item </div>
-                    <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div></div> 
+                    <div class="ui left aligned">
+                      <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
+                      <div class="header"> Look Up Known Item </div>
+                    </div>
+                    <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
+                  </div>
                 </div>
               </div>
 
@@ -753,8 +768,10 @@
                       </div>
                     </div>
                     <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/policy.png"> 
-                    <div class="header"> Policy & Operations</div>
-                    <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
+                    <div class="ui left aligned">
+                      <div class="header"> Policy & Operations</div>
+                      <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
+                    </div>
                   </div> 
                 </div>
               </div>
@@ -771,8 +788,10 @@
                       </div>
                     </div>
                     <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/research.png">
-                    <div class="header"> Referral </div>
-                    <div class="meta"> Referral to advance research support, library location, campus support, etc. </div>
+                    <div class="ui left aligned">
+                      <div class="header"> Referral </div>
+                      <div class="meta"> Referral to advance research support, library location, campus support, etc. </div>
+                    </div>
                   </div> 
                 </div>
               </div>
@@ -789,8 +808,10 @@
                       </div>
                     </div>
                     <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/technical.png"> 
-                    <div class="header"> Technical Assistance </div>
-                    <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
+                    <div class="ui left aligned">
+                      <div class="header"> Technical Assistance </div>
+                      <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
+                    </div>
                   </div> 
                 </div>
               </div>
