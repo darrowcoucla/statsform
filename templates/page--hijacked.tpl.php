@@ -18,8 +18,9 @@
 <!--
       <script type="text/javascript" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.accordion.js"></script>
 -->
+<!--
       <script type="text/javascript" src="/<?php print( $page['sf_path'] ); ?>/templates/jquery.touchSwipe.min.js"></script>
-
+-->
 
       <link rel="stylesheet" type="text/css" href="http://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.css">
       <link rel="stylesheet" type="text/css" href="http://amsul.ca/pickadate.js/vendor/pickadate/lib/themes/default.date.css">
@@ -29,9 +30,9 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.css">
 -->
       <link rel="stylesheet" type="text/css" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.tap.css">
-<!--
+
       <link rel="stylesheet" type="text/css" src="/<?php print( $page['sf_path'] ); ?>/templates/custom.accordion.css">
--->
+
       <link rel="stylesheet" type="text/css" href="/<?php print( $page['sf_path'] ); ?>/templates/responsive-full-background-image.css">
     
       <script type='text/javascript'>
@@ -681,100 +682,286 @@
         </div>
       </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <!-- data-tab="overview" -->
+              <div class="ui tab" data-tab="overview">
+
+
+
+
+
       <div class="ui main stackable grid container">
-        <div class="one column row">
+        <div class="three column row">
+                <!-- PAGE TOP CONTENT -->
+                <div class="ui main stackable center aligned middle aligned grid container">
+                  <div class="sixteen column row">
 
-          <div class="ui column">
-            <div class="content">
-              <div class="ui buttons">
-              <div class="ui two item stackable tabs menu">
-                <a class="active item" data-tab="overview">Quick Questions</a>
-                <a class="item" data-tab="test">Research Assistance</a>
-              </div>
-              </div>
-            </div>
-          </div>
+                    <!-- OUTER LEFT COLUMN -->
+                    <div class="ui four wide left floated column">
 
+                        <div class="ui buttons">
+                        <div class="ui two item stackable tabs menu">
+                          <a class="item" data-tab="overview">Quick Questions2</a>
+                          <a class="active item" data-tab="test_OFF">Research Assistance2</a>
+                        </div>
+                        </div>
+
+                    </div>
+                    <!-- OUTER RIGHT COLUMN END -->
+
+                  </div> <!-- 16 column row -->
+                </div> <!-- grid container -->
+                <!-- PAGE TOP CONTENT - END -->
         </div>
       </div>
 
       <div class="ui main stackable grid container">
         <div class="sixteen column row">
 
+          <div class="ui sixteen wide column">
+            <div class="content">
 
+<!--            <div class="ui active tab" data-tab="overview"> -->
+
+                <div class="active content">
+                  <div class="ui equal width aligned grid">
+
+                    <div class="eight wide column"> 
+                      <div class="ui fluid card withCount">
+                        <div class="content"> 
+                          <div class="ui inverted segment left floated" id="directions"> 
+                            <div class="ui tiny inverted statistics left floated"> 
+                              <div class="statistic">
+                                <div class="value" id="directional">0</div> 
+                                <div class="label"> Count </div>
+                              </div>
+                            </div>
+                          </div>
+                          <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/directions.png">
+                          <div class="ui left aligned">
+                            <div class="header"> Directional </div> 
+                            <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="eight wide column"> 
+                      <div class="ui fluid card withCount">
+                        <div class="content">
+                          <div class="ui inverted segment left floated" id="lookup">
+                            <div class="ui tiny inverted statistics left floated"> 
+                              <div class="statistic">
+                                <div class="value" id="lookUp">0</div> 
+                                <div class="label"> Count </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ui left aligned">
+                            <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
+                            <div class="header"> Look Up Known Item </div>
+                          </div>
+                          <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="eight wide column"> 
+                      <div class="ui fluid card withCount">
+                        <div class="content">
+                          <div class="ui inverted segment left floated" id="policy">
+                            <div class="ui tiny inverted statistics left floated"> 
+                              <div class="statistic">
+                                <div class="value" id="policyVal">0</div> 
+                                <div class="label"> Count </div>
+                              </div>
+                            </div>
+                          </div>
+                          <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/policy.png"> 
+                          <div class="ui left aligned">
+                            <div class="header"> Policy & Operations</div>
+                            <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
+
+                    <div class="eight wide column"> 
+                      <div class="ui fluid card withCount">
+                        <div class="content">
+                          <div class="ui inverted segment left floated" id="research">
+                            <div class="ui tiny inverted statistics left floated"> 
+                              <div class="statistic">
+                                <div class="value" id="referral">0</div> 
+                                <div class="label"> Count </div>
+                              </div>
+                            </div>
+                          </div>
+                          <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/research.png">
+                          <div class="ui left aligned">
+                            <div class="header"> Referral </div>
+                            <div class="meta"> Referral to advance research support, library location, campus support, etc. </div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
+
+                    <div class="eight wide column"> 
+                      <div class="ui fluid card withCount">
+                        <div class="content">
+                          <div class="ui inverted segment left floated" id="technical">
+                            <div class="ui tiny inverted statistics left floated"> 
+                              <div class="statistic">
+                                <div class="value" id="technicalVal">0</div> 
+                                <div class="label"> Count </div>
+                              </div>
+                            </div>
+                          </div>
+                          <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/technical.png"> 
+                          <div class="ui left aligned">
+                            <div class="header"> Technical Assistance </div>
+                            <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
+
+                    <div class="eight wide column"> 
+                      <div class="ui fluid card ">
+                        <button style = "height: 120px" class=" ui button" id="submit1"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- data-tab="overview" - END -->
+
+
+
+              <!-- data-tab="test_OFF" -->
+              <div class="ui active tab" data-tab="test_OFF">
+
+
+
+
+
+      <div class="ui main stackable grid container">
+        <div class="three column row">
+                <!-- PAGE TOP CONTENT -->
+      <!-- HEADER CONTENT -->
+      <div class="ui main stackable center aligned middle aligned grid container">
+        <div class="sixteen column row">
+
+          <!-- OUTER LEFT COLUMN -->
+          <div class="ui four wide left floated column">
+
+              <div class="ui buttons">
+              <div class="ui two item stackable tabs menu">
+                <a class="item" data-tab="overview">Quick Questions2</a>
+                <a class="active item" data-tab="test_OFF">Research Assistance2</a>
+              </div>
+              </div>
+
+
+          </div>
+          <!-- OUTER RIGHT COLUMN END -->
+
+
+          <!-- OUTER RIGHT COLUMN -->
+          <div class="ui nine wide right floated column">
+            <div class="ui main stackable middle aligned grid container">
+              <div class="sixteen column row">
+
+                <!-- INNER LEFT COLUMN -->
+                <!-- large screen -->
+                <div class="ui six wide right floated column">
+                  <div class="content">
+                    <div class="ui center aligned">
+                      <div class="ui fluid input right icon">
+                        <i id="iconCal" class="large calendar icon"></i>
+                        <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-      value="dhc">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- INNER CENTER COLUMN -->
+                <!-- large screen -->
+                <div class="ui six wide right floated column">
+                  <div class="content">
+                    <div class="ui center aligned">
+                      <div class="ui fluid input right icon">
+                        <i id="iconTim" class="large clock icon"></i>
+                        <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- INNER RIGHT COLUMN -->
+                <div class="ui four wide right floated column">
+                  <div class="content">
+                    <div class="ui dropdown">
+                      <div class="text">Hi Darrow</div>
+                      <i class="dropdown icon"></i>
+                      <div class="menu icon">
+                          <div class="item disabled" data-value="0"><i class="user icon"></i>Darrow Cole</div>
+                          <div class="item" data-value="1"><i class="edit icon"></i> Logout</div>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+
+              </div> <!-- 16 column row -->
+            </div> <!-- grid container -->
+          </div>
+          <!-- OUTER RIGHT COLUMN END -->
+
+        </div> <!-- 16 column row -->
+      </div> <!-- grid container -->
+      <!-- HEADER CONTENT END -->
+                <!-- PAGE TOP CONTENT - END -->
+        </div>
+      </div>
+
+      <div class="ui main stackable grid container">
+        <div class="sixteen column row">
 
           <div class="ui sixteen wide column">
             <div class="content">
 
-
-              <div class="ui active tab" data-tab="overview">
-
-
-
-
+<!--            <div class="ui active tab" data-tab="overview"> -->
 
           <div class="active content">
             <div class="ui equal width aligned grid">
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content"> 
-                    <div class="ui inverted segment left floated" id="directions"> 
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="directional">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
-                      </div>
-                    </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/directions.png">
-                    <div class="ui left aligned">
-                      <div class="header"> Directional </div> 
-                      <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content">
-                    <div class="ui inverted segment left floated" id="lookup">
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="lookUp">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ui left aligned">
-                      <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
-                      <div class="header"> Look Up Known Item </div>
-                    </div>
-                    <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content">
-                    <div class="ui inverted segment left floated" id="policy">
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="policyVal">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
-                      </div>
-                    </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/policy.png"> 
-                    <div class="ui left aligned">
-                      <div class="header"> Policy & Operations</div>
-                      <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
-                    </div>
-                  </div> 
-                </div>
-              </div>
 
               <div class="eight wide column"> 
                 <div class="ui fluid card withCount">
@@ -789,8 +976,9 @@
                     </div>
                     <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/research.png">
                     <div class="ui left aligned">
-                      <div class="header"> Referral </div>
-                      <div class="meta"> Referral to advance research support, library location, campus support, etc. </div>
+                      <div class="header"> Research Assistance </div>
+                      <div class="meta"> Help patron with research strategy, advice, overview of resources (drop-in). </div>
+
                     </div>
                   </div> 
                 </div>
@@ -817,33 +1005,44 @@
               </div>
 
               <div class="eight wide column"> 
-                <div class="ui fluid card ">
-                  <button style = "height: 120px" class=" ui button" id="submit1"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
+                <div class="ui fluid card withCount">
+                  <div class="content">
+                    <div class="ui inverted segment left floated" id="lookup">
+                      <div class="ui tiny inverted statistics left floated"> 
+                        <div class="statistic">
+                          <div class="value" id="lookUp">0</div> 
+                          <div class="label"> Count </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui left aligned">
+                      <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
+                      <div class="header"> Look Up Known Item </div>
+                    </div>
+                    <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
+                  </div>
                 </div>
               </div>
 
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-
+              <div class="eight wide column"> 
+                <div class="ui fluid card withCount">
+                  <div class="content"> 
+                    <div class="ui inverted segment left floated" id="directions"> 
+                      <div class="ui tiny inverted statistics left floated"> 
+                        <div class="statistic">
+                          <div class="value" id="directional">0</div> 
+                          <div class="label"> Count </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/directions.png">
+                    <div class="ui left aligned">
+                      <div class="header"> Directional </div> 
+                      <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-
-              <div class="ui tab" data-tab="test">
-
-
-
-
-
-          <div class="active content">
-            <div class="ui equal width aligned grid">
 
               <div class="eight wide column"> 
                 <div class="ui fluid card withCount">
@@ -857,44 +1056,10 @@
                       </div>
                     </div>
                     <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/policy.png"> 
-                    <div class="header"> Policy & Operations</div>
-                    <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
-                  </div> 
-                </div>
-              </div>
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content">
-                    <div class="ui inverted segment left floated" id="research">
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="referral">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
-                      </div>
+                    <div class="ui left aligned">
+                      <div class="header"> Policy & Operations</div>
+                      <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
                     </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/research.png">
-                    <div class="header"> Referral </div>
-                    <div class="meta"> Referral to advance research support, library location, campus support, etc. </div>
-                  </div> 
-                </div>
-              </div>
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content">
-                    <div class="ui inverted segment left floated" id="technical">
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="technicalVal">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
-                      </div>
-                    </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/technical.png"> 
-                    <div class="header"> Technical Assistance </div>
-                    <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
                   </div> 
                 </div>
               </div>
@@ -907,6 +1072,359 @@
 
             </div>
           </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- data-tab="overview" - END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="ui tab" data-tab="test_OFF_OFF">
+
+
+
+
+
+      <!-- HEADER CONTENT -->
+      <div class="ui main stackable center aligned middle aligned grid container">
+        <div class="sixteen column row">
+
+          <!-- OUTER LEFT COLUMN -->
+          <div class="ui four wide left floated column">
+
+              <div class="ui buttons">
+              <div class="ui two item stackable tabs menu">
+                <a class="item" data-tab="overview">Quick Questions2</a>
+                <a class="active item" data-tab="test_OFF">Research Assistance2</a>
+              </div>
+              </div>
+
+
+          </div>
+          <!-- OUTER RIGHT COLUMN END -->
+
+
+          <!-- OUTER RIGHT COLUMN -->
+          <div class="ui nine wide right floated column">
+            <div class="ui main stackable middle aligned grid container">
+              <div class="sixteen column row">
+
+                <!-- INNER LEFT COLUMN -->
+                <!-- large screen -->
+                <div class="ui six wide right floated column">
+                  <div class="content">
+                    <div class="ui center aligned">
+                      <div class="ui fluid input right icon">
+                        <i id="iconCal" class="large calendar icon"></i>
+                        <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-      value="dhc">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- INNER CENTER COLUMN -->
+                <!-- large screen -->
+                <div class="ui six wide right floated column">
+                  <div class="content">
+                    <div class="ui center aligned">
+                      <div class="ui fluid input right icon">
+                        <i id="iconTim" class="large clock icon"></i>
+                        <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- INNER RIGHT COLUMN -->
+                <div class="ui four wide right floated column">
+                  <div class="content">
+                    <div class="ui dropdown">
+                      <div class="text">Hi Darrow</div>
+                      <i class="dropdown icon"></i>
+                      <div class="menu icon">
+                          <div class="item disabled" data-value="0"><i class="user icon"></i>Darrow Cole</div>
+                          <div class="item" data-value="1"><i class="edit icon"></i> Logout</div>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+
+              </div> <!-- 16 column row -->
+            </div> <!-- grid container -->
+          </div>
+          <!-- OUTER RIGHT COLUMN END -->
+
+        </div> <!-- 16 column row -->
+      </div> <!-- grid container -->
+      <!-- HEADER CONTENT END -->
+
+
+
+
+
+
+        <div class="content">
+
+          <div class="ui equal width aligned grid">
+
+            <div class="eight wide column">
+              <div class="ui fluid card">
+                <div class="content">
+                  <img class="ui tiny image left floated" src="../../img/research.png"> 
+                  <div class="header"> Research Assistance </div>
+                  <div class="meta"> Help patron with research strategy, advice, overview of resources (drop-in). </div>
+                </div> 
+              </div>
+            </div>
+
+            <div class="eight wide column">
+              <div class="ui fluid card">
+                <div class="content">
+                  <img class="ui tiny image left floated" src="../../img/technical.png"> 
+                  <div class="header"> Technical Assistance </div>
+                  <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
+                </div> 
+              </div>
+            </div>
+
+            <div class="eight wide column">
+              <div class="ui fluid card">
+                <div class="content">
+                  <img class="ui tiny image left floated" src="../../img/lookup.png"> 
+                  <div class="header"> Look up Known Item </div>
+                  <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
+                </div> 
+              </div>
+            </div>
+
+            <div class="eight wide column">
+                    <div class="ui fluid card">
+                        <div class="content">
+                            <img class="ui tiny image left floated" src="../../img/directions.png"> 
+                            <div class="header"> Directional </div>
+                            <div class="meta"> Location or directions provided e.g. rooms, events, contact information, etc. </div>
+                        </div> 
+                    </div>
+            </div>
+
+            <div class="eight wide column">
+                    <div class="ui fluid card">
+                        <div class="content">
+                            <img class="ui tiny image left floated" src="../../img/policy.png"> 
+                            <div class="header"> Policy & Operations </div>
+                            <div class="meta"> Hours, access privileges, borrowing, space reservations, other policies. </div>
+                        </div> 
+                    </div>
+            </div>
+
+            <div class="eight wide column">
+                    <form class="ui form">
+
+                        <div class="field">
+                            <label>
+                                Question Topic
+                            </label>
+                            <input type="text" name="topic" placeholder="Add topic here." height="200">
+                        </div>
+
+                        <div class="grouped fields">
+                            <label for="referral">Referral?</label>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="referral" tabindex="0" class="hidden">
+                                    <label>Yes</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="referral" tabindex="0" class="hidden">
+                                    <label>No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>
+                                Department / Unit
+                            </label>
+                            <div class="ui selection dropdown">
+                                <input type="hidden" name="department">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">
+                                    Choose your department
+                                </div>
+                                <div class="menu">
+                                    <div class="item" data-value="none">N/A</div>
+                                    <div class="item" data-value="linguistics">Linguistics</div>
+                                    <div class="item" data-value="cs">Computer Science</div>
+                                    <div class="item" data-value="commstudies">Communications</div>
+                                    <div class="item" data-value="arts">Fine Arts</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Course / Section</label>
+                            <input type="text" name="course" placeholder="CRS###/SEC###">
+                        </div>
+                    </form>
+            </div>
+          </div>
+
+          <div class="ui equal width aligned grid">
+
+            <div class="eight wide column">
+              <div class="ui equal width aligned grid">
+
+                <div class="four wide column">
+                  <div class="ui inverted segment">
+                    <div class="ui tiny inverted statistics">
+                      <div class="statistic">
+                        <div class="value">
+                          0
+                        </div>
+                        <div class="label">
+                          People
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="four wide column">
+                  <div class="ui inverted segment">
+                    <div class="ui tiny inverted statistics">
+                      <div class="statistic">
+                        <div class="value">
+                          0
+                        </div>
+                        <div class="label">
+                          Minutes
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ui form">
+                  <div class="inline fields">
+                    <label>How did you help the patron?</label>
+                    <div class="field">
+                      <div class="ui radio checkbox">
+                        <input type="radio" name="frequency" checked="checked">
+                        <label>In-Person</label>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="ui radio checkbox">
+                        <input type="radio" name="frequency">
+                        <label>E-mail</label>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="ui radio checkbox">
+                        <input type="radio" name="frequency">
+                        <label>Telephone</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="eight wide column">
+                  <form class="ui form">
+
+                    <div class="grouped fields">
+                      <label for="status" style = "font-size: 30px">Patron Status</label>
+
+                      <div class="field">
+                        <div class="ui radio checkbox">
+                          <input type="radio" name="status" tabindex="0" checked="" class="hidden">
+                          <label>Unknown</label>
+                        </div>
+                      </div>
+
+                      <div class="field">
+                        <div class="ui radio checkbox">
+                          <input type="radio" name="status" tabindex="0" class="hidden">
+                          <label>UCLA undergrad</label>
+                        </div>
+                      </div>
+
+                      <div class="field">
+                        <div class="ui radio checkbox">
+                          <input type="radio" name="status" tabindex="0" class="hidden">
+                          <label>UCLA graduate student</label>
+                        </div>
+                      </div>
+
+                      <div class="field">
+                        <div class="ui radio checkbox">
+                          <input type="radio" name="status" tabindex="0" class="hidden">
+                          <label>UCLA faculty</label>
+                        </div>
+                      </div>
+
+                      <div class="field">
+                        <div class="ui radio checkbox">
+                          <input type="radio" name="status" tabindex="0" class="hidden">
+                          <label>UCLA researcher/other</label>
+                        </div>
+                      </div>
+
+                      <div class="field">
+                        <div class="ui radio checkbox">
+                          <input type="radio" name="status" tabindex="0" class="hidden">
+                          <label>UCLA alumnus/a</label>
+                        </div>
+                      </div>
+
+                      <div class="field">
+                        <div class="ui radio checkbox">
+                          <input type="radio" name="status" tabindex="0" class="hidden">
+                          <label>non-UCLA</label>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </form>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
 
 
 
@@ -1088,6 +1606,16 @@ $('.clear.example .button')
 $('.ui.dropdown')
   .dropdown()
 ;
+
+        $('.test.checkbox').checkbox('attach events', '.toggle.button');
+        $('.test.checkbox').checkbox('attach events', '.check.button', 'check');
+        $('.test.checkbox').checkbox('attach events', '.uncheck.button', 'uncheck');
+
+
+
+
+
+
 
 
         /// ajax section

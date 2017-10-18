@@ -86,6 +86,7 @@ function incrementCount(object) {
 }
 
 function editDirections() {
+alert("gfgf");
     /* Gather relevant elements. */
     var object =
         $('#directions')
