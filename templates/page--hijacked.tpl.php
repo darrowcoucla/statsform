@@ -287,6 +287,7 @@
       <!-- MODAL #1 -->
       <!-- MODAL #1 -->
       <div class="ui sp united large modal" id="modal1">
+
         <div class="header">
           Please select a main location
         </div>
@@ -294,7 +295,7 @@
         <div class="content">
           <div id="libraryChoice">
             <div class="ui three stackable link cards" id="albums">
-      
+    
               <div class="actions">
                 <div class="ui approve button" data-value="UCLA Powell Library">
                   <div class="ui card">
@@ -330,7 +331,7 @@
                   </div>
                 </div>
               </div>
-    
+      
               <div class="actions">
                 <div class="ui approve button" data-value="Science and Engineering Library">
                   <div class="ui card">
@@ -349,7 +350,7 @@
                   </div>
                 </div>
               </div>
-    
+
               <div class="actions">
                 <div class="ui approve button" data-value="UCLA Music Library">
                   <div class="ui card">
@@ -368,7 +369,7 @@
                   </div>
                 </div>
               </div>
-    
+
               <div class="actions">
                 <div class="ui approve button" data-value="UCLA Biomedical Library">
                   <div class="ui card">
@@ -387,7 +388,7 @@
                   </div>
                 </div>
               </div>
-    
+
               <div class="actions">
                 <div class="ui approve button" data-value="UCLA Arts Library">
                   <div class="ui card">
@@ -406,7 +407,7 @@
                   </div>
                 </div>
               </div>
-    
+  
             </div>
             <!-- albums END -->
 
@@ -424,9 +425,11 @@
       <!-- modal #2 -->
       <!-- modal #2 -->
       <div class="ui united large modal" id="modal2">
+
         <div class="header">
           Please pick a service point
         </div>
+
         <div class="content">
           <div id="libraryChoice">
             <div class="ui three stackable link cards" id="albums">
@@ -552,19 +555,6 @@
       <!-- MODAL #2 END-->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
       <!-- HEADER -->
       <!-- HEADER -->
       <!-- HEADER -->
@@ -610,7 +600,6 @@
               <div class="sixteen column row">
 
                 <!-- INNER LEFT COLUMN -->
-                <!-- large screen -->
                 <div class="ui six wide right floated column">
                   <div class="content">
                     <div class="ui center aligned">
@@ -623,7 +612,6 @@
                 </div>
 
                 <!-- INNER CENTER COLUMN -->
-                <!-- large screen -->
                 <div class="ui six wide right floated column">
                   <div class="content">
                     <div class="ui center aligned">
@@ -642,17 +630,17 @@
                       <div class="text">Hi Darrow</div>
                       <i class="dropdown icon"></i>
                       <div class="menu icon">
-                          <div class="item disabled" data-value="0"><i class="user icon"></i>Darrow Cole</div>
-                          <div class="item" data-value="1"><i class="edit icon"></i> Logout</div>
+                        <div class="item disabled" data-value="0"><i class="user icon"></i>Darrow Cole</div>
+                        <div class="item" data-value="1"><i class="edit icon"></i> Logout</div>
                       </div>
                      </div>
                   </div>
                 </div>
 
-              </div> <!-- 16 column row -->
-            </div> <!-- grid container -->
+              </div>
+            </div>
           </div>
-          <!-- OUTER RIGHT COLUMN END -->
+          <!-- OUTER RIGHT COLUMN - END -->
 
         </div> <!-- 16 column row -->
       </div> <!-- grid container -->
@@ -663,18 +651,18 @@
       <!-- HEADER END -->
 
 
-
-      <div id="statsformToken" data-value="<?php print( $page['variables'] ); ?>">
-      <div id="sfUnit" data-value="<?php print( $page['sfUnit'] ); ?>">
-      <div id="sfUnitColor" data-value="<?php print( $page['sfUnitColor'] ); ?>">
-      <div id="sfServicePoint" data-value="<?php print( $page['sfServicePoint'] ); ?>">
-      <div id="sfServicePointColor" data-value="<?php print( $page['sfServicePointColor'] ); ?>">
-      <div id="statsformPath" data-value="<?php print( $page['sf_path'] ); ?>">
+      <div id="statsformToken" data-value="<?php print( $page['variables'] ); ?>"></div>
+      <div id="sfUnit" data-value="<?php print( $page['sfUnit'] ); ?>"></div>
+      <div id="sfUnitColor" data-value="<?php print( $page['sfUnitColor'] ); ?>"></div>
+      <div id="sfServicePoint" data-value="<?php print( $page['sfServicePoint'] ); ?>"></div>
+      <div id="sfServicePointColor" data-value="<?php print( $page['sfServicePointColor'] ); ?>"></div>
+      <div id="statsformPath" data-value="<?php print( $page['sf_path'] ); ?>"></div>
 
 
       <!-- BODY -->
       <!-- BODY -->
       <!-- BODY -->
+
       <div class="ui stackable grid container">
         <div class="row">
           <div class="column">&nbsp;
@@ -682,71 +670,38 @@
         </div>
       </div>
 
+      <!-------------------------- TAB overview - START -------------------------->
+      <div class="ui tab" data-tab="overview">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <!-- data-tab="overview" -->
-              <div class="ui tab" data-tab="overview">
-
-
-
-
-
-      <div class="ui main stackable grid container">
-        <div class="three column row">
-                <!-- PAGE TOP CONTENT -->
-                <div class="ui main stackable center aligned middle aligned grid container">
-                  <div class="sixteen column row">
-
-                    <!-- OUTER LEFT COLUMN -->
-                    <div class="ui four wide left floated column">
-
-                        <div class="ui buttons">
-                        <div class="ui two item stackable tabs menu">
-                          <a class="item" data-tab="overview">Quick Questions2</a>
-                          <a class="active item" data-tab="test_OFF">Research Assistance2</a>
-                        </div>
-                        </div>
-
+        <!-- PAGE TOP CONTENT -->
+        <div class="ui main stackable grid container">
+          <div class="three column row">
+            <div class="ui main stackable center aligned middle aligned grid container">
+              <div class="sixteen column row">
+                <!-- OUTER LEFT COLUMN -->
+                <div class="ui four wide left floated column">
+                  <div class="ui buttons">
+                    <div class="ui two item stackable tabs menu">
+                      <a class="item" data-tab="overview">Quick Questions</a>
+                      <a class="active item" data-tab="test_OFF_OFF">Research Assistance</a>
                     </div>
-                    <!-- OUTER RIGHT COLUMN END -->
-
-                  </div> <!-- 16 column row -->
-                </div> <!-- grid container -->
-                <!-- PAGE TOP CONTENT - END -->
+                  </div>
+                </div>
+              </div> <!-- 16 column row -->
+            </div> <!-- grid container - END -->
+          </div>
         </div>
-      </div>
+        <!-- PAGE TOP CONTENT - END -->
 
-      <div class="ui main stackable grid container">
-        <div class="sixteen column row">
+        <!-- MAIN PAGE CONTENT -->
+        <div class="ui main stackable grid container"> <!-- Outer Grid1 -->
+          <div class="sixteen column row">
 
-          <div class="ui sixteen wide column">
-            <div class="content">
-
-<!--            <div class="ui active tab" data-tab="overview"> -->
-
+            <div class="ui sixteen wide column"> <!-- 16 wide column1 -->
+              <div class="content">
                 <div class="active content">
-                  <div class="ui equal width aligned grid">
+
+                  <div class="ui equal width aligned grid"> <!-- Inner Grid1 -->
 
                     <div class="eight wide column"> 
                       <div class="ui fluid card withCount">
@@ -854,231 +809,291 @@
                       </div>
                     </div>
 
-                  </div>
+                  </div> <!-- Inner Grid 1 - END -->
+
                 </div>
-
               </div>
-            </div>
+            </div> <!-- 16 wide column 1 - END -->
+
           </div>
-        </div>
+        </div> <!-- Outer Grid 1 - END -->
+
       </div>
-      <!-- data-tab="overview" - END -->
+      <!-------------------------- TAB overview - END ---------------------------->
 
+      <!-------------------------- TAB test_OFF - START -------------------------->
+      <div class="ui active tab" data-tab="test_OFF">
 
-
-              <!-- data-tab="test_OFF" -->
-              <div class="ui active tab" data-tab="test_OFF">
-
-
-
-
-
-      <div class="ui main stackable grid container">
-        <div class="three column row">
-                <!-- PAGE TOP CONTENT -->
-      <!-- HEADER CONTENT -->
-      <div class="ui main stackable center aligned middle aligned grid container">
-        <div class="sixteen column row">
-
-          <!-- OUTER LEFT COLUMN -->
-          <div class="ui four wide left floated column">
-
-              <div class="ui buttons">
-              <div class="ui two item stackable tabs menu">
-                <a class="item" data-tab="overview">Quick Questions2</a>
-                <a class="active item" data-tab="test_OFF">Research Assistance2</a>
-              </div>
-              </div>
-
-
-          </div>
-          <!-- OUTER RIGHT COLUMN END -->
-
-
-          <!-- OUTER RIGHT COLUMN -->
-          <div class="ui nine wide right floated column">
-            <div class="ui main stackable middle aligned grid container">
+        <!-- PAGE TOP CONTENT -->
+        <div class="ui main stackable grid container">
+          <div class="three column row">
+            <div class="ui main stackable center aligned middle aligned grid container">
               <div class="sixteen column row">
 
-                <!-- INNER LEFT COLUMN -->
-                <!-- large screen -->
-                <div class="ui six wide right floated column">
-                  <div class="content">
-                    <div class="ui center aligned">
-                      <div class="ui fluid input right icon">
-                        <i id="iconCal" class="large calendar icon"></i>
-                        <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-      value="dhc">
-                      </div>
+                <div class="ui four wide left floated column">
+<!--                <div class="ui four wide blue left floated column"> -->
+                  <div class="ui buttons">
+                    <div class="ui two item stackable tabs menu">
+                      <a class="item" data-tab="overview">Quick Questions</a>
+                      <a class="active item" data-tab="test_OFF">Research Assistance</a>
                     </div>
                   </div>
                 </div>
 
-                <!-- INNER CENTER COLUMN -->
-                <!-- large screen -->
-                <div class="ui six wide right floated column">
-                  <div class="content">
-                    <div class="ui center aligned">
-                      <div class="ui fluid input right icon">
-                        <i id="iconTim" class="large clock icon"></i>
-                        <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
+                <div class="ui three wide left floated column">
+<!--                <div class="ui three wide red left floated column"> -->
+
+                  <div class="ui main stackable middle aligned grid container">
+                    <div class="sixteen column row">
+                      <div class="ui sixteen wide left floated column">
+
+                        <div class="content">
+                          <div class="ui left aligned">
+                            <div class="ui test checkbox">
+                              <input type="checkbox">
+                              <label>Reference?</label>
+                            </div>
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                   </div>
+
                 </div>
 
-                <!-- INNER RIGHT COLUMN -->
-                <div class="ui four wide right floated column">
-                  <div class="content">
-                    <div class="ui dropdown">
-                      <div class="text">Hi Darrow</div>
-                      <i class="dropdown icon"></i>
-                      <div class="menu icon">
-                          <div class="item disabled" data-value="0"><i class="user icon"></i>Darrow Cole</div>
-                          <div class="item" data-value="1"><i class="edit icon"></i> Logout</div>
+                <div class="ui three wide left floated column">
+
+                  <div class="ui main stackable middle aligned grid container">
+                    <div class="sixteen column row">
+                      <div class="ui sixteen wide left floated column">
+
+                        <div class="content">
+                          <div class="ui left aligned">
+                            <div class="ui test checkbox">
+                              <input type="checkbox">
+                              <label>Reference?</label>
+                            </div>
+                          </div>
+                        </div>
+
                       </div>
-                     </div>
+                    </div>
                   </div>
+
                 </div>
+
+
+
+
+
+                <div class="ui three wide left floated column">
+
+                  <div class="ui main stackable middle aligned grid container">
+                    <div class="sixteen column row">
+                      <div class="ui sixteen wide left floated column">
+
+                        <div class="content">
+                          <div class="ui left aligned">
+                            <div class="ui test checkbox">
+                              <input type="checkbox">
+                              <label>Reference?</label>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="ui three wide left floated column">
+
+<!--                  <div class="ui main stackable middle aligned grid container">
+                    <div class="sixteen column row"> -->
+                      <div class="ui sixteen wide left floated column">
+
+                        <div class="content">
+                          <div class="ui left aligned">
+                            <select name="skills" class="ui fluid search dropdown">
+                              <option value="init">Patron Status</option>
+                              <option value="angular">Unknown</option>
+                              <option value="css">UCLA undergrad</option>
+                              <option value="design">UCLA graduate student</option>
+                              <option value="ember">UCLA faculty</option>
+                              <option value="html">UCLA researcher/other</option>
+                              <option value="ia">UCLA alumnus/a</option>
+                              <option value="javascript">non-UCLA</option>
+                            </select>
+                          </div>
+                        </div>
+
+                      </div>
+<!--                    </div>
+                  </div> -->
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
               </div> <!-- 16 column row -->
             </div> <!-- grid container -->
           </div>
-          <!-- OUTER RIGHT COLUMN END -->
+        </div> <!-- grid container -->
+        <!-- PAGE TOP CONTENT - END -->
 
-        </div> <!-- 16 column row -->
-      </div> <!-- grid container -->
-      <!-- HEADER CONTENT END -->
-                <!-- PAGE TOP CONTENT - END -->
-        </div>
-      </div>
+        <!-- MAIN PAGE CONTENT -->
+        <div class="ui main stackable grid container"> <!-- Outer Grid2 -->
+          <div class="sixteen column row">
 
-      <div class="ui main stackable grid container">
-        <div class="sixteen column row">
+            <div class="ui sixteen wide column"> <!-- 16 wide column2 -->
+              <div class="content">
+                <div class="active content">
 
-          <div class="ui sixteen wide column">
-            <div class="content">
+                  <div class="ui equal width aligned grid"> <!-- Inner Grid2 -->
 
-<!--            <div class="ui active tab" data-tab="overview"> -->
+                    <div class="eight wide column"> 
+                      <div class="ui fluid card withCount">
+                        <div class="content">
+                          <div class="ui inverted segment left floated" id="research">
+                            <div class="ui tiny inverted statistics left floated"> 
+                              <div class="statistic">
+                                <div class="value" id="referral">0</div> 
+                                <div class="label"> Count </div>
+                              </div>
+                            </div>
+                          </div>
+                          <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/research.png">
+                          <div class="ui left aligned">
+                            <div class="header"> Research Assistance </div>
+                            <div class="meta"> Help patron with research strategy, advice, overview of resources (drop-in). </div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
 
-          <div class="active content">
-            <div class="ui equal width aligned grid">
+                    <div class="eight wide column"> 
+                      <div class="ui fluid card withCount">
+                        <div class="content">
+                          <div class="ui inverted segment left floated" id="technical">
+                            <div class="ui tiny inverted statistics left floated"> 
+                              <div class="statistic">
+                                <div class="value" id="technicalVal">0</div> 
+                                <div class="label"> Count </div>
+                              </div>
+                            </div>
+                          </div>
+                          <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/technical.png"> 
+                          <div class="ui left aligned">
+                            <div class="header"> Technical Assistance </div>
+                            <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
 
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content">
-                    <div class="ui inverted segment left floated" id="research">
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="referral">0</div> 
-                          <div class="label"> Count </div>
+                    <div class="eight wide column"> 
+                      <div class="ui fluid card withCount">
+                        <div class="content">
+                          <div class="ui inverted segment left floated" id="lookup">
+                            <div class="ui tiny inverted statistics left floated"> 
+                              <div class="statistic">
+                                <div class="value" id="lookUp">0</div> 
+                                <div class="label"> Count </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ui left aligned">
+                            <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
+                            <div class="header"> Look Up Known Item </div>
+                          </div>
+                          <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
                         </div>
                       </div>
                     </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/research.png">
-                    <div class="ui left aligned">
-                      <div class="header"> Research Assistance </div>
-                      <div class="meta"> Help patron with research strategy, advice, overview of resources (drop-in). </div>
 
-                    </div>
-                  </div> 
-                </div>
-              </div>
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content">
-                    <div class="ui inverted segment left floated" id="technical">
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="technicalVal">0</div> 
-                          <div class="label"> Count </div>
+                    <div class="eight wide column"> 
+                      <div class="ui fluid card withCount">
+                        <div class="content"> 
+                          <div class="ui inverted segment left floated" id="directions"> 
+                            <div class="ui tiny inverted statistics left floated"> 
+                              <div class="statistic">
+                                <div class="value" id="directional">0</div> 
+                                <div class="label"> Count </div>
+                              </div>
+                            </div>
+                          </div>
+                          <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/directions.png">
+                          <div class="ui left aligned">
+                            <div class="header"> Directional </div> 
+                            <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/technical.png"> 
-                    <div class="ui left aligned">
-                      <div class="header"> Technical Assistance </div>
-                      <div class="meta"> Help with printers, computers, software, scanners, etc. </div>
-                    </div>
-                  </div> 
-                </div>
-              </div>
 
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content">
-                    <div class="ui inverted segment left floated" id="lookup">
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="lookUp">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
+                    <div class="eight wide column"> 
+                      <div class="ui fluid card withCount">
+                        <div class="content">
+                          <div class="ui inverted segment left floated" id="policy">
+                            <div class="ui tiny inverted statistics left floated"> 
+                              <div class="statistic">
+                                <div class="value" id="policyVal">0</div> 
+                                <div class="label"> Count </div>
+                              </div>
+                            </div>
+                          </div>
+                          <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/policy.png"> 
+                          <div class="ui left aligned">
+                            <div class="header"> Policy & Operations</div>
+                            <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
+                          </div>
+                        </div> 
                       </div>
                     </div>
-                    <div class="ui left aligned">
-                      <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/lookup.png"> 
-                      <div class="header"> Look Up Known Item </div>
-                    </div>
-                    <div class="meta"> Find call numbers, books, articles, locations, etc. for known items requested by patron. </div>
-                  </div>
-                </div>
-              </div>
 
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content"> 
-                    <div class="ui inverted segment left floated" id="directions"> 
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="directional">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
+                    <div class="eight wide column"> 
+                      <div class="ui fluid card ">
+                        <button style = "height: 120px" class=" ui button" id="submit1"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
                       </div>
                     </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/directions.png">
-                    <div class="ui left aligned">
-                      <div class="header"> Directional </div> 
-                      <div class="meta"> Location or directions provided. E.G. rooms, events, contact info, etc. </div>
-                    </div>
-                  </div>
+
+                  </div> <!-- Inner Grid2 - END -->
+
                 </div>
               </div>
+            </div> <!-- 16 wide column2 - END -->
 
-              <div class="eight wide column"> 
-                <div class="ui fluid card withCount">
-                  <div class="content">
-                    <div class="ui inverted segment left floated" id="policy">
-                      <div class="ui tiny inverted statistics left floated"> 
-                        <div class="statistic">
-                          <div class="value" id="policyVal">0</div> 
-                          <div class="label"> Count </div>
-                        </div>
-                      </div>
-                    </div>
-                    <img class="ui tiny image left floated" src="/<?php print( $page['sf_path'] ); ?>/img/policy.png"> 
-                    <div class="ui left aligned">
-                      <div class="header"> Policy & Operations</div>
-                      <div class="meta"> Hours, access privileges, borrowing, reservations, other policies. </div>
-                    </div>
-                  </div> 
-                </div>
-              </div>
-
-              <div class="eight wide column"> 
-                <div class="ui fluid card ">
-                  <button style = "height: 120px" class=" ui button" id="submit1"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
-                </div>
-              </div>
-
-            </div>
           </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
+        </div> <!-- Outer Grid2 - END -->
       </div>
-      <!-- data-tab="overview" - END -->
+      <!-------------------------- TAB test_OFF - END ---------------------------->
 
 
 
@@ -1105,95 +1120,84 @@
 
 
 
+      <!-------------------------- REFERENCE ---------------------------->
+      <!-- Save for data to set up test_OFF, above  -->
+      <div class="ui tab" data-tab="test_OFF_OFF">
 
+        <!-- HEADER CONTENT -->
+        <div class="ui main stackable center aligned middle aligned grid container">
+          <div class="sixteen column row">
 
-              <div class="ui tab" data-tab="test_OFF_OFF">
-
-
-
-
-
-      <!-- HEADER CONTENT -->
-      <div class="ui main stackable center aligned middle aligned grid container">
-        <div class="sixteen column row">
-
-          <!-- OUTER LEFT COLUMN -->
-          <div class="ui four wide left floated column">
+            <!-- OUTER LEFT COLUMN -->
+            <div class="ui four wide left floated column">
 
               <div class="ui buttons">
-              <div class="ui two item stackable tabs menu">
-                <a class="item" data-tab="overview">Quick Questions2</a>
-                <a class="active item" data-tab="test_OFF">Research Assistance2</a>
+                <div class="ui two item stackable tabs menu">
+                  <a class="item" data-tab="overview">Quick Questions</a>
+                  <a class="active item" data-tab="test_OFF">Research Assistance</a>
+                </div>
               </div>
-              </div>
 
+            </div>
+            <!-- OUTER LEFT COLUMN END -->
 
-          </div>
-          <!-- OUTER RIGHT COLUMN END -->
+            <!-- OUTER RIGHT COLUMN -->
+            <div class="ui nine wide right floated column">
+              <div class="ui main stackable middle aligned grid container">
+                <div class="sixteen column row">
 
-
-          <!-- OUTER RIGHT COLUMN -->
-          <div class="ui nine wide right floated column">
-            <div class="ui main stackable middle aligned grid container">
-              <div class="sixteen column row">
-
-                <!-- INNER LEFT COLUMN -->
-                <!-- large screen -->
-                <div class="ui six wide right floated column">
-                  <div class="content">
-                    <div class="ui center aligned">
-                      <div class="ui fluid input right icon">
-                        <i id="iconCal" class="large calendar icon"></i>
-                        <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-      value="dhc">
+                  <!-- INNER LEFT COLUMN -->
+                  <!-- large screen -->
+                  <div class="ui six wide right floated column">
+                    <div class="content">
+                      <div class="ui center aligned">
+                        <div class="ui fluid input right icon">
+                          <i id="iconCal" class="large calendar icon"></i>
+                          <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-      value="dhc">
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- INNER CENTER COLUMN -->
-                <!-- large screen -->
-                <div class="ui six wide right floated column">
-                  <div class="content">
-                    <div class="ui center aligned">
-                      <div class="ui fluid input right icon">
-                        <i id="iconTim" class="large clock icon"></i>
-                        <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
+                  <!-- INNER CENTER COLUMN -->
+                  <!-- large screen -->
+                  <div class="ui six wide right floated column">
+                    <div class="content">
+                      <div class="ui center aligned">
+                        <div class="ui fluid input right icon">
+                          <i id="iconTim" class="large clock icon"></i>
+                          <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- INNER RIGHT COLUMN -->
-                <div class="ui four wide right floated column">
-                  <div class="content">
-                    <div class="ui dropdown">
-                      <div class="text">Hi Darrow</div>
-                      <i class="dropdown icon"></i>
-                      <div class="menu icon">
+                  <!-- INNER RIGHT COLUMN -->
+                  <div class="ui four wide right floated column">
+                    <div class="content">
+                      <div class="ui dropdown">
+                        <div class="text">Hi Darrow</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu icon">
                           <div class="item disabled" data-value="0"><i class="user icon"></i>Darrow Cole</div>
                           <div class="item" data-value="1"><i class="edit icon"></i> Logout</div>
-                      </div>
-                     </div>
+                        </div>
+                       </div>
+                    </div>
                   </div>
-                </div>
 
-              </div> <!-- 16 column row -->
-            </div> <!-- grid container -->
-          </div>
-          <!-- OUTER RIGHT COLUMN END -->
+                </div> <!-- 16 column row -->
+              </div> <!-- grid container -->
+            </div>
+            <!-- OUTER RIGHT COLUMN END -->
 
-        </div> <!-- 16 column row -->
-      </div> <!-- grid container -->
-      <!-- HEADER CONTENT END -->
-
-
-
-
-
+          </div> <!-- 16 column row -->
+        </div> <!-- grid container -->
+        <!-- HEADER CONTENT END -->
 
         <div class="content">
 
-          <div class="ui equal width aligned grid">
+          <div class="ui equal width aligned grid"> <!-- grid container -->
 
             <div class="eight wide column">
               <div class="ui fluid card">
@@ -1226,80 +1230,81 @@
             </div>
 
             <div class="eight wide column">
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <img class="ui tiny image left floated" src="../../img/directions.png"> 
-                            <div class="header"> Directional </div>
-                            <div class="meta"> Location or directions provided e.g. rooms, events, contact information, etc. </div>
-                        </div> 
-                    </div>
+              <div class="ui fluid card">
+                <div class="content">
+                  <img class="ui tiny image left floated" src="../../img/directions.png"> 
+                  <div class="header"> Directional </div>
+                  <div class="meta"> Location or directions provided e.g. rooms, events, contact information, etc. </div>
+                </div> 
+              </div>
             </div>
 
             <div class="eight wide column">
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <img class="ui tiny image left floated" src="../../img/policy.png"> 
-                            <div class="header"> Policy & Operations </div>
-                            <div class="meta"> Hours, access privileges, borrowing, space reservations, other policies. </div>
-                        </div> 
+              <div class="ui fluid card">
+                <div class="content">
+                  <img class="ui tiny image left floated" src="../../img/policy.png"> 
+                  <div class="header"> Policy & Operations </div>
+                  <div class="meta"> Hours, access privileges, borrowing, space reservations, other policies. </div>
+                </div> 
+              </div>
+            </div>
+
+            <div class="eight wide column"> <!-- eight wide column -->
+              <form class="ui form"> <!-- Form -->
+
+                <div class="field">
+                  <label>
+                    Question Topic
+                  </label>
+                  <input type="text" name="topic" placeholder="Add topic here." height="200">
+                </div>
+
+                <div class="grouped fields">
+                  <label for="referral">Referral?</label>
+                  <div class="field">
+                    <div class="ui radio checkbox">
+                      <input type="radio" name="referral" tabindex="0" class="hidden">
+                      <label>Yes</label>
                     </div>
-            </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui radio checkbox">
+                      <input type="radio" name="referral" tabindex="0" class="hidden">
+                      <label>No</label>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="eight wide column">
-                    <form class="ui form">
+                <div class="field">
+                  <label>
+                    Department / Unit
+                  </label>
+                  <div class="ui selection dropdown">
+                    <input type="hidden" name="department">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">
+                      Choose your department
+                    </div>
+                    <div class="menu">
+                      <div class="item" data-value="none">N/A</div>
+                      <div class="item" data-value="linguistics">Linguistics</div>
+                      <div class="item" data-value="cs">Computer Science</div>
+                      <div class="item" data-value="commstudies">Communications</div>
+                      <div class="item" data-value="arts">Fine Arts</div>
+                    </div>
+                  </div>
+                </div>
 
-                        <div class="field">
-                            <label>
-                                Question Topic
-                            </label>
-                            <input type="text" name="topic" placeholder="Add topic here." height="200">
-                        </div>
+                <div class="field">
+                  <label>Course / Section</label>
+                  <input type="text" name="course" placeholder="CRS###/SEC###">
+                </div>
+              </form> <!-- Form - END -->
+            </div> <!-- eight wide column -->
 
-                        <div class="grouped fields">
-                            <label for="referral">Referral?</label>
-                            <div class="field">
-                                <div class="ui radio checkbox">
-                                    <input type="radio" name="referral" tabindex="0" class="hidden">
-                                    <label>Yes</label>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="ui radio checkbox">
-                                    <input type="radio" name="referral" tabindex="0" class="hidden">
-                                    <label>No</label>
-                                </div>
-                            </div>
-                        </div>
+          </div> <!-- grid container - END -->
 
-                        <div class="field">
-                            <label>
-                                Department / Unit
-                            </label>
-                            <div class="ui selection dropdown">
-                                <input type="hidden" name="department">
-                                <i class="dropdown icon"></i>
-                                <div class="default text">
-                                    Choose your department
-                                </div>
-                                <div class="menu">
-                                    <div class="item" data-value="none">N/A</div>
-                                    <div class="item" data-value="linguistics">Linguistics</div>
-                                    <div class="item" data-value="cs">Computer Science</div>
-                                    <div class="item" data-value="commstudies">Communications</div>
-                                    <div class="item" data-value="arts">Fine Arts</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="field">
-                            <label>Course / Section</label>
-                            <input type="text" name="course" placeholder="CRS###/SEC###">
-                        </div>
-                    </form>
-            </div>
-          </div>
-
-          <div class="ui equal width aligned grid">
+          <div class="ui equal width aligned grid"> <!-- grid container2 -->
 
             <div class="eight wide column">
               <div class="ui equal width aligned grid">
@@ -1358,8 +1363,8 @@
                   </div>
                 </div>
 
-                <div class="eight wide column">
-                  <form class="ui form">
+                <div class="eight wide column"> <!-- Eight Wide Column -->
+                  <form class="ui form"> <!-- Form2 -->
 
                     <div class="grouped fields">
                       <label for="status" style = "font-size: 30px">Patron Status</label>
@@ -1415,8 +1420,8 @@
 
                     </div>
 
-                  </form>
-                </div>
+                  </form> <!-- Form2 -->
+                </div> <!-- Eight Wide Column - END -->
 
               </div>
 
@@ -1426,23 +1431,6 @@
 
         </div>
 
-
-
-
-
-
-
-
-
-              </div>
-
-
-            </div>
-          </div>
-
-
-
-        </div>
       </div>
       <!-- BODY END -->
       <!-- BODY END -->
@@ -1606,6 +1594,17 @@ $('.clear.example .button')
 $('.ui.dropdown')
   .dropdown()
 ;
+
+$('.dropdown')
+  .dropdown({
+    // you can use any ui transition
+    transition: 'drop'
+  })
+;
+
+
+
+
 
         $('.test.checkbox').checkbox('attach events', '.toggle.button');
         $('.test.checkbox').checkbox('attach events', '.check.button', 'check');
