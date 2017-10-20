@@ -895,18 +895,17 @@
         </div> <!-- grid container1 -->
         <!-- PAGE TOP CONTENT - END -->
 
-        <!-- PAGE TOP2 CONTENT -->
+        <!-- PAGE TOP CONTENT -->
         <div class="ui main stackable grid container"> <!-- grid container1 -->
           <div class="three column row"> <!-- three column row -->
             <div class="ui main stackable center aligned middle aligned grid container"> <!-- grid container2 -->
               <div class="sixteen column row"> <!-- 16 column row -->
 
-                <div class="ui three wide center floated column">
-                  <div class="ui sixteen wide left floated column">
+                <div class="ui three wide floated column">
                     <div class="content">
                       <div class="ui left aligned">
                         <select name="dept" class="ui fluid selection dropdown">
-                          <option value="init">Choose Deptartment / Unit</option>
+                          <option value="init">Dept or Unit</option>
                           <option value="angular">N/A</option>
                           <option value="css">Linguistics</option>
                           <option value="design">Computer Science</option>
@@ -915,15 +914,13 @@
                         </select>
                       </div>
                     </div>
-                  </div>
                 </div>
 
-                <div class="ui three wide center floated column">
-                  <div class="ui sixteen wide left floated column">
+                <div class="ui four wide floated column">
                     <div class="content">
                       <div class="ui left aligned">
-                        <select name="dept" class="ui fluid selection dropdown">
-                          <option value="init">Choose Course / Section</option>
+                        <select name="course" class="ui fluid selection dropdown">
+                          <option value="init">Course or Section</option>
                           <option value="angular">N/A</option>
                           <option value="css">Linguistics</option>
                           <option value="design">Computer Science</option>
@@ -932,23 +929,26 @@
                         </select>
                       </div>
                     </div>
-                  </div>
                 </div>
 
-                <div class="ui eight wide column">
-                  <div class="ui huge fluid input">
-                    <div class="ui big label">
-                      Question <br>/ Topic
+                <div class="ui nine wide floated column">
+                    <div class="content">
+
+                      <div class="ui huge fluid input">
+                        <div class="ui big label">
+                          Question <br>/ Topic
+                        </div>
+                        <input placeholder="Enter here..." type="text">
+                      </div>
+
                     </div>
-                    <input type="text">
-                  </div>
                 </div>
 
               </div> <!-- 16 column row2 - END -->
             </div> <!-- grid container -->
           </div> <!-- three column row - END -->
         </div> <!-- grid container1 -->
-        <!-- PAGE TOP2 CONTENT - END -->
+        <!-- PAGE TOP CONTENT - END -->
 
         <!-- MAIN PAGE CONTENT -->
         <div class="ui main stackable grid container"> <!-- Outer Grid2 -->
@@ -1060,48 +1060,45 @@
                       </div>
                     </div>
 
-
-                    <div class="eight wide red column"> 
-                      <div class="ui blue fluid card withCount">
+                    <div class="four wide column"> 
+                      <div class="ui fluid card withCount">
                         <div class="content">
-
-                          <div class="ui green inverted segment left floated" id="policy">
+                          <div class="ui inverted segment left floated" id="policy">
                             <div class="ui tiny inverted statistics left floated"> 
                               <div class="statistic">
-                                <div class="value" id="policyVal">0</div> 
-                                <div class="label"> People </div>
+                                <div class="value" id="people">0</div> 
+                                <div class="label">Count</div>
                               </div>
                             </div>
                           </div>
-                        </div>
-
-                        <div class="content">
-                          <div class="ui orange inverted segment left floated" id="policy">
-                            <div class="ui tiny inverted statistics left floated"> 
-                              <div class="statistic">
-                                <div class="value" id="policyVal">0</div> 
-                                <div class="label"> People </div>
-                              </div>
-                            </div>
+                          <div class="ui left aligned">
+                            <div class="header">People</div>
+                            <div class="meta"> Number of people served </div>
                           </div>
-                        </div>
-
-                        <div class="content">
-
-                          <div class="ui orange inverted segment left floated" id="policy">
-                            <div class="ui tiny inverted statistics left floated"> 
-                              <div class="statistic">
-                                <div class="value" id="policyVal">0</div> 
-                                <div class="label"> People </div>
-                              </div>
-                            </div>
-                          </div>
-
                         </div> 
                       </div>
                     </div>
 
-                    <div class="eight wide column"> 
+                    <div class="four wide column"> 
+                      <div class="ui fluid card withCount">
+                        <div class="content">
+                          <div class="ui inverted segment left floated" id="policy">
+                            <div class="ui tiny inverted statistics left floated"> 
+                              <div class="statistic">
+                                <div class="value" id="minutes">0</div> 
+                                <div class="label">Count</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ui left aligned">
+                            <div class="header">Minutes</div>
+                            <div class="meta"> Session in minutes </div>
+                          </div> 
+                        </div> 
+                      </div>
+                    </div>
+
+                    <div class="eight wide right floated column"> 
                       <div class="ui fluid card ">
                         <button style = "height: 120px" class=" ui button" id="submit1"> <h1 style = "font-size:70px"> SUBMIT </h1> </button>
                       </div>
