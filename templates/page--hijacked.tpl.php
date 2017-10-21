@@ -271,9 +271,26 @@
           background-color: rgba(255, 255, 255, 0.7);
           border-radius: 8px;
         }
+        .ui.tb.buttons {
+          background-color: rgba(255, 255, 255, 0.01);
+          border-radius: 8px;
+        }
         .ui.button:hover {
           font-weight: bold;
           font-color: #ffffff;
+        }
+        .ui.tabular.menu {
+          border-style: hidden;
+        }
+        #grid1 {
+          border: 2px solid rgba(242, 242, 242, 0.3);
+        }
+        #grid2 {
+border: 2px solid rgba(255, 255, 255, 0.9);
+border-radius: 0px;
+        }
+        #grid3 {
+font-weight: lighter;
         }
 
 .dimmable.dimmed > .dimmer {
@@ -670,31 +687,31 @@
         </div>
       </div>
 
+
+
+
+
+
+
+
+
+
+
       <!-------------------------- TAB overview - START -------------------------->
-      <div class="ui tab" data-tab="overview">
+      <div class="ui bottom attached active tab" data-tab="overview">
 
         <!-- PAGE TOP CONTENT -->
-        <div class="ui main stackable grid container">
-          <div class="three column row">
-            <div class="ui main stackable center aligned middle aligned grid container">
-              <div class="sixteen column row">
-                <!-- OUTER LEFT COLUMN -->
-                <div class="ui four wide left floated column">
-                  <div class="ui buttons">
-                    <div class="ui two item stackable tabs menu">
-                      <a class="item" data-tab="overview">Quick Questions</a>
-                      <a class="active item" data-tab="test_OFF_OFF">Research Assistance</a>
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- 16 column row -->
-            </div> <!-- grid container - END -->
+        <div class="ui stackable bottom aligned bottom aligned grid container">
+          <div class="ui top attached tabular menu">
+            <a class="active item" data-tab="overview">Quick Questions1</a>
+            <a class="active grey item" data-tab="test_OFF">Research Assistance1</a>
+            <a class="active grey item" data-tab="test_OFF_OFF">Help</a>
           </div>
         </div>
         <!-- PAGE TOP CONTENT - END -->
 
         <!-- MAIN PAGE CONTENT -->
-        <div class="ui main stackable grid container"> <!-- Outer Grid1 -->
+        <div id="grid1" class="ui main stackable grid container"> <!-- Outer Grid1 -->
           <div class="sixteen column row">
 
             <div class="ui sixteen wide column"> <!-- 16 wide column1 -->
@@ -822,7 +839,18 @@
       <!-------------------------- TAB overview - END ---------------------------->
 
       <!-------------------------- TAB test_OFF - START -------------------------->
-      <div class="ui active tab" data-tab="test_OFF">
+      <div class="ui bottom attached tab" data-tab="test_OFF">
+
+        <!-- PAGE TOP CONTENT -->
+        <div class="ui stackable bottom aligned bottom aligned grid container">
+          <div class="ui top attached tabular menu">
+            <a class="active grey item" data-tab="overview">Quick Questions1</a>
+            <a class="active item" data-tab="test_OFF">Research Assistance1</a>
+            <a class="active grey item" data-tab="test_OFF_OFF">Help</a>
+          </div>
+        </div>
+        <!-- PAGE TOP CONTENT - END -->
+
 
         <!-- PAGE TOP CONTENT -->
         <div class="ui main stackable grid container"> <!-- grid container1 -->
@@ -830,25 +858,16 @@
             <div class="ui main stackable center aligned middle aligned grid container"> <!-- grid container2 -->
               <div class="sixteen column row"> <!-- 16 column row -->
 
-                <div class="ui four wide left floated column">
-                  <div class="ui buttons">
-                    <div class="ui two item stackable tabs menu">
-                      <a class="item" data-tab="overview">Quick Questions</a>
-                      <a class="active item" data-tab="test_OFF">Research Assistance</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="ui three wide left floated column">
+                <div class="ui three wide test column">
                   <div class="ui main stackable middle aligned grid container">
                     <div class="sixteen column row">
                       <div class="ui sixteen wide left floated column">
 
-                        <div class="content">
+                        <div class="ui test content">
                           <div class="ui left aligned">
                             <div class="ui test checkbox">
                               <input type="checkbox">
-                              <label>Referral?</label>
+                              <label>Referral?</label> 
                             </div>
                           </div>
                         </div>
@@ -859,24 +878,11 @@
 
                 </div>
 
-                <div class="ui three wide left floated column">
-                  <div class="content">
-                    <div class="ui left aligned">
-                      <select name="method" class="ui fluid selection dropdown">
-                        <option value="init">Set Assistance Method</option>
-                        <option value="angular">In-Person</option>
-                        <option value="css">E-mail</option>
-                        <option value="design">Telephone</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="ui three wide left floated column">
+                <div class="ui four wide column">
                   <div class="content">
                     <div class="ui left aligned">
                       <select name="status" class="ui fluid selection dropdown">
-                        <option value="init">Indicate Patron Status</option>
+                        <option value="init">Patron Status</option>
                         <option value="angular">Unknown</option>
                         <option value="css">UCLA undergrad</option>
                         <option value="design">UCLA graduate student</option>
@@ -884,6 +890,19 @@
                         <option value="html">UCLA researcher/other</option>
                         <option value="ia">UCLA alumnus/a</option>
                         <option value="javascript">non-UCLA</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ui five wide column">
+                  <div class="content">
+                    <div class="ui left aligned">
+                      <select name="method" class="ui fluid selection dropdown">
+                        <option value="init">Assistance Method</option>
+                        <option value="angular">In-Person</option>
+                        <option value="css">E-mail</option>
+                        <option value="design">Telephone</option>
                       </select>
                     </div>
                   </div>
@@ -1144,79 +1163,21 @@
 
 
       <!-------------------------- REFERENCE ---------------------------->
-      <!-- Save for data to set up test_OFF, above  -->
-      <div class="ui tab" data-tab="test_OFF_OFF">
+      <!-- Save for data to set up test_OFF_OFF, above  -->
+      <div class="ui bottom attached tab" data-tab="test_OFF_OFF">
 
-        <!-- HEADER CONTENT -->
-        <div class="ui main stackable center aligned middle aligned grid container">
-          <div class="sixteen column row">
+        <!-- PAGE TOP CONTENT -->
+        <div class="ui stackable bottom aligned bottom aligned grid container">
+          <div class="ui top attached tabular menu">
+            <a class="active grey item" data-tab="overview">Quick Questions1</a>
+            <a class="active grey item" data-tab="test_OFF">Research Assistance1</a>
+            <a class="active item" data-tab="test_OFF_OFF">Help</a>
+          </div>
+        </div>
+        <!-- PAGE TOP CONTENT - END -->
 
-            <!-- OUTER LEFT COLUMN -->
-            <div class="ui four wide left floated column">
 
-              <div class="ui buttons">
-                <div class="ui two item stackable tabs menu">
-                  <a class="item" data-tab="overview">Quick Questions</a>
-                  <a class="active item" data-tab="test_OFF">Research Assistance</a>
-                </div>
-              </div>
 
-            </div>
-            <!-- OUTER LEFT COLUMN END -->
-
-            <!-- OUTER RIGHT COLUMN -->
-            <div class="ui nine wide right floated column">
-              <div class="ui main stackable middle aligned grid container">
-                <div class="sixteen column row">
-
-                  <!-- INNER LEFT COLUMN -->
-                  <!-- large screen -->
-                  <div class="ui six wide right floated column">
-                    <div class="content">
-                      <div class="ui center aligned">
-                        <div class="ui fluid input right icon">
-                          <i id="iconCal" class="large calendar icon"></i>
-                          <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-      value="dhc">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- INNER CENTER COLUMN -->
-                  <!-- large screen -->
-                  <div class="ui six wide right floated column">
-                    <div class="content">
-                      <div class="ui center aligned">
-                        <div class="ui fluid input right icon">
-                          <i id="iconTim" class="large clock icon"></i>
-                          <input id="inputTime" name="inputTime" class="timepicker" type="text" placeholder="Date/Time" data-value="dhc">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- INNER RIGHT COLUMN -->
-                  <div class="ui four wide right floated column">
-                    <div class="content">
-                      <div class="ui dropdown">
-                        <div class="text">Hi Darrow</div>
-                        <i class="dropdown icon"></i>
-                        <div class="menu icon">
-                          <div class="item disabled" data-value="0"><i class="user icon"></i>Darrow Cole</div>
-                          <div class="item" data-value="1"><i class="edit icon"></i> Logout</div>
-                        </div>
-                       </div>
-                    </div>
-                  </div>
-
-                </div> <!-- 16 column row -->
-              </div> <!-- grid container -->
-            </div>
-            <!-- OUTER RIGHT COLUMN END -->
-
-          </div> <!-- 16 column row -->
-        </div> <!-- grid container -->
-        <!-- HEADER CONTENT END -->
 
         <div class="content">
 
@@ -1628,7 +1589,9 @@ $('.dropdown')
 
 
 
-
+        $('.test.checkbox').checkbox('attach events', '.test.column');
+        $('.test.checkbox').checkbox('attach events', '.test.content');
+        $('.test.checkbox').checkbox('attach events', '.test.button');
         $('.test.checkbox').checkbox('attach events', '.toggle.button');
         $('.test.checkbox').checkbox('attach events', '.check.button', 'check');
         $('.test.checkbox').checkbox('attach events', '.uncheck.button', 'uncheck');
