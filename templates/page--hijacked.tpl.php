@@ -622,7 +622,7 @@ font-weight: lighter;
                     <div class="ui center aligned">
                       <div class="ui fluid input right icon">
                         <i id="iconCal" class="large calendar icon"></i>
-                        <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-      value="dhc">
+                        <input id="inputDatetime" name="inputDatetime" class="datepicker-fullscreen" type="text" placeholder="Date/Time" data-      value="23 Oct">
                       </div>
                     </div>
                   </div>
@@ -703,8 +703,8 @@ font-weight: lighter;
         <!-- PAGE TOP CONTENT -->
         <div class="ui stackable bottom aligned bottom aligned grid container">
           <div class="ui top attached tabular menu">
-            <a class="active item" data-tab="overview">Quick Questions1</a>
-            <a class="active grey item" data-tab="test_OFF">Research Assistance1</a>
+            <a class="active item" data-tab="overview">Quick Questions</a>
+            <a class="active grey item" data-tab="test_OFF">Research Assistance</a>
             <a class="active grey item" data-tab="test_OFF_OFF">Help</a>
           </div>
         </div>
@@ -844,8 +844,8 @@ font-weight: lighter;
         <!-- PAGE TOP CONTENT -->
         <div class="ui stackable bottom aligned bottom aligned grid container">
           <div class="ui top attached tabular menu">
-            <a class="active grey item" data-tab="overview">Quick Questions1</a>
-            <a class="active item" data-tab="test_OFF">Research Assistance1</a>
+            <a class="active grey item" data-tab="overview">Quick Questions</a>
+            <a class="active item" data-tab="test_OFF">Research Assistance</a>
             <a class="active grey item" data-tab="test_OFF_OFF">Help</a>
           </div>
         </div>
@@ -858,31 +858,24 @@ font-weight: lighter;
             <div class="ui main stackable center aligned middle aligned grid container"> <!-- grid container2 -->
               <div class="sixteen column row"> <!-- 16 column row -->
 
-                <div class="ui three wide test column">
-                  <div class="ui main stackable middle aligned grid container">
-                    <div class="sixteen column row">
-                      <div class="ui sixteen wide left floated column">
+                <div class="ui eight wide floated column">
+                    <div class="content">
 
-                        <div class="ui test content">
-                          <div class="ui left aligned">
-                            <div class="ui test checkbox">
-                              <input type="checkbox">
-                              <label>Referral?</label> 
-                            </div>
-                          </div>
+                      <div class="ui huge fluid input">
+                        <div class="ui big label">
+                          Question <br>/ Topic
                         </div>
-
+                        <input placeholder="Enter here..." type="text">
                       </div>
-                    </div>
-                  </div>
 
+                    </div>
                 </div>
 
                 <div class="ui four wide column">
                   <div class="content">
                     <div class="ui left aligned">
                       <select name="status" class="ui fluid selection dropdown">
-                        <option value="init">Patron Status</option>
+                        <option value="init">Patron Status&nbsp;&nbsp;</option>
                         <option value="angular">Unknown</option>
                         <option value="css">UCLA undergrad</option>
                         <option value="design">UCLA graduate student</option>
@@ -895,7 +888,7 @@ font-weight: lighter;
                   </div>
                 </div>
 
-                <div class="ui five wide column">
+                <div class="ui four wide column">
                   <div class="content">
                     <div class="ui left aligned">
                       <select name="method" class="ui fluid selection dropdown">
@@ -920,7 +913,7 @@ font-weight: lighter;
             <div class="ui main stackable center aligned middle aligned grid container"> <!-- grid container2 -->
               <div class="sixteen column row"> <!-- 16 column row -->
 
-                <div class="ui three wide floated column">
+                <div class="ui four wide floated column">
                     <div class="content">
                       <div class="ui left aligned">
                         <select name="dept" class="ui fluid selection dropdown">
@@ -935,32 +928,36 @@ font-weight: lighter;
                     </div>
                 </div>
 
-                <div class="ui four wide floated column">
-                    <div class="content">
-                      <div class="ui left aligned">
-                        <select name="course" class="ui fluid selection dropdown">
-                          <option value="init">Course or Section</option>
-                          <option value="angular">N/A</option>
-                          <option value="css">Linguistics</option>
-                          <option value="design">Computer Science</option>
-                          <option value="ember">Communications</option>
-                          <option value="html">Fine Arts</option>
-                        </select>
-                      </div>
-                    </div>
-                </div>
-
-                <div class="ui nine wide floated column">
+                <div class="ui eight wide floated column">
                     <div class="content">
 
                       <div class="ui huge fluid input">
                         <div class="ui big label">
-                          Question <br>/ Topic
+                          Course <br>/ Section
                         </div>
                         <input placeholder="Enter here..." type="text">
                       </div>
 
                     </div>
+                </div>
+
+                <div class="ui three wide test column">
+                  <div class="ui main stackable middle aligned grid container">
+                    <div class="sixteen column row">
+                      <div class="ui sixteen wide left floated column">
+
+                        <div class="ui test content">
+                          <div class="ui left aligned">
+                            <div class="ui test checkbox">
+                              <input type="checkbox">
+                              <label>Referral?</label> 
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
               </div> <!-- 16 column row2 - END -->
@@ -1169,8 +1166,8 @@ font-weight: lighter;
         <!-- PAGE TOP CONTENT -->
         <div class="ui stackable bottom aligned bottom aligned grid container">
           <div class="ui top attached tabular menu">
-            <a class="active grey item" data-tab="overview">Quick Questions1</a>
-            <a class="active grey item" data-tab="test_OFF">Research Assistance1</a>
+            <a class="active grey item" data-tab="overview">Quick Questions</a>
+            <a class="active grey item" data-tab="test_OFF">Research Assistance</a>
             <a class="active item" data-tab="test_OFF_OFF">Help</a>
           </div>
         </div>
