@@ -1507,9 +1507,11 @@ font-weight: lighter;
   var sfUnit = document.getElementById("sfUnit").dataset.value;
   var sfServicePoint = document.getElementById("sfServicePoint").dataset.value;
 
+  // reinsert <br>'s and &nbsp;'s for display
   sfUnit = sfUnit.replace(/ /g, " <br>");
+  sfUnit = sfUnit.replace(/%C2%A0/g, "&nbsp;");
   sfServicePoint = sfServicePoint.replace(/ /g, " <br>");
-
+  sfServicePoint = sfServicePoint.replace(/%C2%A0/g, "&nbsp;");
 
 /// Tabs
 $(document).ready(function() {
