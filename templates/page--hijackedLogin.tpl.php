@@ -1656,6 +1656,44 @@
                 </div>
               </div>
       
+              <div class="actions">
+                <div class="ui approve button" data-value="HSS/IS, Reference desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">HSS/IS, Reference desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>HSS/IS, Reference desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="HSS/IS, Off-desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">HSS/IS, Off-desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>HSS/IS, Off-desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
             </div>
           </div>
         </div>
@@ -2321,6 +2359,17 @@
             case 'LSC, Off-desk':
               $("#servicePoint").html("LSC, <br>Off-desk <br> <br>");
               document.getElementById('servicePoint').className = 'show ui black button';
+              $(".ui.modal").modal("hide");
+              break;
+
+            case 'HSS/IS, Reference desk':
+              $("#servicePoint").html("HSS/IS <br>Reference <br>Desk");
+              document.getElementById('servicePoint').className = 'show ui black button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'HSS/IS, Off-desk':
+              $("#servicePoint").html("HSS/IS <br>Off-Desk <br>&nbsp;");
+              document.getElementById('servicePoint').className = 'show ui yellow button';
               $(".ui.modal").modal("hide");
               break;
 
