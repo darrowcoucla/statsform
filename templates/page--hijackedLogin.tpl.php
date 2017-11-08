@@ -266,6 +266,8 @@
 
     </head>
     <body>
+      <!-- MODALS START --------------------------------------------------------------------------------------- -->
+
       <!-- MODAL #1 - Library Units -->
       <!-- MODAL #1 - Library Units -->
       <!-- MODAL #1 - Library Units -->
@@ -1700,23 +1702,9 @@
       </div>
       <!-- MODAL #18 - Service Points YRL - END -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- modal #4b -->
-      <!-- modal #4b -->
-      <!-- modal #4b -->
+      <!-- MODAL #19 - Library Message -->
+      <!-- MODAL #19 - Library Message -->
+      <!-- MODAL #19 - Library Message -->
       <div class="ui united large modal" id="libraryMsg">
         <div class="header">
           Please pick a service point
@@ -1756,11 +1744,11 @@
         </div>
 
       </div>
-      <!-- MODAL #4b END-->
+      <!-- MODAL #19 - Library Message - END -->
 
-      <!-- modal #6 -->
-      <!-- modal #6 -->
-      <!-- modal #6 -->
+      <!-- MODAL #20 - Individual Login -->
+      <!-- MODAL #20 - Individual Login -->
+      <!-- MODAL #20 - Individual Login -->
       <div class="ui united large modal" id="individualLogin">
         <div class="header">
           Please pick a Login Provider
@@ -1814,11 +1802,10 @@
         </div>
 
       </div>
-      <!-- MODAL #6 END-->
+      <!-- MODAL #20 - Individual Login - END -->
 
-      <!-- modal #5 -->
-      <!-- modal #5 -->
-      <!-- modal #5 -->
+
+      <!-- MODAL #21 - Group Login -->
       <div class="ui united large modal" id="groupLogin">
         <div class="header">
           Please pick a User Group
@@ -1973,7 +1960,8 @@
         </div>
 
       </div>
-      <!-- MODAL #5 END-->
+      <!-- MODAL #21 - Group Login - END -->
+
       <!-- MODALS END --------------------------------------------------------------------------------------- -->
 
 
@@ -2096,15 +2084,7 @@
       <!--------------------------------------------------------------------------------->
       
       <script type="text/javascript">
-
-
-
-
-
-
         $(document).on("click", ".show", function () {
-
-
         // if Unit button or Service Point button
         if( $(this).attr('id') == "result" ) {
           modal = 'libraryUnits';
