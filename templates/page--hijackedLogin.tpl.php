@@ -374,32 +374,167 @@
               </div>
       
               <div class="actions">
-                <div class="ui approve button" data-value="Young Research Library">
+                <div class="ui approve button" data-value="Digital Library Program">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">Young Research Library</h2>
+                        <h2 class="ui aligned inverted header">Digital Library Program</h2>
                       </div>
-                      <img src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
-                      <div class="ui large label"><center>Young Research Library</center></div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/powellnight.png">
+                      <div class="ui large label">
+                        <center>Digital Library Program</center>
+                      </div>
                       <div class="meta">
-                        <span class="right"><i></i>Providing service since 1937&nbsp;</span>
+                        <span class="right"><i></i>Providing service since 1929&nbsp;</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-    
+      
               <div class="actions">
-                <div class="ui approve button" data-value="UCLA SEL Library">
+                <div class="ui approve button" data-value="East Asian">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">UCLA SEL Library</h2>
+                        <h2 class="ui aligned inverted header">East Asian</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/powellnight.png">
+                      <div class="ui large label">
+                        <center>East Asian</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1929&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Law">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Law</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/powellnight.png">
+                      <div class="ui large label">
+                        <center>Law</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1929&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Management">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Management</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/powellnight.png">
+                      <div class="ui large label">
+                        <center>Management</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1929&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Music">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Music</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/powellnight.png">
+                      <div class="ui large label">
+                        <center>Music</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1929&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Rieber Hall">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Rieber Hall</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/powellnight.png">
+                      <div class="ui large label">
+                        <center>Rieber Hall</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1929&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="SEL">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">SEL</h2>
                       </div>
                       <img src="/<?php print( $page['sf_path'] ); ?>/img/sel_00.png">
                       <div class="ui large label">
-                        <center>UCLA SEL Library</center>
+                        <center>SEL</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1929&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="SRLF">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">SRLF</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/sel_00.png">
+                      <div class="ui large label">
+                        <center>SRLF</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1929&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="actions">
+                <div class="ui approve button" data-value="Social Science Data Archive">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Social Science Data Archive</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/sel_00.png">
+                      <div class="ui large label">
+                        <center>Social Science Data Archive</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>Providing service since 1937&nbsp;</span>
@@ -410,18 +545,35 @@
               </div>
     
               <div class="actions">
-                <div class="ui approve button" data-value="UCLA Music Library">
+                <div class="ui approve button" data-value="Library Special Collections">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">UCLA Music Library</h2>
+                        <h2 class="ui aligned inverted header">Library Special Collections</h2>
                       </div>
-                      <img src="/<?php print( $page['sf_path'] ); ?>/img/music_00.png">
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
                       <div class="ui large label">
-                        <center>UCLA Music Library</center>
+                        <center>Library Special Collections</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>Providing service since 1945&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="actions">
+                <div class="ui approve button" data-value="YRL">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">YRL</h2>
+                      </div>
+                      <img src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label"><center>YRL</center></div>
+                      <div class="meta">
+                        <span class="right"><i></i>Providing service since 1937&nbsp;</span>
                       </div>
                     </div>
                   </div>
@@ -612,7 +764,7 @@
                       </div>
                       <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
                       <div class="ui large label">
-                        <center>&nbsp;<br>Off-desk<br>&nbsp;</center>
+                        <center>Off-desk</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>310-555-5555&nbsp;</span>
@@ -812,9 +964,9 @@
       </div>
       <!-- MODAL #6 - Service Points Clark Library - END -->
 
-      <!-- MODAL #3bbb - Service Points Powell -->
-      <!-- MODAL #3 - Service Points Powell -->
-      <!-- MODAL #3 - Service Points Powell -->
+      <!-- MODAL #7 - Service Points Powell -->
+      <!-- MODAL #7 - Service Points Powell -->
+      <!-- MODAL #7 - Service Points Powell -->
       <div class="ui united large modal" id="unitPowell">
         <div class="header">
           Please pick a service point.
@@ -824,15 +976,15 @@
             <div class="ui three stackable link cards" id="albums">
       
               <div class="actions">
-                <div class="ui approve button" data-value="The Circulation Desk">
+                <div class="ui approve button" data-value="InqLab1 (research and writing help)">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">The Circulation Desk</h2>
+                        <h2 class="ui aligned inverted header">InqLab1 (research and writing help)</h2>
                       </div>
                       <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/service_desk.png">
                       <div class="ui large label">
-                        <center>The Circulation Desk</center>
+                        <center>InqLab1 (research and writing help)</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>310-555-5555&nbsp;</span>
@@ -843,15 +995,15 @@
               </div>
       
               <div class="actions">
-                <div class="ui approve button" data-value="The Reference Desk">
+                <div class="ui approve button" data-value="Off-desk">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">The Reference Desk</h2>
+                        <h2 class="ui aligned inverted header">Off-desk</h2>
                       </div>
                       <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
                       <div class="ui large label">
-                        <center>The Reference Desk</center>
+                        <center>Off-desk</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>310-555-5555&nbsp;</span>
@@ -862,15 +1014,34 @@
               </div>
       
               <div class="actions">
-                <div class="ui approve button" data-value="Reference Desk, 2nd Flr">
+                <div class="ui approve button" data-value="Inquiry Desk">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">Reference Desk, 2nd Flr</h2>
+                        <h2 class="ui aligned inverted header">Inquiry Desk</h2>
                       </div>
                       <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
                       <div class="ui large label">
-                        <center>Reference Desk, 2nd Flr</center>
+                        <center>Inquiry Desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Entrance Foyer">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Entrance Foyer</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>Entrance Foyer</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>310-555-5555&nbsp;</span>
@@ -884,12 +1055,12 @@
           </div>
         </div>
       </div>
-      <!-- MODAL #3 - Service Points Powell - END -->
+      <!-- MODAL #7 - Service Points Powell - END -->
 
-      <!-- MODAL #4 - Service Points YRL -->
-      <!-- MODAL #4 - Service Points YRL -->
-      <!-- MODAL #4 - Service Points YRL -->
-      <div class="ui united large modal" id="unitYrl">
+      <!-- MODAL #8 - Service Points Digital Library Program -->
+      <!-- MODAL #8 - Service Points Digital Library Program -->
+      <!-- MODAL #8 - Service Points Digital Library Program -->
+      <div class="ui united large modal" id="unitDigitalLibraryProgram">
         <div class="header">
           Please pick a service point.
         </div>
@@ -898,15 +1069,15 @@
             <div class="ui three stackable link cards" id="albums">
       
               <div class="actions">
-                <div class="ui approve button" data-value="The Circulation Desk">
+                <div class="ui approve button" data-value="Off-desk">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">The Circulation Desk</h2>
+                        <h2 class="ui aligned inverted header">Off-desk</h2>
                       </div>
-                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/service_desk.png">
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
                       <div class="ui large label">
-                        <center>The Circulation Desk</center>
+                        <center>Off-desk</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>310-555-5555&nbsp;</span>
@@ -916,16 +1087,33 @@
                 </div>
               </div>
       
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL #8 - Service Points Digital Library Program - END -->
+
+      <!-- MODAL #9 - Service Points East Asian -->
+      <!-- MODAL #9 - Service Points East Asian -->
+      <!-- MODAL #9 - Service Points East Asian -->
+      <div class="ui united large modal" id="unitEastAsian">
+        <div class="header">
+          Please pick a service point.
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
               <div class="actions">
-                <div class="ui approve button" data-value="The Reference Desk">
+                <div class="ui approve button" data-value="Off-desk">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">The Reference Desk</h2>
+                        <h2 class="ui aligned inverted header">Off-desk</h2>
                       </div>
                       <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
                       <div class="ui large label">
-                        <center>The Reference Desk</center>
+                        <center>Off-desk</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>310-555-5555&nbsp;</span>
@@ -954,16 +1142,33 @@
                 </div>
               </div>
       
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL #9 - Service Points East Asian - END -->
+
+      <!-- MODAL #10 - Service Points Law -->
+      <!-- MODAL #10 - Service Points Law -->
+      <!-- MODAL #10 - Service Points Law -->
+      <div class="ui united large modal" id="unitLaw">
+        <div class="header">
+          Please pick a service point.
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
               <div class="actions">
-                <div class="ui approve button" data-value="A-Level Information Desk">
+                <div class="ui approve button" data-value="The Reference Desk">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">A-Level Information Desk</h2>
+                        <h2 class="ui aligned inverted header">The Reference Desk</h2>
                       </div>
                       <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
                       <div class="ui large label">
-                        <center>A-Level Information Desk</center>
+                        <center>The Reference Desk</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>310-555-5555&nbsp;</span>
@@ -974,15 +1179,15 @@
               </div>
       
               <div class="actions">
-                <div class="ui approve button" data-value="Science and Engineering Library Service">
+                <div class="ui approve button" data-value="The Circulation Desk">
                   <div class="ui card">
                     <div class="blurring dimmable image">
                       <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">Science and Engineering Library Service</h2>
+                        <h2 class="ui aligned inverted header">The Circulation Desk</h2>
                       </div>
-                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/service_desk.png">
                       <div class="ui large label">
-                        <center>Science and Engineering Library Service</center>
+                        <center>The Circulation Desk</center>
                       </div>
                       <div class="meta">
                         <span class="right"><i></i>310-555-5555&nbsp;</span>
@@ -991,50 +1196,483 @@
                   </div>
                 </div>
               </div>
-    
-              <div class="actions">
-                <div class="ui approve button" data-value="The Cashier Window">
-                  <div class="ui card">
-                    <div class="blurring dimmable image">
-                      <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">The Cashier Window</h2>
-                      </div>
-                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
-                      <div class="ui large label">
-                        <center>The Cashier Window</center>
-                      </div>
-                      <div class="meta">
-                        <span class="right"><i></i>310-555-5555&nbsp;</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="actions">
-                <div class="ui approve button" data-value="Phone Answering Station">
-                  <div class="ui card">
-                    <div class="blurring dimmable image">
-                      <div class="ui inverted dimmer">
-                        <h2 class="ui aligned inverted header">Phone Answering Station</h2>
-                      </div>
-                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/library.png">
-                      <div class="ui large label">
-                        <center>Phone Answering Station</center>
-                      </div>
-                      <div class="meta">
-                        <span class="right"><i></i>310-555-5555&nbsp;</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
+      
             </div>
           </div>
         </div>
       </div>
-      <!-- MODAL #4 - Service Points YRL - END -->
+      <!-- MODAL #10 - Service Points Law - END -->
+
+      <!-- MODAL #11 - Service Points Management -->
+      <!-- MODAL #11 - Service Points Management -->
+      <!-- MODAL #11 - Service Points Management -->
+      <div class="ui united large modal" id="unitManagement">
+        <div class="header">
+          Please pick a service point.
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="The Reference Desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">The Reference Desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>The Reference Desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Off-desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Off-desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>Off-desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="The Circulation Desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">The Circulation Desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/service_desk.png">
+                      <div class="ui large label">
+                        <center>The Circulation Desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL #11 - Service Points Management - END -->
+
+      <!-- MODAL #12 - Service Points Music -->
+      <!-- MODAL #12 - Service Points Music -->
+      <!-- MODAL #12 - Service Points Music -->
+      <div class="ui united large modal" id="unitMusic">
+        <div class="header">
+          Please pick a service point.
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="The Reference Desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">The Reference Desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>The Reference Desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Off-desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Off-desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>Off-desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="The Circulation Desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">The Circulation Desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/service_desk.png">
+                      <div class="ui large label">
+                        <center>The Circulation Desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL #12 - Service Points Music - END -->
+
+      <!-- MODAL #13 - Service Points Rieber Hall -->
+      <!-- MODAL #13 - Service Points Rieber Hall -->
+      <!-- MODAL #13 - Service Points Rieber Hall -->
+      <div class="ui united large modal" id="unitRieberHall">
+        <div class="header">
+          Please pick a service point.
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Rieber Hall 115">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Rieber Hall 115</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>Rieber Hall 115</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL #13 - Service Points Rieber Hall - END -->
+
+      <!-- MODAL #14 - Service Points SEL -->
+      <!-- MODAL #14 - Service Points SEL -->
+      <!-- MODAL #14 - Service Points SEL -->
+      <div class="ui united large modal" id="unitSel">
+        <div class="header">
+          Please pick a service point.
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="SEL Boelter, Reference desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">SEL Boelter, Reference desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>SEL Boelter, Reference desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="SEL Boelter, Off-desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">SEL Boelter, Off-desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>SEL Boelter, Off-desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="SEL Boelter, Circulation Desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">SEL Boelter, Circulation Desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/service_desk.png">
+                      <div class="ui large label">
+                        <center>SEL Boelter, Circulation Desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="SEL Geology, Circulation Desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">SEL Geology, Circulation Desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/service_desk.png">
+                      <div class="ui large label">
+                        <center>SEL Geology, Circulation Desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL #14 - Service Points SEL - END -->
+
+      <!-- MODAL #15 - Service Points SRLF -->
+      <!-- MODAL #15 - Service Points SRLF -->
+      <!-- MODAL #15 - Service Points SRLF -->
+      <div class="ui united large modal" id="unitSrlf">
+        <div class="header">
+          Please pick a service point.
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="The Circulation Desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">The Circulation Desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/service_desk.png">
+                      <div class="ui large label">
+                        <center>The Circulation Desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL #15 - Service Points SRLF - END -->
+
+      <!-- MODAL #16 - Service Points Social Science Data Archive -->
+      <!-- MODAL #16 - Service Points Social Science Data Archive -->
+      <!-- MODAL #16 - Service Points Social Science Data Archive -->
+      <div class="ui united large modal" id="unitSocialScienceDataArchive">
+        <div class="header">
+          Please pick a service point.
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Office">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Office</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>Office</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL #16 - Service Points Social Science Data Archive - END -->
+
+      <!-- MODAL #17 - Service Points Library Special Collections -->
+      <!-- MODAL #17 - Service Points Library Special Collections -->
+      <!-- MODAL #17 - Service Points Library Special Collections -->
+      <div class="ui united large modal" id="unitLibrarySpecialCollections">
+        <div class="header">
+          Please pick a service point.
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="LSC YRL, Reference desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">LSC YRL, Reference desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>LSC YRL, Reference desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="LSC, Off-desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">LSC, Off-desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>LSC, Off-desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL #17 - Service Points Library Special Collections - END -->
+
+      <!-- MODAL #18 - Service Points YRL -->
+      <!-- MODAL #18 - Service Points YRL -->
+      <!-- MODAL #18 - Service Points YRL -->
+      <div class="ui united large modal" id="unitYrl">
+        <div class="header">
+          Please pick a service point.
+        </div>
+        <div class="content">
+          <div id="libraryChoice">
+            <div class="ui three stackable link cards" id="albums">
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="The Circulation Desk">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">The Circulation Desk</h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/service_desk.png">
+                      <div class="ui large label">
+                        <center>The Circulation Desk</center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="actions">
+                <div class="ui approve button" data-value="Access Services - A-level service desk ">
+                  <div class="ui card">
+                    <div class="blurring dimmable image">
+                      <div class="ui inverted dimmer">
+                        <h2 class="ui aligned inverted header">Access Services - A-level service desk </h2>
+                      </div>
+                      <img class="ui small image" src="/<?php print( $page['sf_path'] ); ?>/img/yrl_pods.png">
+                      <div class="ui large label">
+                        <center>Access Services - A-level service desk </center>
+                      </div>
+                      <div class="meta">
+                        <span class="right"><i></i>310-555-5555&nbsp;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL #18 - Service Points YRL - END -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1436,12 +2074,44 @@
           alert("Please choose a Library Unit first.");
 //          modal = 'libraryMsg';
         } else if( $(this).attr('id') == "servicePoint" ) {
-  tc_copy = result.textContent;
-  tc_copy = tc_copy.replace(/\u00a0/g, "");
 
-  result.nodeValue = result.nodeValue.replace(/\u00a0/g, "");
+          // remove any &nbsp; from 1-line or 2-line labels
+          tc_copy = result.textContent;
+          tc_copy = tc_copy.replace(/^Clark Library.*/, "Clark Library");
+          tc_copy = tc_copy.replace(/^East Asian.*/, "East Asian");
+          tc_copy = tc_copy.replace(/^Rieber Hall.*/, "Rieber Hall");
+          tc_copy = tc_copy.replace(/^ Law.*/, "Law");
+          tc_copy = tc_copy.replace(/^ Management.*/, "Management");
+          tc_copy = tc_copy.replace(/^ Music.*/, "Music");
+          tc_copy = tc_copy.replace(/^ SEL.*/, "SEL");
+          tc_copy = tc_copy.replace(/^ SRLF.*/, "SRLF");
+          tc_copy = tc_copy.replace(/^ YRL.*/, "YRL");
 
-          switch (result.textContent) {
+          switch (tc_copy) {
+            case 'Library Special Collections':
+              modal = 'unitLibrarySpecialCollections';
+              break;
+            case 'Social Science Data Archive':
+              modal = 'unitSocialScienceDataArchive';
+              break;
+            case 'SRLF':
+              modal = 'unitSrlf';
+              break;
+            case 'SEL':
+              modal = 'unitSel';
+              break;
+            case 'Rieber Hall':
+              modal = 'unitRieberHall';
+              break;
+            case 'Music':
+              modal = 'unitMusic';
+              break;
+            case 'Management':
+              modal = 'unitManagement';
+              break;
+            case 'Law':
+              modal = 'unitLaw';
+              break;
             case 'Choose Service Point':
               modal = 'unitServicePoints';
               break;
@@ -1454,17 +2124,20 @@
             case 'Library Special Collections':
               modal = 'unitLibrarySpecialCollections';
               break;
-            case 'Clark Library ':
+            case 'Clark Library':
               modal = 'unitClark';
               break;
             case 'UCLA Powell Library':
               modal = 'unitPowell';
               break;
-            case 'Young Research Library':
-              modal = 'unitYrl';
+            case 'Digital Library Program':
+              modal = 'unitDigitalLibraryProgram';
               break;
-            case 'UCLA SEL Library':
-              modal = 'unitSel';
+            case 'East Asian':
+              modal = 'unitEastAsian';
+              break;
+            case 'YRL':
+              modal = 'unitYrl';
               break;
             case 'UCLA Music Library':
               modal = 'unitMusic';
@@ -1489,6 +2162,78 @@
           }).modal("show");
         }).on("click", ".ui.button", function () {
           switch ($(this).data("value")) {
+            case 'Library Special Collections':
+              $("#result").html("Library <br>Special <br>Collections");
+              document.getElementById('result').className = 'show ui teal button';
+              $(".ui.modal").modal("hide");
+              document.getElementById('servicePoint').className = 'show basic ui black button';
+              $("#servicePoint").html("Choose <br>Service <br>Point");
+              document.getElementById("servicePoint").disabled = false;
+              break;
+            case 'Social Science Data Archive':
+              $("#result").html("Social <br>Science <br>Data Archive");
+              document.getElementById('result').className = 'show ui teal button';
+              $(".ui.modal").modal("hide");
+              document.getElementById('servicePoint').className = 'show basic ui black button';
+              $("#servicePoint").html("Choose <br>Service <br>Point");
+              document.getElementById("servicePoint").disabled = false;
+              break;
+            case 'SRLF':
+              $("#result").html(" <br>SRLF <br>&nbsp;");
+              document.getElementById('result').className = 'show ui teal button';
+              $(".ui.modal").modal("hide");
+              document.getElementById('servicePoint').className = 'show basic ui black button';
+              $("#servicePoint").html("Choose <br>Service <br>Point");
+              document.getElementById("servicePoint").disabled = false;
+              break;
+            case 'SEL':
+              $("#result").html(" <br>SEL <br>&nbsp;");
+              document.getElementById('result').className = 'show ui teal button';
+              $(".ui.modal").modal("hide");
+              document.getElementById('servicePoint').className = 'show basic ui black button';
+              $("#servicePoint").html("Choose <br>Service <br>Point");
+              document.getElementById("servicePoint").disabled = false;
+              break;
+            case 'Rieber Hall':
+              $("#result").html("Rieber <br>Hall <br>&nbsp;");
+              document.getElementById('result').className = 'show ui teal button';
+              $(".ui.modal").modal("hide");
+              document.getElementById('servicePoint').className = 'show basic ui black button';
+              $("#servicePoint").html("Choose <br>Service <br>Point");
+              document.getElementById("servicePoint").disabled = false;
+              break;
+            case 'Music':
+              $("#result").html(" <br>Music <br>&nbsp;");
+              document.getElementById('result').className = 'show ui teal button';
+              $(".ui.modal").modal("hide");
+              document.getElementById('servicePoint').className = 'show basic ui black button';
+              $("#servicePoint").html("Choose <br>Service <br>Point");
+              document.getElementById("servicePoint").disabled = false;
+              break;
+            case 'Management':
+              $("#result").html(" <br>Management <br>&nbsp;");
+              document.getElementById('result').className = 'show ui teal button';
+              $(".ui.modal").modal("hide");
+              document.getElementById('servicePoint').className = 'show basic ui black button';
+              $("#servicePoint").html("Choose <br>Service <br>Point");
+              document.getElementById("servicePoint").disabled = false;
+              break;
+            case 'Law':
+              $("#result").html(" <br>Law <br>&nbsp;");
+              document.getElementById('result').className = 'show ui teal button';
+              $(".ui.modal").modal("hide");
+              document.getElementById('servicePoint').className = 'show basic ui black button';
+              $("#servicePoint").html("Choose <br>Service <br>Point");
+              document.getElementById("servicePoint").disabled = false;
+              break;
+            case 'East Asian':
+              $("#result").html("East <br>Asian <br>&nbsp;");
+              document.getElementById('result').className = 'show ui teal button';
+              $(".ui.modal").modal("hide");
+              document.getElementById('servicePoint').className = 'show basic ui black button';
+              $("#servicePoint").html("Choose <br>Service <br>Point");
+              document.getElementById("servicePoint").disabled = false;
+              break;
             case 'Clark Library':
               $("#result").html("Clark <br>Library <br> &nbsp;");
               document.getElementById('result').className = 'show ui teal button';
@@ -1513,9 +2258,17 @@
               $("#servicePoint").html("Choose <br>Service <br>Point");
               document.getElementById("servicePoint").disabled = false;
               break;
-            case 'Young Research Library':
-              $("#result").html("Young <br>Research <br>Library");
-              document.getElementById('result').className = 'show ui red button';
+            case 'Digital Library Program':
+              $("#result").html("Digital <br>Library <br>Program");
+              document.getElementById('result').className = 'show ui green button';
+              $(".ui.modal").modal("hide");
+              document.getElementById('servicePoint').className = 'show basic ui black button';
+              $("#servicePoint").html("Choose <br>Service <br>Point");
+              document.getElementById("servicePoint").disabled = false;
+              break;
+            case 'YRL':
+              $("#result").html(" <br>YRL <br>&nbsp;");
+              document.getElementById('result').className = 'show ui teal button';
               $(".ui.modal").modal("hide");
               document.getElementById('servicePoint').className = 'show basic ui black button';
               $("#servicePoint").html("Choose <br>Service <br>Point");
@@ -1554,8 +2307,66 @@
               document.getElementById("servicePoint").disabled = false;
               break;
 
+            case 'Access Services - A-level service desk ':
+              $("#servicePoint").html("Access Serv. <br>A-Level <br>Service Desk");
+              document.getElementById('servicePoint').className = 'show ui black button';
+              $(".ui.modal").modal("hide");
+              break;
+
+            case 'LSC YRL, Reference desk':
+              $("#servicePoint").html("LSC YRL, <br>Reference <br>Desk");
+              document.getElementById('servicePoint').className = 'show ui black button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'LSC, Off-desk':
+              $("#servicePoint").html("LSC, <br>Off-desk <br> <br>");
+              document.getElementById('servicePoint').className = 'show ui black button';
+              $(".ui.modal").modal("hide");
+              break;
+
+            case 'SEL Boelter, Reference desk':
+              $("#servicePoint").html("SEL Boelter <br>Reference <br>Desk");
+              document.getElementById('servicePoint').className = 'show ui black button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'SEL Boelter, Off-desk':
+              $("#servicePoint").html("SEL Boelter <br>Off-Desk <br>&nbsp;");
+              document.getElementById('servicePoint').className = 'show ui yellow button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'SEL Geology, Circulation Desk':
+              $("#servicePoint").html("SEL Geology <br>Circulation <br>Desk");
+              document.getElementById('servicePoint').className = 'show ui black button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'SEL Boelter, Circulation Desk':
+              $("#servicePoint").html("SEL Boelter <br>Circulation <br>Desk");
+              document.getElementById('servicePoint').className = 'show ui black button';
+              $(".ui.modal").modal("hide");
+              break;
+
+            case 'Rieber Hall 115':
+              $("#servicePoint").html("Rieber <br>Hall <br>115");
+              document.getElementById('servicePoint').className = 'show ui black button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'Entrance Foyer':
+              $("#servicePoint").html("Entrance <br>Foyer <br> <br>");
+              document.getElementById('servicePoint').className = 'show ui yellow button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'InqLab1 (research and writing help)':
+              $("#servicePoint").html(" <br>InqLab1 <br> <br>");
+              document.getElementById('servicePoint').className = 'show ui yellow button';
+              $(".ui.modal").modal("hide");
+              break;
             case 'Office':
               $("#servicePoint").html("&nbsp; <br>Office <br>&nbsp;");
+              document.getElementById('servicePoint').className = 'show ui yellow button';
+              $(".ui.modal").modal("hide");
+              break;
+            case 'Inquiry Desk':
+              $("#servicePoint").html("Inquiry <br>Desk <br> <br>");
               document.getElementById('servicePoint').className = 'show ui yellow button';
               $(".ui.modal").modal("hide");
               break;

@@ -1510,7 +1510,12 @@ font-weight: lighter;
   // reinsert <br>'s and &nbsp;'s for display
   sfUnit = sfUnit.replace(/ /g, " <br>");
   sfUnit = sfUnit.replace(/%C2%A0/g, "&nbsp;");
+  sfUnit = sfUnit.replace(/Data <br>/, "Data ");
   sfServicePoint = sfServicePoint.replace(/ /g, " <br>");
+  sfServicePoint = sfServicePoint.replace(/^SEL <br>/, "SEL ");
+  sfServicePoint = sfServicePoint.replace(/^LSC <br>/, "LSC ");
+  sfServicePoint = sfServicePoint.replace(/^Access <br>/, "Access ");
+  sfServicePoint = sfServicePoint.replace(/Service <br>/, "Service ");
   sfServicePoint = sfServicePoint.replace(/%C2%A0/g, "&nbsp;");
 
 /// Tabs
